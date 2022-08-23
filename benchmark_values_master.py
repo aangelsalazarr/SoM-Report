@@ -1,6 +1,7 @@
 # purpose of this file is to provide benchmark values on financial markets
 import yfinance as yf
 import pandas as pd
+import matplotlib.pyplot as plt
 
 # sp500 index
 sp500_index = yf.Ticker("^SPX")
@@ -24,17 +25,43 @@ equity_indices = ['^SPX', '^IXIC', '^RUI', '^RLV', '^RLG', '^RUT', '^RUJ',
 
 # for each ticker symbol, let's first filter out
 index_value = 0
+appended_data = []
 
 for index in equity_indices:
     a = yf.Ticker(str(index)).info
     filtered_a = {key: a[key] for key in a.keys() & {
         'shortName', 'regularMarketOpen',
         'twoHundredDayAverage', 'fiftyTwoWeekHigh',
-        'regularMarketPreviousClose'
+        'regularMarketPreviousClose', 'ytdReturn',
     }}
-    df = pd.DataFrame(filtered_a, index=[str(index_value + 1), ])
+    df = pd.DataFrame(filtered_a, index=[str(index_value), ])
     df = df.sort_index(axis=1)
-    print(df)
+    index_value += 1
+    appended_data.append(df)
+
+
+# combining all of our dfs into 1 df
+appended_data = pd.concat(appended_data)
+
+# viewing our new df; good to go!
+print(appended_data)
+
+# add a new col that tracks percentage change of price
+appended_data = appended_data.assign(percentChange=(appended_data[
+                                                        "regularMarketOpen"]-appended_data[
+    "regularMarketPreviousClose"])/appended_data[
+    "regularMarketPreviousClose"]*100)
+
+#conditional color statement
+# colors = ["red" if float(appended_data["percentChange"]) < 0 else "green"]
+
+# now let's plot our data
+appended_data.plot(x='shortName', y='percentChange', kind='bar')
+plt.title("Index Price % Change (Market Open vs Market Previous Close)")
+plt.xlabel("Index")
+plt.ylabel("Percent Change (%)")
+plt.show()
+
 
 # fixed income / credit
 # real assets
