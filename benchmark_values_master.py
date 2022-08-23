@@ -4,21 +4,17 @@ import pandas as pd
 
 # equity indices
 sp500_index = yf.Ticker("^SPX")
-sp500_dict = sp500_index.info # this is a dictionary
-
-# we would like to grab a list of all keys
-for key, value in sp500_dict.items():
-    pass # printing nothing because we do not need this at moment
+sp500_dict = sp500_index.info  # this is a dictionary
 
 # purpose is to extract specific key value pairs that we care about
-filtered_sp500 = {key: sp500_dict[key] for key in sp500_dict.keys() & {
+filtered_sp500_dict = {key: sp500_dict[key] for key in sp500_dict.keys() & {
     'shortName', 'previousClose', 'regularMarketOpen',
     'twoHundredDayAverage', 'beta', 'fiftyTwoWeekHigh',
     'regularMarketPreviousClose'}}
 
-# showing our filtered data
-print("filtered sp500 information: " + str(filtered_sp500))
-
+# converting dicionary into df
+sp500_df = pd.DataFrame(filtered_sp500_dict, index=['i', ])
+print(sp500_df.head())
 
 # fixed income / credit
 
@@ -33,4 +29,3 @@ print("filtered sp500 information: " + str(filtered_sp500))
 # commodities
 
 # consumer price index
-
