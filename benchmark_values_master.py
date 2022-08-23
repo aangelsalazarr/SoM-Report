@@ -60,6 +60,7 @@ appended_data.plot(x='shortName', y='percentChange', kind='bar')
 plt.title("Index Price % Change (Market Open vs Market Previous Close)")
 plt.xlabel("Index")
 plt.ylabel("Percent Change (%)")
+plt.axhline(y=0, color="green")
 plt.show()
 
 
