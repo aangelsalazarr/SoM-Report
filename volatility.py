@@ -12,7 +12,7 @@ volatility_index = yf.Ticker("^VIX")
 # converting information on vix --> dictionary
 vix_dict = volatility_index.info
 # getting historical market data
-historical_data = volatility_index.history(period='1Y')
+hist_data = volatility_index.history(period='1Y')
 
 # now we will be filtering out to only data that we need into a df
 filtered_vix = {key: vix_dict[key] for key in vix_dict.keys() & {
@@ -25,11 +25,23 @@ filtered_vix = {key: vix_dict[key] for key in vix_dict.keys() & {
 vix_df = pd.DataFrame(filtered_vix, index = [0, ])
 vix_df = vix_df.sort_index(axis=1)
 
-# please note that historical data is already a df so we can plot it
-# converting our date col into date type
+# adding col of percent change of index
+vix_df = vix_df.assign(percentChange = (vix_df['regularMarketOpen'] - vix_df[
+    'regularMarketPreviousClose']) / vix_df['regularMarketPreviousClose']*100)
 
-historical_data.plot(y='Open')
+# plotting the percent change
+# vix_df.plot(x='shortName', y='percentChange', kind='bar')
+
+# adding a percent change col to historical data df
+hist_data = hist_data.assign(percentChange = hist_data['Open'].pct_change())
+
+# please note that historical data is already a df so we can plot it
+ax1 = plt.subplot()
+l1, = ax1.plot(hist_data['Open'], color='blue')
+ax1.set_ylabel('VIX Index Value')
+ax2 = ax1.twinx()
+ax2.set_ylabel('% Change VIX')
+l2, = ax2.plot(hist_data['percentChange'], color='pink', alpha=0.5)
+plt.legend([l1, l2], ['VIX Value', '% Change'])
 plt.title("CBOE Volatility Index")
-plt.xlabel("Date")
-plt.ylabel("Open")
 plt.show()
