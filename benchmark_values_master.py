@@ -62,7 +62,7 @@ plt.title("Index Price % Change (Market Open vs Market Previous Close)")
 plt.xlabel("Index")
 plt.ylabel("Percent Change (%)")
 plt.axhline(y=0, color="green")
-# plt.show()
+plt.show()
 
 # fixed income / credit
 # real assets
@@ -82,9 +82,9 @@ appended_cryptos = []
 for crypto in crypto_indices:
     cryp = yf.Ticker(str(crypto)).info
     filtered_cryp = {key: cryp[key] for key in cryp.keys() & {
-        'fiftyTwoWeekHigh', 'ytdReturn',
+        'fiftyTwoWeekHigh',
         'priceToSalesTrailing12Months',
-        'marketCap', 'beta',
+        'marketCap',
         'regularMarketPreviousClose',
         'averageDailyVolume10Day', 'volume24Hr', 'payoutRatio',
         'regularMarketOpen', 'name',
