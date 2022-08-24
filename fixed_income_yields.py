@@ -28,6 +28,9 @@ appended_data = pd.concat(appended_data)
 
 print(appended_data)
 
+# doing the same as above except with historical data
+
+
 # federal funds rate data
 fred_api_key = os.environ['fredapi']
 fred = Fred(api_key=fred_api_key)

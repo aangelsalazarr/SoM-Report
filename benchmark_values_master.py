@@ -66,8 +66,6 @@ plt.show()
 
 # fixed income / credit
 # real assets
-# volatility
-# fixed income yield
 # foreign exchange
 # consumer price index
 # commodities
