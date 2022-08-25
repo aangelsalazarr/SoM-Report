@@ -5,15 +5,13 @@ import requests
 import json
 import os
 
-# we want to grab the bls from our virtual environment
-reg_key = os.environ['blsAPI']
 
 class bls_data:
 
-    def __init__(self, reg_key, out_file_nm, series_id, start_year, end_year):
+    def __init__(self, reg_key, series_id, start_year, end_year):
 
         # set the file name variable and create the params for the api request
-        self.out_file_nm = out_file_nm
+        #self.out_file_nm = out_file_nm
 
         headers = {'Content-type' : 'application/json'}
         params = json.dumps({'seriesid':series_id, 'startyear':start_year,

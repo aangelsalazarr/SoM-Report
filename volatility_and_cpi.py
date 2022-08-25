@@ -9,6 +9,8 @@ import numpy as np
 import os
 import requests
 import json
+from bls_data_retriever import bls_data # allows us to run get request bls api
+import datetime
 
 # finding ticker symbol for volatility on yfinance
 volatility_index = yf.Ticker("^VIX")
@@ -47,10 +49,17 @@ ax2.set_ylabel('% Change VIX')
 l2, = ax2.plot(hist_data['percentChange'], color='pink', alpha=0.5)
 plt.legend([l1, l2], ['VIX Value', '% Change'])
 plt.title("CBOE Volatility Index")
-plt.show()
+# plt.show()
 
 # grabbing data from bls public api
-# Setting our api key from our environment
-bls_api_key = os.environ['blsAPI']
+# we want to grab the bls from our virtual environment
+reg_key = os.environ['blsAPI']
+
+# the id for our specific topics of interest
+cpi_u = 'CUUR0000SA0' # cpi for all urban consumers 1982-84=100
+end_year = datetime.datetime.now().year
+start_year = end_year - 5
 
 # grabbing cpi data
+cpi = bls_data(reg_key, cpi_u, start_year, end_year)
+print(cpi)
