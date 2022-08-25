@@ -6,6 +6,9 @@ import seaborn as sns
 import datetime as dt
 import matplotlib.dates as mdates
 import numpy as np
+import os
+import requests
+import json
 
 # finding ticker symbol for volatility on yfinance
 volatility_index = yf.Ticker("^VIX")
@@ -45,3 +48,9 @@ l2, = ax2.plot(hist_data['percentChange'], color='pink', alpha=0.5)
 plt.legend([l1, l2], ['VIX Value', '% Change'])
 plt.title("CBOE Volatility Index")
 plt.show()
+
+# grabbing data from bls public api
+# Setting our api key from our environment
+bls_api_key = os.environ['blsAPI']
+
+# grabbing cpi data
