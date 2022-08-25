@@ -39,3 +39,4 @@ Purpose: gather data into a 20 page report laying out the state of the market
 - [Yahoo Finance](https://finance.yahoo.com/)
 - [Energy Information Administration](https://www.eia.gov/)
 - [Federal Reserve Economic Data (FRED)](https://fred.stlouisfed.org/)
+- [U.S. Bureau of Labor Statistics](https://www.bls.gov/)
