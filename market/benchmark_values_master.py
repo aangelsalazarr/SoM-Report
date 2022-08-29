@@ -64,12 +64,6 @@ plt.ylabel("Percent Change (%)")
 plt.axhline(y=0, color="green")
 plt.show()
 
-# fixed income / credit
-# real assets
-# foreign exchange
-# consumer price index
-# commodities
-commodities_indices = []
 
 # crypto related reference entities
 crypto_indices = ["BTC-USD", "ETH-USD", "USDT-USD", "USDC-USD", "BNB-USD"]
