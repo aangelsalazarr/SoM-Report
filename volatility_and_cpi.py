@@ -9,9 +9,8 @@ import numpy as np
 import os
 import requests
 import json
-from bls_data_retriever import bls_data # allows us to run get request bls api
 import datetime
-
+from bls_data_processor import fetch_bls_series
 # finding ticker symbol for volatility on yfinance
 volatility_index = yf.Ticker("^VIX")
 # converting information on vix --> dictionary
@@ -51,15 +50,25 @@ plt.legend([l1, l2], ['VIX Value', '% Change'])
 plt.title("CBOE Volatility Index")
 # plt.show()
 
+# ______________________________________________________________________________
+# BLS API DATA FROM HERE AND DOWN
 # grabbing data from bls public api
 # we want to grab the bls from our virtual environment
-reg_key = os.environ['blsAPI']
+bls_api_key = os.environ['blsAPI']
 
-# the id for our specific topics of interest
-cpi_u = 'CUUR0000SA0' # cpi for all urban consumers 1982-84=100
+# series id of interest
+unemployment_rate = "LNS14000000"
+cpi = "CUUR0000SA0" # consumer price index
+eci = "CIU1010000000000A" # employment cost index
+imports = "EIUIR" # imports all commodities
+exports = "EIUIQ" # exports, all commodities
+
+# setting up our series list
+series = [unemployment_rate, cpi, eci, imports, exports]
 end_year = datetime.datetime.now().year
 start_year = end_year - 5
 
-# grabbing cpi data
-cpi = bls_data(reg_key, cpi_u, start_year, end_year)
-print(cpi)
+# grabbing bls api data
+bls_data = fetch_bls_series(series, startyear=start_year, endyear=end_year,
+                            registrationKey=bls_api_key)
+print(json.dumps(bls_data, indent=2))
