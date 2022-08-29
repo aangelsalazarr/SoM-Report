@@ -54,7 +54,7 @@ plt.title("CBOE Volatility Index")
 # BLS API DATA FROM HERE AND DOWN
 # grabbing data from bls public api
 # we want to grab the bls from our virtual environment
-bls_api_key = os.environ['blsAPI']
+bls_api_key = os.environ.get('blsAPI')
 
 # series id of interest
 unemployment_rate = "LNS14000000"
