@@ -2,6 +2,7 @@ import matplotlib.pyplot as plt
 import yfinance as yf
 import pandas as pd
 import seaborn as sns
+from scipy import stats
 
 # industrial metals list
 lead = 0
@@ -51,16 +52,20 @@ cu_history.reset_index(inplace=True)
 # dropping dividens and strock split columns because NA
 cu_history.drop(['Dividends', 'Stock Splits'], inplace=True, axis=1)
 
-print(cu_history)
-
 '''
 Let's now plot historic data.
 Historic data contains the following columns
 - date (index), open, high, low, close, volume, dividends, stock splits
 '''
 
-sns.lineplot(x='Date', y='value', hue='variable', data=pd.melt(cu_history,
-                                                               'Date'))
+# defining dimensions of subplots & aesthetics
+sns.set_style('white')
+
+# create a chart in each subplot
+sns.lineplot(data=cu_history, x='Date', y='Open', color='green')
+ax2 = plt.twinx()
+sns.lineplot(data=cu_history, x='Date', y='Volume', color='lightgreen', ax=ax2)
+
 plt.show()
 
 # **************************COPPER**********************************************
