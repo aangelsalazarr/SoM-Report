@@ -1,6 +1,7 @@
 # purpose is to gather data related to volatility and print our a plot
 import yfinance as yf
 import pandas as pd
+from pandas import json_normalize
 import matplotlib.pyplot as plt
 import seaborn as sns
 import datetime as dt
@@ -73,15 +74,8 @@ start_year = end_year - 5
 # grabbing bls api data
 bls_data = fetch_bls_series(series, startyear=start_year, endyear=end_year,
                             registrationKey=bls_api_key)
+
+
 # print(json.dumps(bls_data, indent=2))
-
-# now we want to store this data into a csv file
-bls_data_file = open('bls_data_file.csv', 'w')
-
-# creating a csv write object
-csv_writer = csv.writer(bls_data_file)
-
-# counter var used for writing headers to the csv file
-count = 0
 
 
