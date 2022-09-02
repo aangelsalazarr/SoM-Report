@@ -16,15 +16,20 @@ lmeCu = yf.Ticker("HG=F")
 aluminum = yf.Ticker("ALI=F")
 
 # need to convert to .history to grab historical data
-goldHistory = gold.info(period="1Y")
-platinumHistory = platinum.info(period='1Y')
-palladiumHistory = palladium.info(period='1Y')
-silverHistory = silver.info(period='1Y')
-copperHistory = lmeCu.info(period='1Y')
-aluminumHistory = aluminum.info(period='1Y')
+goldHistory = gold.history(period="1Y")
+platinumHistory = platinum.history(period='1Y')
+palladiumHistory = palladium.history(period='1Y')
+silverHistory = silver.history(period='1Y')
+copperHistory = lmeCu.history(period='1Y')
+aluminumHistory = aluminum.history(period='1Y')
 
 # commodities history list
 commoditiesHistories = [goldHistory, platinumHistory, palladiumHistory,
                         silverHistory, copperHistory, aluminumHistory]
 
+# create a for loop to clean the data
+for commodity in commoditiesHistories:
+    commodity.reset_index(inplace=True)
+    commodity.drop(['Dividends', 'Stock Splits'], inplace=True, axis=1)
 
+# now we will create multiple figures and put them into one pdf
