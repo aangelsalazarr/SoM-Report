@@ -8,17 +8,17 @@ from scipy import stats
 lead = 0
 zinc = 0
 tin = 0
-aluminum = 0
+aluminum = yf.Ticker("ALI=F")
 aluminiumAlloy = 0
 lmeNi = 0
 cobalt = 0
 molybdenum = 0
 
 # precious metals list
-gold = 0
-platinum = 0
-palladium = 0
-silver = 0
+gold = yf.Ticker("GC=F")
+platinum = yf.Ticker("PL=F")
+palladium = yf.Ticker("PA=F")
+silver = yf.Ticker("SI=F")
 
 # energy related metals not already covered list
 lithium = 0
