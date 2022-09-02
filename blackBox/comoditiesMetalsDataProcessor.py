@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 from matplotlib.backends.backend_pdf import PdfPages
 import seaborn as sns
 
-plt.rcParams["figure.figsize"] = [7.00, 3.50]
+# plt.rcParams["figure.figsize"] = [7.00, 3.50]
 plt.rcParams["figure.autolayout"] = True
 
 """
@@ -69,6 +69,7 @@ sns.lineplot(data=aluminumHistory, x='Date', y='Open', color='green')
 ax2_6 = plt.twinx()
 sns.lineplot(data=aluminumHistory, x='Date', y='Volume', color='lightgreen')
 
+
 def save_multi_image(filename):
     pp = PdfPages(filename)
     fig_nums = plt.get_fignums()
@@ -76,6 +77,7 @@ def save_multi_image(filename):
     for fig in figs:
         fig.savefig(pp, format='pdf')
     pp.close()
+
 
 filename = 'CommoditiesFuturesInformation.pdf'
 save_multi_image(filename)
