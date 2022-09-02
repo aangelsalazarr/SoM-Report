@@ -1,18 +1,10 @@
 # purpose is to gather data related to volatility and print our a plot
 import yfinance as yf
 import pandas as pd
-from pandas import json_normalize
 import matplotlib.pyplot as plt
-import seaborn as sns
-import datetime as dt
-import matplotlib.dates as mdates
-import numpy as np
 import os
-import requests
-import json
 import datetime
-from bls_data_processor import fetch_bls_series
-import csv
+from blackBox.bls_data_processor import fetch_bls_series
 
 # finding ticker symbol for volatility on yfinance
 volatility_index = yf.Ticker("^VIX")
