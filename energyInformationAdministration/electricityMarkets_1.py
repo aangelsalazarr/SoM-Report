@@ -4,6 +4,10 @@ import os
 from datetime import date
 from dateutil.relativedelta import relativedelta
 import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+pd.set_option('display.max_columns', None)
 
 '''
 Purpose of this is to grab relevant price data on the electricity market in the
@@ -88,6 +92,7 @@ entries = data['response']["data"]
 
 # converting our json data format to pandas
 df = pd.DataFrame(data=entries)
+df2 = df[df['stateid'] != 'US']
 
 '''
 Let it be noted that the entries contains all the data that we need and has the
@@ -107,5 +112,10 @@ following columns:
 - sales-units
 '''
 
-print(df)
+# let's look at a quick plot of stateDescription and customers (bar graph)
+fig1 = sns.barplot(data=df2, x='stateDescription', y='customers',
+                   order = df2.sort_values('customers',
+                                           ascending=False).stateDescription)
+fig1.set_xticklabels(fig1.get_xticklabels(), rotation=90)
+plt.show()
 
