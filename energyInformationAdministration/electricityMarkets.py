@@ -6,6 +6,11 @@ from dateutil.relativedelta import relativedelta
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
+from matplotlib.backends.backend_pdf import PdfPages
+from matplotlib import rc
+rc('mathtext', default='regular')
+
+plt.rcParams["figure.autolayout"] = True
 
 pd.set_option('display.max_columns', None)
 
@@ -124,38 +129,39 @@ following columns:
 now, we want to grab all of the data and start creating graphs, the first will 
 be related to customers and price by sector (there will be 6 plots)
 """
-
+sns.set(font_scale = 0.3)
 fig, axes = plt.subplots(2, 3)
-fig.suptitle('Electricity Price by Sector')
+fig.suptitle('U.S. Electricity Price by Sector')
 
 fig1 = sns.lineplot(ax=axes[0, 0], data=df2[df2['sectorid'] == 'ALL'],
-                    x='period', y='price',
+                    x='period', y='price', linewidth= 0.7,
                     ci=None).set(title='All Sectors (Average)')  # total
 
 fig2 = sns.lineplot(ax=axes[0, 1], data=df2[df2['sectorid'] == 'COM'],
-                    x='period', y='price',
+                    x='period', y='price', linewidth= 0.7,
                     ci = None).set(title='Commercial')  #
 # commercial
 
 fig3 = sns.lineplot(ax=axes[0, 2], data=df2[df2['sectorid'] == 'IND'],
-                    x='period', y='price',
+                    x='period', y='price', linewidth= 0.7,
                     ci = None).set(title='Industrial')  # industrial
 
 fig4 = sns.lineplot(ax=axes[1, 0], data=df2[df2['sectorid'] == 'RES'],
-                    x='period', y='price',
+                    x='period', y='price', linewidth= 0.7,
                     ci = None).set(title='Residential')  # residential
 
 fig5 = sns.lineplot(ax=axes[1, 1], data=df2[df2['sectorid'] == 'TRA'],
-                    x='period', y='price',
+                    x='period', y='price', linewidth= 0.7,
                     ci = None).set(title='Transportation')  # transportation
 
 fig6 = sns.lineplot(ax=axes[1, 2], data=df2, x='period', y='price',
-                       hue='sectorid',
+                       hue='sectorid', linewidth= 0.7,
                     ci = None).set(title='All Sectors Split')  # all
 
 # rotating period access
 for ax in fig.axes:
   ax.set_ylabel(df2['price-units'][0])
+  ax.tick_params(labelrotation=90, axis='x')
 
 '''
 fig1 = sns.barplot(data=df2, x='stateDescription', y='customers')
@@ -165,4 +171,16 @@ fig2 = sns.lineplot(data=df2, x='sectorName', y='sales')
 fig2.set_xticklabels(fig2.get_xticklabels(), rotation=90)
 '''
 
-plt.show()
+def save_multi_image(filename):
+    pp = PdfPages(filename)
+    fig_nums = plt.get_fignums()
+    figs = [plt.figure(n) for n in fig_nums]
+    for fig in figs:
+        fig.savefig(pp, format='pdf')
+    pp.close()
+
+
+filename = 'USElectricityPriceBySector.pdf'
+save_multi_image(filename)
+
+# plt.show()
