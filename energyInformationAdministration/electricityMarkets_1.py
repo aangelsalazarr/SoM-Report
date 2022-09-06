@@ -43,16 +43,16 @@ in this python script
 """
 
 dataInput = "&data[0]=customers&data[1]=price&data[2]=revenue&data[3]=sales"
-facetsInput= "&facets[sectorid][0]=ALL&facets[sectorid][1]=COM&facets[" \
-             "sectorid][2]=IND&facets[sectorid][3]=OTH&facets[" \
-             "sectorid][4]=RES&facets[" \
-             "sectorid][5]=TRA"
+facetsInput = "&facets[sectorid][0]=ALL&facets[sectorid][1]=COM&facets[" \
+              "sectorid][2]=IND&facets[sectorid][3]=OTH&facets[" \
+              "sectorid][4]=RES&facets[" \
+              "sectorid][5]=TRA"
 frequencyInput = "&frequency=monthly"
 endDateInput = "&start=" + str(startDateEIA)
 
 # adding everything up
 electricityPricesURL = electricityPricesURL + dataInput + facetsInput \
-                       +frequencyInput + endDateInput
+                       + frequencyInput + endDateInput
 
 # helping us visualize our url
 # print(electricityPricesURL)
@@ -94,6 +94,9 @@ entries = data['response']["data"]
 df = pd.DataFrame(data=entries)
 df2 = df[df['stateid'] != 'US']
 
+# making sure our date function is set as a type = date
+df2['period'] = pd.to_datetime(df2['period'])
+
 '''
 Let it be noted that the entries contains all the data that we need and has the
 following columns: 
@@ -113,9 +116,53 @@ following columns:
 '''
 
 # let's look at a quick plot of stateDescription and customers (bar graph)
-fig1 = sns.barplot(data=df2, x='stateDescription', y='customers',
-                   order = df2.sort_values('customers',
-                                           ascending=False).stateDescription)
-fig1.set_xticklabels(fig1.get_xticklabels(), rotation=90)
-plt.show()
+# how to sort values but takes a long time lol
+# order = df2.sort_values('customers', ascending=False).stateDescription
+# add in .barplot params
 
+"""
+now, we want to grab all of the data and start creating graphs, the first will 
+be related to customers and price by sector (there will be 6 plots)
+"""
+
+fig, axes = plt.subplots(2, 3)
+fig.suptitle('Electricity Price by Sector')
+
+fig1 = sns.lineplot(ax=axes[0, 0], data=df2[df2['sectorid'] == 'ALL'],
+                    x='period', y='price',
+                    ci=None).set(title='All Sectors (Average)')  # total
+
+fig2 = sns.lineplot(ax=axes[0, 1], data=df2[df2['sectorid'] == 'COM'],
+                    x='period', y='price',
+                    ci = None).set(title='Commercial')  #
+# commercial
+
+fig3 = sns.lineplot(ax=axes[0, 2], data=df2[df2['sectorid'] == 'IND'],
+                    x='period', y='price',
+                    ci = None).set(title='Industrial')  # industrial
+
+fig4 = sns.lineplot(ax=axes[1, 0], data=df2[df2['sectorid'] == 'RES'],
+                    x='period', y='price',
+                    ci = None).set(title='Residential')  # residential
+
+fig5 = sns.lineplot(ax=axes[1, 1], data=df2[df2['sectorid'] == 'TRA'],
+                    x='period', y='price',
+                    ci = None).set(title='Transportation')  # transportation
+
+fig6 = sns.lineplot(ax=axes[1, 2], data=df2, x='period', y='price',
+                       hue='sectorid',
+                    ci = None).set(title='All Sectors Split')  # all
+
+# rotating period access
+for ax in fig.axes:
+  ax.set_ylabel(df2['price-units'][0])
+
+'''
+fig1 = sns.barplot(data=df2, x='stateDescription', y='customers')
+fig1.set_xticklabels(fig1.get_xticklabels(), rotation=90)
+
+fig2 = sns.lineplot(data=df2, x='sectorName', y='sales')
+fig2.set_xticklabels(fig2.get_xticklabels(), rotation=90)
+'''
+
+plt.show()
