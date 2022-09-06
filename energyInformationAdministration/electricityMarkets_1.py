@@ -39,14 +39,18 @@ in this python script
 
 dataInput = "&data[0]=customers&data[1]=price&data[2]=revenue&data[3]=sales"
 facetsInput= "&facets[sectorid][0]=ALL&facets[sectorid][1]=COM&facets[" \
-             "sectorid]=IND&facets[sectorid]=OTH&facets[sectorid]=RES&facets[" \
-             "sectorid]=TRA"
+             "sectorid][2]=IND&facets[sectorid][3]=OTH&facets[" \
+             "sectorid][4]=RES&facets[" \
+             "sectorid][5]=TRA"
 frequencyInput = "&frequency=monthly"
 endDateInput = "&start=" + str(startDateEIA)
 
 # adding everything up
 electricityPricesURL = electricityPricesURL + dataInput + facetsInput \
                        +frequencyInput + endDateInput
+
+# helping us visualize our url
+print(electricityPricesURL)
 
 # purpose is to define parameters
 PARAMS = {
@@ -79,5 +83,4 @@ r = requests.get(url=electricityPricesURL)
 data = r.json()
 
 # visualizing data
-print(electricityPricesURL)
 print(data)
