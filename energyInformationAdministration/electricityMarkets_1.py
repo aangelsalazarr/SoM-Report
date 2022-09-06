@@ -3,6 +3,7 @@ import requests
 import os
 from datetime import date
 from dateutil.relativedelta import relativedelta
+import pandas as pd
 
 '''
 Purpose of this is to grab relevant price data on the electricity market in the
@@ -50,7 +51,7 @@ electricityPricesURL = electricityPricesURL + dataInput + facetsInput \
                        +frequencyInput + endDateInput
 
 # helping us visualize our url
-print(electricityPricesURL)
+# print(electricityPricesURL)
 
 # purpose is to define parameters
 PARAMS = {
@@ -82,5 +83,29 @@ r = requests.get(url=electricityPricesURL)
 # extracting data in json format
 data = r.json()
 
-# visualizing data
-print(data)
+# grabbing only data object
+entries = data['response']["data"]
+
+# converting our json data format to pandas
+df = pd.DataFrame(data=entries)
+
+'''
+Let it be noted that the entries contains all the data that we need and has the
+following columns: 
+- period
+- statid
+- stateDescription
+- sectorid
+- sectorName
+- customers
+- price
+- revenue
+- sales
+- customer-units
+- price-units
+- revenue-units
+- sales-units
+'''
+
+print(df)
+
