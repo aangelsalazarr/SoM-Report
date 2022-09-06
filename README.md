@@ -2,9 +2,10 @@
 Purpose: gather data into a 20 page report laying out the state of the market
 
 ## Topics
+- [U.S. Electricity Market](https://github.com/aangelsalazarr/SoM-Report/blob/main/energyInformationAdministration/electricityMarkets_1.py)
 - Equity Indices
 - Fixed Income / Credit
-- Volatility / CPI
+- [Volatility / CPI](https://github.com/aangelsalazarr/SoM-Report/blob/main/market/volatility_and_cpi.py)
 - Fixed Income Yields
 - Real Assets
 - Foreign Exchange
@@ -15,8 +16,8 @@ Purpose: gather data into a 20 page report laying out the state of the market
     - USD Coin
     - BNB
 - Commodities
-    - [Metals Market](https://github.com/aangelsalazarr/SoM-Report/blob/main/commodities_metals.py)
-    - [Energy Market](https://github.com/aangelsalazarr/SoM-Report/blob/main/commodities_energy.py)
+    - [Metals Market](https://github.com/aangelsalazarr/SoM-Report/blob/main/market/commodities_metals.py)
+    - [Energy Market](https://github.com/aangelsalazarr/SoM-Report/blob/main/market/commodities_energy.py)
 - Equities
     - Energy
     - Materials
