@@ -127,5 +127,14 @@ for item in blsDataList:
 # removing columns we do not need such as footnotes and latest cols
 blsMainDF = blsMainDF.drop(['latest', 'footnotes'], axis=1)
 
+# converting year and period to string to manipulate it
+# blsMainDF[['year', 'period']] = blsMainDF[['year', 'period']].astype(str)
+
+# dropping M from period column
+
+# now we are adding date column
+blsMainDF['Date'] = blsMainDF['periodName'] + "-" + blsMainDF['year']
+
+print(blsMainDF.dtypes)
 print(blsMainDF)
 
