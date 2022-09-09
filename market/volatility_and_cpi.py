@@ -6,6 +6,9 @@ import os
 import datetime
 from blackBox.bls_data_processor import fetch_bls_series
 
+pd.set_option('display.max_rows', None)
+pd.set_option('display.max_columns', None)
+
 # finding ticker symbol for volatility on yfinance
 volatility_index = yf.Ticker("^VIX")
 # converting information on vix --> dictionary
@@ -35,6 +38,7 @@ vix_df = vix_df.assign(percentChange = (vix_df['regularMarketOpen'] - vix_df[
 hist_data = hist_data.assign(percentChange = hist_data['Open'].pct_change())
 
 # please note that historical data is already a df so we can plot it
+'''
 ax1 = plt.subplot()
 l1, = ax1.plot(hist_data['Open'], color='blue')
 ax1.set_ylabel('VIX Index Value')
@@ -44,6 +48,7 @@ l2, = ax2.plot(hist_data['percentChange'], color='pink', alpha=0.5)
 plt.legend([l1, l2], ['VIX Value', '% Change'])
 plt.title("CBOE Volatility Index")
 # plt.show()
+'''
 
 # ______________________________________________________________________________
 # BLS API DATA FROM HERE AND DOWN
@@ -68,6 +73,55 @@ bls_data = fetch_bls_series(series, startyear=start_year, endyear=end_year,
                             registrationKey=bls_api_key)
 
 
-# print(json.dumps(bls_data, indent=2))
+'''
+Looking at our bls data structure we see the following:
+*level 1: 
+- {4 props}
+**Level 2: 
+- status:
+- responseTime
+- message
+- Results
+***Level 3 [Results unnest]:
+- series
+    - 0
+        - seriesID:
+        - data:
+            - 0:
+                - year
+                - period
+                -periodName
+                -latest
+                - value
+            - 1:
+            - ...
+            - M
+    - 1
+    - ...
+    - N
+    
+So it seems that we only care about first grabbing props in series which 
+each index contains specific information requested. for instance, if we req
+5 series id, then N = 5. best way to move forward would be to allocate a df 
+for each series index, grab seriesID and add it to a df that grabbed data per
+series index. once we have N df's, then given they are similar in structure, we
+just need to vertically concatenate them and there we have 1 master df.
+'''
 
+# purpose is to only grab the results -> series list which containts 2 things
+# first, the seriesID and second, the data!
+blsDataList = bls_data['Results']['series']
+
+# creating an empty df to add incoming dfs
+blsMainDF = pd.DataFrame()
+
+# purpose is now to loop through each item and add to a general pandas df
+for item in blsDataList:
+    blsMainDF = pd.concat([blsMainDF, pd.DataFrame(data=item['data'])])
+    blsMainDF['seriesID'] = item['seriesID']
+
+# removing columns we do not need such as footnotes and latest cols
+blsMainDF = blsMainDF.drop(['latest', 'footnotes'], axis=1)
+
+print(blsMainDF)
 
