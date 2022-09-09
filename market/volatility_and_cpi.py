@@ -113,12 +113,16 @@ just need to vertically concatenate them and there we have 1 master df.
 blsDataList = bls_data['Results']['series']
 
 # creating an empty df to add incoming dfs
-blsMainDF = pd.DataFrame()
+blsMainDF = pd.DataFrame(columns=['seriesID'])
 
 # purpose is now to loop through each item and add to a general pandas df
 for item in blsDataList:
     blsMainDF = pd.concat([blsMainDF, pd.DataFrame(data=item['data'])])
-    blsMainDF['seriesID'] = item['seriesID']
+    if blsMainDF['seriesID'].isnull:
+        blsMainDF['seriesID'].fillna(item['seriesID'], inplace=True)
+    else:
+        continue
+
 
 # removing columns we do not need such as footnotes and latest cols
 blsMainDF = blsMainDF.drop(['latest', 'footnotes'], axis=1)
