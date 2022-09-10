@@ -148,6 +148,7 @@ blsNonECI = blsMainDF[blsMainDF['seriesID'] != 'CIU1010000000000A']
 
 blsNonECI['Date'] = pd.to_datetime(blsNonECI['Date'])
 blsNonECI = blsNonECI.reset_index(drop=True)
+blsNonECI['value'] = blsNonECI['value'].astype(float)
 
 '''
 now we want to create graphs for the 5 given data types
@@ -156,8 +157,10 @@ sns.set(font_scale=0.7)
 fig, axes = plt.subplots(2, 2)
 fig.suptitle('U.S. Bureau of Labor Statistics Insights')
 
-fig1 = sns.scatterplot(ax=axes[0, 0], data=blsNonECI[blsNonECI['seriesID'] ==
-                                                  'LNS14000000'], x='Date',
+# setting our specific data
+unemployment = blsNonECI[blsNonECI['seriesID'] == 'LNS14000000']
+
+fig1 = sns.lineplot(ax=axes[0, 0], data=unemployment, x='Date',
                     y='value', linewidth=0.7, ci=None).set(title='Unemployment')
 
 fig2 = sns.lineplot(ax=axes[0, 1], data=blsNonECI[blsNonECI['seriesID'] ==
@@ -179,5 +182,5 @@ fig4 = sns.lineplot(ax=axes[1, 1], data=blsNonECI[blsNonECI['seriesID'] ==
 for ax in fig.axes:
     ax.tick_params(labelrotation=90, axis='x')
 
-print(blsNonECI)
+print(unemployment)
 plt.show()
