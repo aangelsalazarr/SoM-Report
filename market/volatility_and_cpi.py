@@ -45,8 +45,9 @@ vix_df = vix_df.assign(percentChange=(vix_df['regularMarketOpen'] - vix_df[
 # adding a percent change col to historical data df
 hist_data = hist_data.assign(percentChange=hist_data['Open'].pct_change())
 
-# please note that historical data is already a df so we can plot it
 '''
+# please note that historical data is already a df so we can plot it
+
 ax1 = plt.subplot()
 l1, = ax1.plot(hist_data['Open'], color='blue')
 ax1.set_ylabel('VIX Index Value')
@@ -157,6 +158,13 @@ fig.suptitle('U.S. Bureau of Labor Statistics Insights')
 
 # setting our specific data
 unemployment = blsNonECI[blsNonECI['seriesID'] == 'LNS14000000']
+
+fig5 = plt.figure()
+vixOpen = sns.lineplot(data=hist_data['Open'], color='blue')
+ax2 = plt.twinx()
+vixChange = sns.lineplot(data=hist_data['percentChange'], color='lightgreen',
+                     ax=ax2)
+
 
 fig1 = sns.lineplot(ax=axes[0, 0], data=unemployment, x='Date',
                     y='value', linewidth=0.7, ci=None).set(title='Unemployment')
