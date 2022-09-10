@@ -5,6 +5,14 @@ import matplotlib.pyplot as plt
 import os
 import datetime
 from blackBox.bls_data_processor import fetch_bls_series
+import seaborn as sns
+from datetime import datetime
+import datetime
+from matplotlib import rc
+
+rc('mathtext', default='regular')
+
+plt.rcParams["figure.autolayout"] = True
 
 pd.set_option('display.max_rows', None)
 pd.set_option('display.max_columns', None)
@@ -135,6 +143,41 @@ blsMainDF = blsMainDF.drop(['latest', 'footnotes'], axis=1)
 # now we are adding date column
 blsMainDF['Date'] = blsMainDF['periodName'] + "-" + blsMainDF['year']
 
-print(blsMainDF.dtypes)
-print(blsMainDF)
+# excludes eci which only collects every quarter on data
+blsNonECI = blsMainDF[blsMainDF['seriesID'] != 'CIU1010000000000A']
 
+blsNonECI['Date'] = pd.to_datetime(blsNonECI['Date'])
+blsNonECI = blsNonECI.reset_index(drop=True)
+
+'''
+now we want to create graphs for the 5 given data types
+'''
+sns.set(font_scale=0.7)
+fig, axes = plt.subplots(2, 2)
+fig.suptitle('U.S. Bureau of Labor Statistics Insights')
+
+fig1 = sns.scatterplot(ax=axes[0, 0], data=blsNonECI[blsNonECI['seriesID'] ==
+                                                  'LNS14000000'], x='Date',
+                    y='value', linewidth=0.7, ci=None).set(title='Unemployment')
+
+fig2 = sns.lineplot(ax=axes[0, 1], data=blsNonECI[blsNonECI['seriesID'] ==
+                                                  'CUUR0000SA0'], x='Date',
+                    y='value', linewidth=0.7, ci=None).set(title='CPI')
+
+fig3 = sns.lineplot(ax=axes[1, 0], data=blsNonECI[blsNonECI['seriesID'] ==
+                                                  'EIUIR'], x='Date',
+                    y='value', linewidth=0.7, ci=None).set(title='Imports, '
+                                                                 'All '
+                                                                 'Commodities')
+
+fig4 = sns.lineplot(ax=axes[1, 1], data=blsNonECI[blsNonECI['seriesID'] ==
+                                                  'EIUIQ'], x='Date',
+                    y='value', linewidth=0.7, ci=None).set(title='Exports, '
+                                                                 'All '
+                                                                 'Commodities')
+
+for ax in fig.axes:
+    ax.tick_params(labelrotation=90, axis='x')
+
+print(blsNonECI)
+plt.show()
