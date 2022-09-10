@@ -9,9 +9,9 @@ import seaborn as sns
 from datetime import datetime
 import datetime
 from matplotlib import rc
+from matplotlib.backends.backend_pdf import PdfPages
 
 rc('mathtext', default='regular')
-
 plt.rcParams["figure.autolayout"] = True
 
 pd.set_option('display.max_rows', None)
@@ -32,18 +32,18 @@ filtered_vix = {key: vix_dict[key] for key in vix_dict.keys() & {
 }}
 
 # converting our filtered dictionary into a df
-vix_df = pd.DataFrame(filtered_vix, index = [0, ])
+vix_df = pd.DataFrame(filtered_vix, index=[0, ])
 vix_df = vix_df.sort_index(axis=1)
 
 # adding col of percent change of index
-vix_df = vix_df.assign(percentChange = (vix_df['regularMarketOpen'] - vix_df[
-    'regularMarketPreviousClose']) / vix_df['regularMarketPreviousClose']*100)
+vix_df = vix_df.assign(percentChange=(vix_df['regularMarketOpen'] - vix_df[
+    'regularMarketPreviousClose']) / vix_df['regularMarketPreviousClose'] * 100)
 
 # plotting the percent change
 # vix_df.plot(x='shortName', y='percentChange', kind='bar')
 
 # adding a percent change col to historical data df
-hist_data = hist_data.assign(percentChange = hist_data['Open'].pct_change())
+hist_data = hist_data.assign(percentChange=hist_data['Open'].pct_change())
 
 # please note that historical data is already a df so we can plot it
 '''
@@ -66,10 +66,10 @@ bls_api_key = os.environ.get('blsAPI')
 
 # series id of interest
 unemployment_rate = "LNS14000000"
-cpi = "CUUR0000SA0" # consumer price index
-eci = "CIU1010000000000A" # employment cost index
-imports = "EIUIR" # imports all commodities
-exports = "EIUIQ" # exports, all commodities
+cpi = "CUUR0000SA0"  # consumer price index
+eci = "CIU1010000000000A"  # employment cost index
+imports = "EIUIR"  # imports all commodities
+exports = "EIUIQ"  # exports, all commodities
 
 # setting up our series list
 series = [unemployment_rate, cpi, eci, imports, exports]
@@ -79,7 +79,6 @@ start_year = end_year - 5
 # grabbing bls api data
 bls_data = fetch_bls_series(series, startyear=start_year, endyear=end_year,
                             registrationKey=bls_api_key)
-
 
 '''
 Looking at our bls data structure we see the following:
@@ -131,7 +130,6 @@ for item in blsDataList:
     else:
         continue
 
-
 # removing columns we do not need such as footnotes and latest cols
 blsMainDF = blsMainDF.drop(['latest', 'footnotes'], axis=1)
 
@@ -182,5 +180,16 @@ fig4 = sns.lineplot(ax=axes[1, 1], data=blsNonECI[blsNonECI['seriesID'] ==
 for ax in fig.axes:
     ax.tick_params(labelrotation=90, axis='x')
 
-print(unemployment)
-plt.show()
+
+# now we are going to print our graph into a pdf file
+def save_multi_image(filename):
+    pp = PdfPages(filename)
+    fig_nums = plt.get_fignums()
+    figs = [plt.figure(n) for n in fig_nums]
+    for fig in figs:
+        fig.savefig(pp, format='pdf')
+    pp.close()
+
+
+filename = 'BLSDataGraphs.pdf'
+save_multi_image(filename)
