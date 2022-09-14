@@ -22,71 +22,50 @@ following will be tracked along with date data type:
 equityIndices = ['^SPX', '^IXIC', '^RUI', '^RLV', '^RLG', '^RUT', '^RUJ',
                  '^RUO']
 
-indexValue = 0
 # create a empty dataframe
-appendedData = pd.DataFrame(columns=['Index'])
+appendedData = pd.DataFrame(columns=['Ticker'])
 
 # process to grab historical data
 for index in equityIndices:
     a = yf.Ticker(str(index)).history(period="1Y")
-    a.reset_index(inplace=True)
+    # a.reset_index(inplace=True)
     a.drop(['Dividends', 'Stock Splits', 'Volume'], inplace=True, axis=1)
-    appendedData.append(a)
-    if appendedData['Index'].isnull:
-        appendedData['Index'].fillna(index, inplace=True)
+    appendedData = pd.concat([appendedData, pd.DataFrame(a)])
+    appendedData = appendedData.assign(Delta=appendedData['Close'].pct_change())
+    if appendedData['Ticker'].isnull:
+        appendedData['Ticker'].fillna(index, inplace=True)
     else:
         continue
 
-# combining all of our dfs into 1 df
-# appendedData = pd.concat(appendedData)
+# adding a percent change col to historical data df
+# hist_data = hist_data.assign(percentChange=hist_data['Open'].pct_change())
 
-# want to initialize  multiple ticker objects
-# tickersList = '^SPX ^IXIC ^RUI ^RLV ^RLG ^RUT ^RUJ ^RUO'
-# tickers = yf.Tickers(tickersList)
+# resetting our index
+appendedData.reset_index(inplace=True)
 
-# access all of the datas historical data
-# equityIndicesHistData = tickers.history(period="1Y")
+# renaming the column holding date values
+appendedData.rename(columns={'index':'Date'}, inplace=True)
 
-# cleaning up our data
-#equityIndicesHistData.reset_index(inplace=True)
-#equityIndicesHistData.drop(['Dividends', 'Stock Splits', 'Volume'],
-                           #inplace=True,
-                           #axis=1)
+# converting our date column to a date value
+appendedData['Date'] = pd.to_datetime(appendedData['Date'])
+
+# adding a percent change column to our data
+
 
 # checkin our df
 print(appendedData)
 
 # exporting out data as a csv file
-# equityIndicesHistData.to_csv('equityIndicesHistData.csv', index=False)
+# appendedData.to_csv('equityIndicesHistData.csv', index=False)
 
 '''
 at this point we want to create a number of figures that provides us with 
 insights on the historical data we have now collected 
 '''
 
-'''
 # purpose is to create a number of figures reflecting data
 fig1 = plt.figure()
-nasdaq = sns.lineplot(data=equityIndicesHistData, x='Date', y='Close')
+allDelta = sns.lineplot(data=appendedData, x='Date', y='Delta', hue='Ticker')
 
-fig2 = plt.figure()
-russell1 = sns.lineplot(data=equityIndicesHistData, )
+plt.show()
 
-fig3 = plt.figure()
-russellValue1 = sns.lineplot(data=equityIndicesHistData, )
-
-fig4 = plt.figure()
-russellGrowth1 = sns.lineplot(data=equityIndicesHistData, )
-
-fig5 = plt.figure()
-russell2 = sns.lineplot(data=equityIndicesHistData, )
-
-fig6 = plt.figure()
-russellValue2 = sns.lineplot(data=equityIndicesHistData, )
-
-fig7 = plt.figure()
-russellGrowth2 = sns.lineplot(data=equityIndicesHistData, )
-
-fig8 = plt.figure()
-sandp = sns.lineplot()
-'''
