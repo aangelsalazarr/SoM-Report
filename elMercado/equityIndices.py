@@ -19,7 +19,7 @@ following will be tracked along with date data type:
 - russell 2000 growth index
 '''
 # creating a list of equity indices
-equityIndices = ['^SPX', '^IXIC', '^RUI', '^RLV', '^RLG', '^RUT', '^RUJ',
+equityIndices = ['^IXIC', '^RUI', '^RLV', '^RLG', '^RUT', '^RUJ',
                  '^RUO']
 
 # create a empty dataframe
@@ -30,15 +30,15 @@ for index in equityIndices:
     a = yf.Ticker(str(index)).history(period="1Y")
     # a.reset_index(inplace=True)
     a.drop(['Dividends', 'Stock Splits', 'Volume'], inplace=True, axis=1)
+    a = a.assign(Delta=a['Close'].pct_change())
     appendedData = pd.concat([appendedData, pd.DataFrame(a)])
-    appendedData = appendedData.assign(Delta=appendedData['Close'].pct_change())
+    #appendedData = appendedData.assign(Delta=appendedData[
+    # 'Close'].pct_change())
     if appendedData['Ticker'].isnull:
         appendedData['Ticker'].fillna(index, inplace=True)
     else:
         continue
 
-# adding a percent change col to historical data df
-# hist_data = hist_data.assign(percentChange=hist_data['Open'].pct_change())
 
 # resetting our index
 appendedData.reset_index(inplace=True)
@@ -56,7 +56,7 @@ appendedData['Date'] = pd.to_datetime(appendedData['Date'])
 print(appendedData)
 
 # exporting out data as a csv file
-# appendedData.to_csv('equityIndicesHistData.csv', index=False)
+appendedData.to_csv('equityIndicesHistData.csv', index=False)
 
 '''
 at this point we want to create a number of figures that provides us with 
