@@ -4,6 +4,7 @@ import os
 import yfinance as yf
 import matplotlib.pyplot as plt
 import dataframe_image as dfi
+from pdfConverter import save_multi_image
 pd.set_option('display.max_columns', None)
 
 '''
@@ -63,9 +64,27 @@ at this point we want to create a number of figures that provides us with
 insights on the historical data we have now collected 
 '''
 
+# creating subsets of data to present in a figure format
+ixicOnly = appendedData[appendedData['Ticker'] == '^IXIC']
+ruiOnly = appendedData[appendedData['Ticker'] == '^RUI']
+rlvOnly = appendedData[appendedData['Ticker'] == '^RLV']
+rlgOnly = appendedData[appendedData['Ticker'] == '^RLG']
+rutOnly = appendedData[appendedData['Ticker'] == '^RUT']
+rujOnly = appendedData[appendedData['Ticker'] == '^RUJ']
+ruoOnly = appendedData[appendedData['Ticker'] == '^RUO']
+
+
 # purpose is to create a number of figures reflecting data
 fig1 = plt.figure()
-allDelta = sns.lineplot(data=appendedData, x='Date', y='Delta', hue='Ticker')
+ixic = sns.lineplot(data=ixicOnly, x='Date', y='Close')
+
+fig2 = plt.figure()
+rui = sns.lineplot(data=ruiOnly, x='Date', y='Close')
+
+fig3 = plt.figure()
+rlv = sns.lineplot(data=rlvOnly, x='Date', y='Close')
+
+fig
 
 plt.show()
 
