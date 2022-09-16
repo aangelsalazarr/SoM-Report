@@ -5,6 +5,10 @@ import yfinance as yf
 import matplotlib.pyplot as plt
 import dataframe_image as dfi
 from pdfConverter import save_multi_image
+from matplotlib import rc
+
+rc('mathtext', default='regular')
+plt.rcParams["figure.autolayout"] = True
 pd.set_option('display.max_columns', None)
 
 '''
@@ -28,7 +32,7 @@ appendedData = pd.DataFrame(columns=['Ticker'])
 
 # process to grab historical data
 for index in equityIndices:
-    a = yf.Ticker(str(index)).history(period="1Y")
+    a = yf.Ticker(str(index)).history(period="3Y") # how many years of data
     # a.reset_index(inplace=True)
     a.drop(['Dividends', 'Stock Splits', 'Volume'], inplace=True, axis=1)
     a = a.assign(Delta=a['Close'].pct_change())
@@ -74,17 +78,48 @@ rujOnly = appendedData[appendedData['Ticker'] == '^RUJ']
 ruoOnly = appendedData[appendedData['Ticker'] == '^RUO']
 
 
+# setting up our graph information
+sns.set(font_scale=0.6)
+fig, axes = plt.subplots(3, 3)
+fig.suptitle('Equity Indices Historical Information')
+
 # purpose is to create a number of figures reflecting data
+fig0 = plt.figure()
+all = sns.lineplot(ax=axes[0,0], data=appendedData, x='Date', y='Close',
+                   hue='Ticker', linewidth=0.7, ci=None)
+
 fig1 = plt.figure()
-ixic = sns.lineplot(data=ixicOnly, x='Date', y='Close')
+ixic = sns.lineplot(ax=axes[0,1], data=ixicOnly, x='Date', y='Close',
+                    linewidth=0.7, ci=None)
 
 fig2 = plt.figure()
-rui = sns.lineplot(data=ruiOnly, x='Date', y='Close')
+rui = sns.lineplot(ax=axes[0,2], data=ruiOnly, x='Date', y='Close',
+                   linewidth=0.7, ci=None)
 
 fig3 = plt.figure()
-rlv = sns.lineplot(data=rlvOnly, x='Date', y='Close')
+rlv = sns.lineplot(ax=axes[1, 0], data=rlvOnly, x='Date', y='Close',
+                   linewidth=0.7, ci=None)
 
-fig
+fig4 = plt.figure()
+rlg = sns.lineplot(ax=axes[2, 0], data=rlgOnly, x='Date', y='Close',
+                   linewidth=0.7, ci=None)
 
-plt.show()
+fig5 = plt.figure()
+rut = sns.lineplot(ax=axes[1, 2], data=rutOnly, x='Date', y='Close',
+                   linewidth=0.7, ci=None)
+
+fig6 = plt.figure()
+ruj = sns.lineplot(ax=axes[1, 1], data=rujOnly, x='Date', y='Close',
+                   linewidth=0.7, ci=None)
+
+fig7 = plt.figure()
+ruo = sns.lineplot(ax=axes[2, 1], data=ruoOnly, x='Date', y='Close',
+                   linewidth=0.7, ci=None)
+
+# some stylistic changes
+for ax in fig.axes:
+    ax.tick_params(labelrotation=90, axis='x')
+
+filename = 'equityIndices.pdf'
+save_multi_image(filename)
 
