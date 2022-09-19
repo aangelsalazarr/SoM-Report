@@ -41,7 +41,7 @@ today_reformat = today.strftime("%#m-%#d-%y")
 
 # combining our url segments
 url_sgmnt_1 = 'https://olui2.fs.ml.com/Publish/Content/application/pdf/GWMOL/CMO_'
-url_date = '9-12-2022'
+url_date = str(today_reformat)
 url_sgmnt_2 = '_Merrill.pdf'
 
 newest_cmo_url = url_sgmnt_1 + url_date + url_sgmnt_2
@@ -55,3 +55,4 @@ if response.status_code == 200:
 else:
     print(f"Response: {response}")
     print("No PDF found.")
+
