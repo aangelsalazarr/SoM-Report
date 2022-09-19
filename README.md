@@ -8,6 +8,8 @@ Purpose: gather data into a 20 page report laying out the state of the market
     - [Folder containing PDFs](https://github.com/aangelsalazarr/SoM-Report/tree/main/outlookInsights/jpmMarketRecap)
 - [JPMorgan Economic Update](https://github.com/aangelsalazarr/SoM-Report/blob/main/outlookInsights/jpmEconomicUpdate.py)
     - [Folder containing PDFs](https://github.com/aangelsalazarr/SoM-Report/tree/main/outlookInsights/jpmEconomicUpdates)
+- [World Bank Commodity Markets](https://github.com/aangelsalazarr/SoM-Report/blob/main/outlookInsights/wbCMO.py)
+    - [Folder Containing PDFs](https://github.com/aangelsalazarr/SoM-Report/tree/main/outlookInsights/wbCMO)
 
 ## Topics
 - [U.S. Electricity Market](https://github.com/aangelsalazarr/SoM-Report/tree/main/energyInformationAdministration)
