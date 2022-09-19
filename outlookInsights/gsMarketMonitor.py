@@ -33,12 +33,15 @@ urlSeg4 = str(todayReformat)
 urlSeg5 = '.pdf?sa=n'
 
 # recombining our url now that we acounted for changes in url in T+1
-gsMMUrl = urlSeg1 + urlSeg2 + urlSeg3 + urlSeg4 + urlSeg5
+gsMMUrl = urlSeg1 + urlSeg2 + urlSeg3 + '09162022' + urlSeg5
 
 # creating where to store pdf
 output_dir = '.\gsMarketMonitor'
 
 response = requests.get(gsMMUrl)
+
+print(response)
+print(gsMMUrl)
 
 # process to grab goldman sachs market monitor
 if response.status_code == 200:
