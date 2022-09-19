@@ -10,6 +10,9 @@ Purpose: gather data into a 20 page report laying out the state of the market
     - [Folder containing PDFs](https://github.com/aangelsalazarr/SoM-Report/tree/main/outlookInsights/jpmEconomicUpdates)
 - [World Bank Commodity Markets](https://github.com/aangelsalazarr/SoM-Report/blob/main/outlookInsights/wbCMO.py)
     - [Folder Containing PDFs](https://github.com/aangelsalazarr/SoM-Report/tree/main/outlookInsights/wbCMO)
+- [EIA, Short Term Energy Outlook](https://github.com/aangelsalazarr/SoM-Report/blob/main/outlookInsights/eia_seo.py)
+    - Updated on a monthly basis
+    - [Folder containing PDFs](https://github.com/aangelsalazarr/SoM-Report/tree/main/outlookInsights/eia_seo_pdfs)
 
 ## Topics
 - [U.S. Electricity Market](https://github.com/aangelsalazarr/SoM-Report/tree/main/energyInformationAdministration)
