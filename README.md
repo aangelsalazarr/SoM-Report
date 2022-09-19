@@ -6,6 +6,8 @@ Purpose: gather data into a 20 page report laying out the state of the market
     - [Folder containing PDFs](https://github.com/aangelsalazarr/SoM-Report/tree/main/outlookInsights/merrill_pdfs)
 - [JPMorgan Weekly, Market Recap](https://github.com/aangelsalazarr/SoM-Report/blob/main/outlookInsights/jpmWeeklyMarketRecap.py)
     - [Folder containing PDFs](https://github.com/aangelsalazarr/SoM-Report/tree/main/outlookInsights/jpmMarketRecap)
+- [JPMorgan Economic Update](https://github.com/aangelsalazarr/SoM-Report/blob/main/outlookInsights/jpmEconomicUpdate.py)
+    - [Folder containing PDFs](https://github.com/aangelsalazarr/SoM-Report/tree/main/outlookInsights/jpmEconomicUpdates)
 
 ## Topics
 - [U.S. Electricity Market](https://github.com/aangelsalazarr/SoM-Report/tree/main/energyInformationAdministration)
