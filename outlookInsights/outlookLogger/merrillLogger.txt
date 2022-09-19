@@ -1,0 +1,1 @@
+2022-09-18 21:15:22.878882: the script ran without pdf download. 

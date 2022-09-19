@@ -1,4 +1,5 @@
-import requests # pip install requests
+import datetime
+import requests  # pip install requests
 import os
 from datetime import date
 
@@ -37,7 +38,6 @@ today = date.today()
 # need to convert our date to fit format used in url
 today_reformat = today.strftime("%#m-%#d-%y")
 
-# we would like to remove the leading 0 within both month and day
 
 # combining our url segments
 url_sgmnt_1 = 'https://olui2.fs.ml.com/Publish/Content/application/pdf/GWMOL/CMO_'
@@ -48,11 +48,22 @@ newest_cmo_url = url_sgmnt_1 + url_date + url_sgmnt_2
 
 response = requests.get(newest_cmo_url)
 
+
+'''
+Purpose is to grab the pdf folder if the process is successful and then 
+update a log stating at what time it was successful
+'''
+# creating path where the text file will exist
+file = open(r'.\outlookLogger\merrillLogger.txt', 'a')
+
 if response.status_code == 200:
     file_path = os.path.join(output_dir, os.path.basename(newest_cmo_url))
+    file.write(f'{datetime.datetime.now()}: A pdf successfully downloaded. \n')
     with open(file_path, 'wb') as f:
         f.write(response.content)
 else:
+    file.write(f'{datetime.datetime.now()}: the script ran without pdf '
+               f'download. \n')
     print(f"Response: {response}")
     print("No PDF found.")
 
