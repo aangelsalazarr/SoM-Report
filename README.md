@@ -22,7 +22,7 @@ Purpose: gather data into a 20 page report laying out the state of the market
 - Fixed Income Yields
 - Real Assets
 - Foreign Exchange
-- Decentralized Finance
+- Decentralized Finance [[Code]](https://github.com/aangelsalazarr/SoM-Report/blob/main/market/decentralized_finance.py)
     - Bitcoin
     - Ethereum
     - Tether
