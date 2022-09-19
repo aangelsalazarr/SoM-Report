@@ -1,5 +1,6 @@
 import requests # pip install requests
 import os
+from datetime import date
 
 '''
 In this file, we will be downloading the newest pdf from the merrill capital
@@ -30,8 +31,17 @@ newest_cmo_url = url_segment_1 + url_date + url_segment_2
 # where the pdfs will be stored
 output_dir = '.\merrill_pdfs'
 
+# grabbing today's date to be used in our url_date variable
+today = date.today()
+
+# need to convert our date to fit format used in url
+today_reformat = today.strftime("%#m-%#d-%y")
+
+# we would like to remove the leading 0 within both month and day
+
+# combining our url segments
 url_sgmnt_1 = 'https://olui2.fs.ml.com/Publish/Content/application/pdf/GWMOL/CMO_'
-url_date = '9-12-22'
+url_date = '9-12-2022'
 url_sgmnt_2 = '_Merrill.pdf'
 
 newest_cmo_url = url_sgmnt_1 + url_date + url_sgmnt_2
@@ -42,6 +52,6 @@ if response.status_code == 200:
     file_path = os.path.join(output_dir, os.path.basename(newest_cmo_url))
     with open(file_path, 'wb') as f:
         f.write(response.content)
-
-print(response)
-print(newest_cmo_url)
+else:
+    print(f"Response: {response}")
+    print("No PDF found.")
