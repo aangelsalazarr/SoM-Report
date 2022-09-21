@@ -15,15 +15,18 @@ wmrUrl = 'https://am.jpmorgan.com/content/dam/jpm-am-aem/americas/us/en/insights
 
 response = requests.get(wmrUrl)
 
+file = open(r'.\outlookLogger\jpmWMRLogger.txt', 'a')
+
+
 if response.status_code == 200:
     file_path = os.path.join(output_dir, str(today_reformat) + '_' +
     os.path.basename(wmrUrl))
-    # file.write(f'{datetime.datetime.now()}: A pdf successfully downloaded.
-    # \n')
+    file.write(f'{datetime.datetime.now()}: A pdf successfully downloaded. \n')
     with open(file_path, 'wb') as f:
         f.write(response.content)
+
 else:
-    # file.write(f'{datetime.datetime.now()}: the script ran without pdf '
-               # f'download. \n')
+    file.write(f'{datetime.datetime.now()}: the script ran without pdf '
+               f'download. \n')
     print(f"Response: {response}")
     print("No PDF found.")
