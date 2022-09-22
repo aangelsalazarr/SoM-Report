@@ -4,3 +4,5 @@
 2022-09-21 14:38:18.525679: the script ran without pdf download. 
 2022-09-21 14:38:19.112170: the script ran without pdf download. 
 2022-09-21 14:38:34.971359: the script ran without pdf download. 
+2022-09-22 12:00:06.624822: the script ran without pdf download. 
+2022-09-22 16:01:29.568708: A pdf successfully downloaded. 

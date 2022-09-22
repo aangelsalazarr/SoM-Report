@@ -41,7 +41,7 @@ today_reformat = today.strftime("%#m-%#d-%y")
 
 # combining our url segments
 url_sgmnt_1 = 'https://olui2.fs.ml.com/Publish/Content/application/pdf/GWMOL/CMO_'
-url_date = str(today_reformat)
+url_date = today_reformat
 url_sgmnt_2 = '_Merrill.pdf'
 
 newest_cmo_url = url_sgmnt_1 + url_date + url_sgmnt_2
