@@ -19,9 +19,12 @@ Purpose of the script is to present some key visuals as it relates to inflation
 import os
 import fredapi as fa
 import pandas as pd
+import datetime
+from blackBox.bls_data_processor import fetch_bls_series
 
 # setting up any api keys that we may need
 fredKey = os.environ.get('FREDKEY')
+blsKey = os.environ.get('BLSKEY')
 
 # figure 1
 cpi = "CUUR0000SA0"  # series id from bls
@@ -34,7 +37,18 @@ gdp_deflator = fred.get_series("GDPDEF")  # percent change from a year ago
 gdp_deflator.name = 'GDP Def'
 
 # converting data from fred into df
-fredDf = pd.DataFrame(data=gdp_deflator, )
+fredDf = pd.DataFrame(data=gdp_deflator)
 
-print(fredDf)
+# grabbing cpi and cpi seasonally adjusted data from bls
+series = [cpi, cpi_adj]
+end_year = datetime.datetime.now().year
+start_year = end_year - 5
+
+# officially grabbing our data with our params
+bls_data = fetch_bls_series(series, startyear=start_year, endyear=end_year,
+                            registrationKey=blsKey)
+
+
+
+print(blsKey)
 

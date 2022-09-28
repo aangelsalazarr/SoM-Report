@@ -3,7 +3,6 @@ import yfinance as yf
 import pandas as pd
 import matplotlib.pyplot as plt
 import os
-import datetime
 from blackBox.bls_data_processor import fetch_bls_series
 import seaborn as sns
 from datetime import datetime
