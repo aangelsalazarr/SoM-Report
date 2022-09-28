@@ -56,6 +56,7 @@ update a log stating at what time it was successful
 # creating path where the text file will exist
 file = open(r'.\outlookLogger\merrillLogger.txt', 'a')
 
+
 if response.status_code == 200:
     file_path = os.path.join(output_dir, os.path.basename(newest_cmo_url))
     file.write(f'{datetime.datetime.now()}: A pdf successfully downloaded. \n')
