@@ -47,8 +47,24 @@ start_year = end_year - 5
 # officially grabbing our data with our params
 bls_data = fetch_bls_series(series, startyear=start_year, endyear=end_year,
                             registrationKey=blsKey)
+# purpose is to grab the results -> series list which contains 2 things
+# first, the series ID and second, the data!
+blsDataList = bls_data['Results']['series']
+
+# creating an empty df to add incoming dfs
+blsMainDF = pd.DataFrame(columns=['seriesID'])
+
+# purpose is to loop through each item and add to a general pandas df
+for item in blsDataList:
+    blsMainDF = pd.concat([blsMainDF, pd.DataFrame(data=item['data'])])
+    if blsMainDF['seriesID'].isnull:
+        blsMainDF['seriesID'].fillna(item['seriesID'], inplace=True)
+    else:
+        continue
+
+# removing columns we do not need such as footnotes and latest cols
+blsMainDF = blsMainDF.drop(['latest', 'footnotes'], axis=1)
 
 
-
-print(blsKey)
+print(blsMainDF)
 
