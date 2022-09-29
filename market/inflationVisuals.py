@@ -23,6 +23,7 @@ import datetime
 from blackBox.bls_data_processor import fetch_bls_series
 import seaborn as sns
 import matplotlib.pyplot as plt
+import numpy as np
 
 # setting up any api keys that we may need
 fredKey = os.environ.get('FREDKEY')
@@ -46,7 +47,7 @@ fredDf = fredDf.rename(columns = {'index':'Date'})
 # grabbing cpi and cpi seasonally adjusted data from bls
 series = [cpi, cpi_adj]
 end_year = datetime.datetime.now().year
-start_year = end_year - 10
+start_year = end_year - 15
 
 # officially grabbing our data with our params
 bls_data = fetch_bls_series(series, startyear=start_year, endyear=end_year,
