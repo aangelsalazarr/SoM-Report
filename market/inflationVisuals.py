@@ -65,6 +65,11 @@ for item in blsDataList:
 # removing columns we do not need such as footnotes and latest cols
 blsMainDF = blsMainDF.drop(['latest', 'footnotes'], axis=1)
 
+# purpose is to add a date column
+blsMainDF['Date'] = blsMainDF['periodName'] + '-' + blsMainDF['year']
+blsMainDF['Date'] = pd.to_datetime(blsMainDF['Date'])
+blsMainDF = blsMainDF.reset_index(drop=True)
+blsMainDF['value'] = blsMainDF['value'].astype(float)
 
 print(blsMainDF)
 
