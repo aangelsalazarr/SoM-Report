@@ -31,7 +31,7 @@ startIndex = titleIndex + len("<title>")
 endIndex = html.find("</title>")
 title = html[startIndex:endIndex]
 
-# extracting all images
+# extracting all images and texts
 images = soup.findAll('img')
 texts = soup.get_text()
 
