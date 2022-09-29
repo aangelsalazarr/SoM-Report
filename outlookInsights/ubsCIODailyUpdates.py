@@ -38,15 +38,19 @@ soup = BeautifulSoup(html.content, "html.parser")
 totdContent = soup.find_all('p')
 totdContent = totdContent[4:-9]
 
-# opening file path
-fp = open(r'File_Path', 'w')
-
-'''
 # open file in write mode
-with open(r'./ubsDailyUpdate')
-for item in totdContent:
-    print(item)
-'''
+with open(r'./ubsDailyUpdate/main.html', 'w+') as f:
+
+    # write elements of list
+    for items in totdContent:
+        f.write('%s\n' %items)
+
+    print("File written successfully")
+
+f.close()
+
+pdfkit.from_url(urlFull,
+                 'ubsDailyUpdate_' + str(currentDate) + '.pdf')
 
 '''
 # combining all grabbed content into a long string
