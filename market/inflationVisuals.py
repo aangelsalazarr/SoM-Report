@@ -21,6 +21,8 @@ import fredapi as fa
 import pandas as pd
 import datetime
 from blackBox.bls_data_processor import fetch_bls_series
+import seaborn as sns
+import matplotlib.pyplot as plt
 
 # setting up any api keys that we may need
 fredKey = os.environ.get('FREDKEY')
@@ -38,11 +40,13 @@ gdp_deflator.name = 'GDP Def'
 
 # converting data from fred into df
 fredDf = pd.DataFrame(data=gdp_deflator)
+fredDf.reset_index(inplace=True)
+fredDf = fredDf.rename(columns = {'index':'Date'})
 
 # grabbing cpi and cpi seasonally adjusted data from bls
 series = [cpi, cpi_adj]
 end_year = datetime.datetime.now().year
-start_year = end_year - 5
+start_year = end_year - 10
 
 # officially grabbing our data with our params
 bls_data = fetch_bls_series(series, startyear=start_year, endyear=end_year,
@@ -65,11 +69,19 @@ for item in blsDataList:
 # removing columns we do not need such as footnotes and latest cols
 blsMainDF = blsMainDF.drop(['latest', 'footnotes'], axis=1)
 
-# purpose is to add a date column
+# purpose is to add a date column and reset the index
 blsMainDF['Date'] = blsMainDF['periodName'] + '-' + blsMainDF['year']
 blsMainDF['Date'] = pd.to_datetime(blsMainDF['Date'])
 blsMainDF = blsMainDF.reset_index(drop=True)
+
+# purpose is to change value type to float
 blsMainDF['value'] = blsMainDF['value'].astype(float)
 
+fig1 = plt.figure()
+line1 = sns.lineplot(data=fredDf, x='Date', y='GDP Def')
+line2 = sns.lineplot(data=blsMainDF, x='Date', y='value', hue='seriesID')
+
+print(fredDf)
 print(blsMainDF)
 
+plt.show()
