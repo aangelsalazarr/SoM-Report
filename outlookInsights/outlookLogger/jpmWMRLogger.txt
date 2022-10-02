@@ -6,3 +6,5 @@
 2022-09-26 15:00:05.528997: A pdf successfully downloaded. 
 2022-09-27 15:00:02.966390: A pdf successfully downloaded. 
 2022-09-28 15:00:03.230479: A pdf successfully downloaded. 
+2022-09-29 15:00:03.151822: A pdf successfully downloaded. 
+2022-09-30 15:00:02.717274: A pdf successfully downloaded. 

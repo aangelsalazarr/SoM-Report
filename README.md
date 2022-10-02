@@ -13,6 +13,8 @@ Purpose: gather data into a 20 page report laying out the state of the market
 - [EIA, Short Term Energy Outlook](https://github.com/aangelsalazarr/SoM-Report/blob/main/outlookInsights/eia_seo.py)
     - Updated on a monthly basis
     - [Folder containing PDFs](https://github.com/aangelsalazarr/SoM-Report/tree/main/outlookInsights/eia_seo_pdfs)
+- [UBS CIO Daily Notes]()
+- [Goldman Sachs Global Market Monitor]()
 
 ## Topics
 - [U.S. Electricity Market](https://github.com/aangelsalazarr/SoM-Report/tree/main/energyInformationAdministration)
@@ -46,11 +48,14 @@ Purpose: gather data into a 20 page report laying out the state of the market
     
 ## Frequency
 - Beginning of Day, 7 AM ET
-- Middle of Day, 3 PM ET
-- End of Day, 10 pm ET
 
 ## Sources
 - [Yahoo Finance](https://finance.yahoo.com/)
 - [Energy Information Administration](https://www.eia.gov/)
 - [Federal Reserve Economic Data (FRED)](https://fred.stlouisfed.org/)
 - [U.S. Bureau of Labor Statistics](https://www.bls.gov/)
+- [The World Bank]()
+- [Goldman Sachs Market Insights]()
+- [UBS Insights]()
+- [JP Morgan Asset Management]()
+- [Merrill Lynch Capital Markets Outlook]()
