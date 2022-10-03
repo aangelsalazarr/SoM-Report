@@ -1,65 +1,35 @@
-import datetime
-import requests  # pip install requests
-import os
+from fpdf import FPDF
+from bs4 import BeautifulSoup
+import requests
 from datetime import date
 
-'''
-URL: https://www.gsam.com/content/dam/gsam/pdfs/common/en/public/articles/global-market-monitor/2022/market_monitor_091622.pdf?sa=n
-https://www.gsam.com/content/dam/gsam/pdfs/common/en/public/articles/global-market-monitor/2022/market_monitor_091622.pdf?sa=n
-urlSegment1 = https://www.gsam.com/content/dam/gsam/pdfs/common/en/public/articles/global-market-monitor/
-urlSegment2 = 2022/market_monitor_091622.pdf?sa=n
-
-'''
-
-'''
-We would like to break the url into segments so that we can address any char
-changes in the url in the near future. the two things that we can def anticipate
-include the year and the date within the url that are subject to change
-'''
-# grabbing today's date
+# setting up our year and date to match with the general url framework
 today = date.today()
-
-# creating today's date formatted as %m%d%y
-todayReformat = today.strftime("%m%d%y")
-
-# creating current year
+currentDate = today.strftime("%m%d%y")
 currentYear = today.strftime('%Y')
 
-# breaking url into segments to address variable url snippets
-urlSeg1 = 'https://www.gsam.com/content/dam/gsam/pdfs/common/en/public/articles/global-market-monitor/'
-urlSeg2 = str(currentYear)
-urlSeg3 = '/market_monitor_'
-urlSeg4 = str(todayReformat)
-urlSeg5 = '.pdf?sa=n'
+# breaking our very long url into segments to take into account variable aspects
+url1 = "https://www.gsam.com/content/gsam/us/en/individual/market-insights/"
+url2 = "market-strategy/global-market-monitor/"
+url3 = str(currentYear)
+url4 = "/market_monitor_"
+url5 = str(currentDate)
+url6 = ".html"
 
-# recombining our url now that we acounted for changes in url in T+1
-gsMMUrl = urlSeg1 + urlSeg2 + urlSeg3 + '09162022' + urlSeg5
+# combining all of our urls into one
+urlSegments = [url1, url2, url3, url4, url5, url6]
 
-# creating where to store pdf
-output_dir = '.\gsMarketMonitor'
+# concatenating our list of urls to create the full url up to date
+urlFull = ''.join(urlSegments)
 
-response = requests.get(gsMMUrl)
+# extracting html from the website page
+html = requests.get(urlFull)
+soup = BeautifulSoup(html.content, "html.parser")
 
-print(response)
-print(gsMMUrl)
+# let's view our html code now to see the break up
+print(soup.prettify())
+print(urlFull)
 
-# process to grab goldman sachs market monitor
-if response.status_code == 200:
-    x = os.path.basename(gsMMUrl)
-    x = x[:-5]
-    file_path = os.path.join(output_dir, x)
-    # file.write(f'{datetime.datetime.now()}: A pdf successfully downloaded.
-    # \n')
-    with open(file_path, 'wb') as f:
-        f.write(response.content)
-    print('it worked!')
-else:
-    # file.write(f'{datetime.datetime.now()}: the script ran without pdf '
-               # f'download. \n')
-    print(f"Response: {response}")
-    print("No PDF found.")
-
-    # not wokring
 
 
 

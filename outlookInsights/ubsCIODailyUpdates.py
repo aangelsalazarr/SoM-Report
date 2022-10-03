@@ -56,5 +56,6 @@ for element in textElements:
 
 # now we want to output our pdf and ensure that the name is unique to the date
 # when we grabbed the data or when the data was posted
+
 pdf.output("CIO_Daily_Update_" + url6 + ".pdf")
 
