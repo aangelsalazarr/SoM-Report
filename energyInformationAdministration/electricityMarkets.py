@@ -92,6 +92,7 @@ r = requests.get(url=electricityPricesURL)
 # extracting data in json format
 data = r.json()
 
+
 # grabbing only data object
 entries = data['response']["data"]
 
@@ -180,7 +181,7 @@ def save_multi_image(filename):
     pp.close()
 
 
-filename = 'USElectricityPriceBySector.pdf'
-save_multi_image(filename)
+# filename = 'USElectricityPriceBySector.pdf'
+# save_multi_image(filename)
 
-# plt.show()
+plt.show()
