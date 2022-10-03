@@ -21,7 +21,7 @@ url2 = 'investment-research/insights-display-adp/global/en/wealth-management/'
 url3 = 'insights/chief-investment-office/house-view/daily/'
 url4 = str(currentYear)
 url5 = '/latest-'
-url6 = "30092022" # str(currentDate)
+url6 = str(currentDate)
 url7 = '.html?caasID=CAAS-ActivityStream'
 
 # combining all urls in  a list
@@ -35,8 +35,8 @@ html = requests.get(urlFull)
 soup = BeautifulSoup(html.content, "html.parser")
 
 # extracting text from the url
-mainText = soup.find(id="textimage-1867138435")
-textElements = mainText.find_all("p", class_="")
+mainText = soup.find(id="main")
+textElements = mainText.find_all("p")
 
 
 # purpose is to save all the text we are gathering into a pdf format
@@ -47,15 +47,12 @@ pdf = FPDF()
 pdf.add_page()
 
 # setting style and font size that we want for the pdf
-pdf.set_font("Arial", size=12)
-
-# we need a counter
-counter = 1
+pdf.set_font("Helvetica", size=8)
 
 # purpose is to iterate through texts and add to the pdf
 for element in textElements:
-    pdf.cell(200, 10, txt=element.text)
-    counter += 1
+    text = element.text.encode('latin-1', 'replace').decode('latin-1')
+    pdf.multi_cell(w=0, h=5, txt=text, align='L')
 
 # now we want to output our pdf and ensure that the name is unique to the date
 # when we grabbed the data or when the data was posted
