@@ -2,6 +2,7 @@ from fpdf import FPDF
 from bs4 import BeautifulSoup
 import requests
 from datetime import date
+import re
 
 # setting up our year and date to match with the general url framework
 today = date.today()
@@ -26,9 +27,11 @@ urlFull = ''.join(urlSegments)
 html = requests.get(urlFull)
 soup = BeautifulSoup(html.content, "html.parser")
 
-# let's view our html code now to see the break up
-print(soup.prettify())
-print(urlFull)
+# looking for the link to the pdf
+for link in soup.findAll('a', attrs={'href': re.compile("^http://")}):
+    print(link.get('href'), end='\n'*2)
+
+
 
 
 
