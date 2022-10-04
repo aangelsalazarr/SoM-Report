@@ -5,7 +5,7 @@ Chief Investment Office
 '''
 from datetime import date
 from urllib.request import urlopen
-
+import os
 from fpdf import FPDF
 from bs4 import BeautifulSoup
 import requests
@@ -57,5 +57,9 @@ for element in textElements:
 # now we want to output our pdf and ensure that the name is unique to the date
 # when we grabbed the data or when the data was posted
 
-pdf.output("CIO_Daily_Update_" + url6 + ".pdf")
+# we need to define an output directory
+output_dir = '.\ubsDailyUpdate'
+
+pdf.output("CIO_Daily_Update_" + url6 + ".pdf",
+           dest=".\outlookInsights")
 

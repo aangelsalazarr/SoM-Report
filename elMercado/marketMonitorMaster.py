@@ -6,10 +6,17 @@ import matplotlib.pyplot as plt
 import dataframe_image as dfi
 from pdfConverter import save_multi_image
 from matplotlib import rc
+from datetime import date
 
+# some params related to the framework of output that we will need
 rc('mathtext', default='regular')
 plt.rcParams["figure.autolayout"] = True
 pd.set_option('display.max_columns', None)
+
+# purpose is to create current date and current year function
+today = date.today()
+
+
 
 '''
 The purpose of this file is to grab all relevant data on equity indices. The 
@@ -59,7 +66,6 @@ appendedData.rename(columns={'index':'Date'}, inplace=True)
 appendedData['Date'] = pd.to_datetime(appendedData['Date'])
 
 # adding a percent change column to our data
-
 
 # checkin our df
 print(appendedData)
