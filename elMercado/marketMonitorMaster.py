@@ -15,7 +15,7 @@ pd.set_option('display.max_columns', None)
 
 # purpose is to create current date and current year function
 today = date.today()
-
+currentDate = today.strftime('%m%d%y')
 
 
 '''
@@ -42,7 +42,7 @@ topics = {'shortName'}
 
 # process to grab historical data
 for index in equityIndices:
-    a = yf.Ticker(str(index)).history(period="3Y") # how many years of data
+    a = yf.Ticker(str(index)).history(period="5Y") # how many years of data
     a.drop(['Dividends', 'Stock Splits', 'Volume'], inplace=True, axis=1)
     a = a.assign(Delta=a['Close'].pct_change())
     # info = yf.Ticker(str(index)).info
@@ -96,6 +96,7 @@ fig, axes = plt.subplots(3, 3)
 fig.suptitle('Equity Indices Historical Information')
 
 # purpose is to create a number of figures reflecting data
+# this will cover one figure and will be faceted
 dji = sns.lineplot(ax=axes[0, 0], data=djiOnly, x='Date', y='Close',
                    linewidth=0.7,
                    ci=None).set(title='Dow Jones Industrial Average (^DJI)')
@@ -131,20 +132,64 @@ ndx = sns.lineplot(ax=axes[2, 2], data=ndxOnly, x='Date', y='Close',
                    linewidth=0.7,
                    ci=None).set(title='NASDAQ 100 (^NDX)')
 
+# purpose is to plot all indices close in figure 2 of the pdf
 fig0 = plt.figure()
 all = sns.lineplot(data=appendedData, x='Date', y='Close',
                    hue='Ticker', linewidth=0.7, ci=None,
                    legend=True).set(title='All Indices - Close')
+
+# plan is to plot all % change of all indices in one figure aka figure 3
 fig1 = plt.figure()
 delta = sns.lineplot(data=appendedData, x='Date', y='Delta',
                      hue='Ticker', linewidth=0.6, ci=None,
                      legend=True).set(title='% Change All Indices')
+
+# setting up our graph information
+sns.set(font_scale=0.5)
+fig, axes = plt.subplots(3, 3)
+fig.suptitle('Equity Indices Historical % Change')
+
+# purpose is to create a facet grid of % change of all indices
+dji_delta = sns.lineplot(ax=axes[0, 0], data=djiOnly, x='Date', y='Delta',
+                   linewidth=0.5,
+                   ci=None).set(title='Dow Jones Industrial Average (^DJI)')
+
+ixic_delta = sns.lineplot(ax=axes[0,1], data=ixicOnly, x='Date', y='Delta',
+                    linewidth=0.5,
+                    ci=None).set(title='NASDAQ Composite (^IXIC)')
+
+rui_delta = sns.lineplot(ax=axes[0,2], data=ruiOnly, x='Date', y='Delta',
+                   linewidth=0.5, ci=None).set(title='Russell 1000 (^RUI)')
+
+rlv_delta = sns.lineplot(ax=axes[1, 0], data=rlvOnly, x='Date', y='Delta',
+                   linewidth=0.5,
+                   ci=None).set(title='Russell 1000 Value (^RLV)')
+
+rlg_delta = sns.lineplot(ax=axes[2, 0], data=rlgOnly, x='Date', y='Delta',
+                   linewidth=0.5,
+                   ci=None).set(title='Russell 1000 Growth (^RLG)')
+
+rut_delta = sns.lineplot(ax=axes[1, 2], data=rutOnly, x='Date', y='Delta',
+                   linewidth=0.5,
+                   ci=None).set(title='Russell 2000 (^RUT)')
+
+ruj_delta = sns.lineplot(ax=axes[1, 1], data=rujOnly, x='Date', y='Delta',
+                   linewidth=0.5,
+                   ci=None).set(title='Russell 2000 Value (^RUJ)')
+
+ruo_delta = sns.lineplot(ax=axes[2, 1], data=ruoOnly, x='Date', y='Delta',
+                   linewidth=0.5,
+                   ci=None).set(title='Russell 2000 Growth (^RUO)')
+
+ndx_delta = sns.lineplot(ax=axes[2, 2], data=ndxOnly, x='Date', y='Delta',
+                   linewidth=0.5,
+                   ci=None).set(title='NASDAQ 100 (^NDX)')
 
 # some stylistic changes
 for ax in fig.axes:
     ax.tick_params(labelrotation=90, axis='x')
     ax.set(xlabel=None)
 
-filename = 'equityIndices.pdf'
-save_multi_image(filename)
+filename = 'equityIndices_'
+save_multi_image(filename + currentDate + '.pdf')
 
