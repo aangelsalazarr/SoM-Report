@@ -17,10 +17,9 @@ response = requests.get(wmrUrl)
 
 file = open(r'.\outlookLogger\jpmWMRLogger.txt', 'a')
 
-
 if response.status_code == 200:
     file_path = os.path.join(output_dir, str(today_reformat) + '_' +
-    os.path.basename(wmrUrl))
+                             os.path.basename(wmrUrl))
     file.write(f'{datetime.datetime.now()}: A pdf successfully downloaded. \n')
     with open(file_path, 'wb') as f:
         f.write(response.content)

@@ -57,9 +57,7 @@ for element in textElements:
 # now we want to output our pdf and ensure that the name is unique to the date
 # when we grabbed the data or when the data was posted
 
-# we need to define an output directory
-output_dir = '.\ubsDailyUpdate'
-
-pdf.output("CIO_Daily_Update_" + url6 + ".pdf",
-           dest=".\outlookInsights")
+# purpose is to store our pdf in the specified directory
+pdf.output("./ubsDailyUpdate\CIO_Daily_Update_" + url6 + ".pdf",
+           dest='F')
 
