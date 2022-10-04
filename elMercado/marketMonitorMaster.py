@@ -65,13 +65,11 @@ appendedData.rename(columns={'index':'Date'}, inplace=True)
 # converting our date column to a date value
 appendedData['Date'] = pd.to_datetime(appendedData['Date'])
 
-# adding a percent change column to our data
-
 # checkin our df
 print(appendedData)
 
 # exporting out data as a csv file
-appendedData.to_csv('equityIndicesHistData.csv', index=False)
+appendedData.to_csv('.\data_csv_format\equityIndicesHistData.csv', index=False)
 
 '''
 at this point we want to create a number of figures that provides us with 
@@ -184,6 +182,61 @@ ruo_delta = sns.lineplot(ax=axes[2, 1], data=ruoOnly, x='Date', y='Delta',
 ndx_delta = sns.lineplot(ax=axes[2, 2], data=ndxOnly, x='Date', y='Delta',
                    linewidth=0.5,
                    ci=None).set(title='NASDAQ 100 (^NDX)')
+
+################################################################################
+
+'''
+Okay now that we are able to grab and transform data from equity indices, let's
+do it for fixed income yield aka the following:
+- US fed rate
+- us 3 month
+- us 1 year
+- us 2 year
+- us 5 year
+- us 10 year
+- us 30 year
+further we will want to create a visual of this newly plotted yield curve where
+the hue change in color is tracked by year
+'''
+# purpose is to create ticker symbol for fixed income indices
+fi_indices = ['^IRX', '^FVX', '^TNX', '^TYX']
+
+# where we will be adding gathered data
+fi_appendedData = pd.DataFrame(columns=['Ticker'])
+
+# process to grab historical data
+for index in fi_indices:
+    a = yf.Ticker(str(index)).history(period="5Y") # how many years of data
+    a.drop(['Dividends', 'Stock Splits', 'Volume'], inplace=True, axis=1)
+    a = a.assign(Delta=a['Close'].pct_change())
+    # info = yf.Ticker(str(index)).info
+    #filterInfo = {key: info[key] for key in info.keys() & topics}
+    #filterInfo = pd.DataFrame(filterInfo, index=[0, ])
+    fi_appendedData = pd.concat([fi_appendedData, pd.DataFrame(a)])
+    #appendedData = pd.concat([appendedData, filterInfo])
+    if fi_appendedData['Ticker'].isnull:
+        fi_appendedData['Ticker'].fillna(index, inplace=True)
+    else:
+        continue
+
+# resetting our index
+fi_appendedData.reset_index(inplace=True)
+
+# renaming the column holding date values
+fi_appendedData.rename(columns={'index':'Date'}, inplace=True)
+
+# converting our date column to a date value
+fi_appendedData['Date'] = pd.to_datetime(appendedData['Date'])
+
+
+# purpose is to plot all fi indices
+fig2 = plt.figure()
+allFi = sns.lineplot(data=fi_appendedData, x='Date', y='Close',
+                   hue='Ticker', linewidth=0.7, ci=None,
+                   legend=True).set(title='All FI Indices - Close')
+
+# exporting out data as a csv file
+appendedData.to_csv('.\data_csv_format\FIIndicesHistData.csv', index=False)
 
 # some stylistic changes
 for ax in fig.axes:
