@@ -64,9 +64,7 @@ appendedData.rename(columns={'index':'Date'}, inplace=True)
 
 # converting our date column to a date value
 appendedData['Date'] = pd.to_datetime(appendedData['Date'])
-
-# checkin our df
-print(appendedData)
+appendedData['Close'] = appendedData['Close'].astype(float)
 
 # exporting out data as a csv file
 appendedData.to_csv('.\data_csv_format\equityIndicesHistData.csv', index=False)
@@ -228,6 +226,9 @@ fi_appendedData.rename(columns={'index':'Date'}, inplace=True)
 # converting our date column to a date value
 fi_appendedData['Date'] = pd.to_datetime(appendedData['Date'])
 
+# converting our close value to float
+fi_appendedData['Close'] = fi_appendedData['Close'].astype(float)
+
 
 # purpose is to plot all fi indices
 fig2 = plt.figure()
@@ -236,13 +237,17 @@ allFi = sns.lineplot(data=fi_appendedData, x='Date', y='Close',
                    legend=True).set(title='All FI Indices - Close')
 
 # exporting out data as a csv file
-appendedData.to_csv('.\data_csv_format\FIIndicesHistData.csv', index=False)
+fi_appendedData.to_csv('.\data_csv_format\FIIndicesHistData.csv', index=False)
 
 # some stylistic changes
 for ax in fig.axes:
     ax.tick_params(labelrotation=90, axis='x')
     ax.set(xlabel=None)
 
-filename = 'equityIndices_'
+filename = 'marketMonitor_'
 save_multi_image(filename + currentDate + '.pdf')
+
+# checking our dfs
+print(appendedData.tail())
+print(fi_appendedData.tail())
 
