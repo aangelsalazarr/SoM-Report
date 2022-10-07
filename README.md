@@ -1,5 +1,7 @@
 # State of the Market Report
 Purpose: gather data into a 20 page report laying out the state of the market
+- Market Monitor, Master [(Link to code)](https://github.com/aangelsalazarr/SoM-Report/blob/main/elMercado/marketMonitorMaster.py)
+    - [Link to Report](https://github.com/aangelsalazarr/SoM-Report/tree/main/elMercado)
 
 ## Analysis From Exisiting Entities
 - [Merrill Lynch, Capital Markets Outlook](https://github.com/aangelsalazarr/SoM-Report/blob/main/outlookInsights/merrillCMO.py)
