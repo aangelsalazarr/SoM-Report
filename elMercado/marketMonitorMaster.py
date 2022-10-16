@@ -128,13 +128,21 @@ ndx = sns.lineplot(ax=axes[2, 2], data=ndxOnly, x='Date', y='Close',
                    linewidth=0.7,
                    ci=None).set(title='NASDAQ 100 (^NDX)')
 
-# purpose is to plot all indices close in figure 2 of the pdf
-fig0 = plt.figure()
-all = sns.lineplot(data=appendedData, x='Date', y='Close',
+# purpose is to plot all indices close in figure 2 of the pdf above 5k in value
+fig0a = plt.figure()
+all = sns.lineplot(data=appendedData[appendedData['Close'] > 5000],
+                   x='Date', y='Close',
                    hue='Ticker', linewidth=0.7, ci=None,
                    legend=True).set(title='All Indices - Close')
 
-# plan is to plot all % change of all indices in one figure aka figure 3
+# purpose is to plot all indices close in figure 2 of the pdf above 5k in value
+fig0b = plt.figure()
+all = sns.lineplot(data=appendedData[appendedData['Close'] < 5000],
+                   x='Date', y='Close',
+                   hue='Ticker', linewidth=0.7, ci=None,
+                   legend=True).set(title='All Indices - Close')
+
+# plan is to plot all % change of all indices in one figure aka figure 3 above
 fig1 = plt.figure()
 delta = sns.lineplot(data=appendedData, x='Date', y='Delta',
                      hue='Ticker', linewidth=0.6, ci=None,
@@ -180,6 +188,8 @@ ruo_delta = sns.lineplot(ax=axes[2, 1], data=ruoOnly, x='Date', y='Delta',
 ndx_delta = sns.lineplot(ax=axes[2, 2], data=ndxOnly, x='Date', y='Delta',
                    linewidth=0.5,
                    ci=None).set(title='NASDAQ 100 (^NDX)')
+
+################################################################################
 
 ################################################################################
 
@@ -229,7 +239,6 @@ fi_appendedData['Date'] = pd.to_datetime(appendedData['Date'])
 # converting our close value to float
 fi_appendedData['Close'] = fi_appendedData['Close'].astype(float)
 
-
 # purpose is to plot all fi indices
 fig2 = plt.figure()
 allFi = sns.lineplot(data=fi_appendedData, x='Date', y='Close',
@@ -238,6 +247,81 @@ allFi = sns.lineplot(data=fi_appendedData, x='Date', y='Close',
 
 # exporting out data as a csv file
 fi_appendedData.to_csv('.\data_csv_format\FIIndicesHistData.csv', index=False)
+################################################################################
+###
+################################################################################
+'''
+Now, we will be gathering data for foreign exchange rates
+'''
+
+################################################################################
+###
+################################################################################
+'''
+Now, we will be gathering data for commodities in the following order
+- wti 1 month forward contract
+- natural gas 1 month forward contract
+- gold 2 month forward contract
+- copper 2 month forward contract
+- aluminum 2 month forward contract 
+- platinum 2 month forward contract
+- palladium months forward contract
+- silver forward contract
+'''
+# creating a list of ticker symbols for commodity futures
+# need to find wti futures historical data because it is not presented on
+# yfinance
+commodityIndices = ['NG=F', 'GC=F', 'HG=F', 'ALI=F', 'PL=F', 'PA=F',
+                    'SI=F']
+
+# where we will be adding gathered data
+com_appendedData = pd.DataFrame(columns=['Ticker'])
+
+# process to grab historical data
+for index in commodityIndices:
+    a = yf.Ticker(str(index)).history(period="5Y")  # how many years of data
+    a.drop(['Dividends', 'Stock Splits', 'Volume'], inplace=True, axis=1)
+    a = a.assign(Delta=a['Close'].pct_change())
+    # info = yf.Ticker(str(index)).info
+    #filterInfo = {key: info[key] for key in info.keys() & topics}
+    #filterInfo = pd.DataFrame(filterInfo, index=[0, ])
+    com_appendedData = pd.concat([com_appendedData, pd.DataFrame(a)])
+    #appendedData = pd.concat([appendedData, filterInfo])
+    if com_appendedData['Ticker'].isnull:
+        com_appendedData['Ticker'].fillna(index, inplace=True)
+    else:
+        continue
+
+# resetting our index
+com_appendedData.reset_index(inplace=True)
+
+# renaming the column holding date values
+com_appendedData.rename(columns={'index':'Date'}, inplace=True)
+
+# converting our date column to a date value
+com_appendedData['Date'] = pd.to_datetime(appendedData['Date'])
+
+# converting our close value to float
+com_appendedData['Close'] = com_appendedData['Close'].astype(float)
+
+# purpose is to plot all commodity indices with values greater than 500
+fig3 = plt.figure()
+allComa = sns.lineplot(data=com_appendedData[com_appendedData['Close'] > 500],
+                      x='Date', y='Close',
+                   hue='Ticker', linewidth=0.7, ci=None,
+                   legend=True).set(title='All Commodity Indices - Close')
+
+# purpose is to plot all commodity indices with values less than 500
+fig4 = plt.figure()
+allComb = sns.lineplot(data=com_appendedData[com_appendedData['Close'] < 500],
+                      x='Date', y='Close',
+                   hue='Ticker', linewidth=0.7, ci=None,
+                   legend=True).set(title='All Commodity Indices - Close')
+
+# exporting out data as a csv file
+com_appendedData.to_csv('.\data_csv_format\ComIndicesHistData.csv', index=False)
+
+################################################################################
 
 # some stylistic changes
 for ax in fig.axes:
