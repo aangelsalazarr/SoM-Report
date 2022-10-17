@@ -252,7 +252,56 @@ fi_appendedData.to_csv('.\data_csv_format\FIIndicesHistData.csv', index=False)
 ################################################################################
 '''
 Now, we will be gathering data for foreign exchange rates
+- EUR-USD Spot Rate
+- USD-JPY spot rate
+- GBP-USD spot rate
+- CHF-USD spot rate (USD-CHF spot rate inverted)
+- AUD-USD spot rate
+- CAD-USD spot rate (USD-CAD spot rate inverted)
 '''
+# creating a list of tickery symbols for the ticker we want specifically
+fxIndices = ['EURUSD=X', 'JPY=X', 'GBPUSD=X', 'AUDUSD=X', 'MXN=X',
+             'CHFUSD=X', 'CADUSD=X', 'NZDUSD=X', 'RUB=X']
+
+# where we will be adding gathered data
+fx_appendedData = pd.DataFrame(columns=['Ticker'])
+
+# process to grab historical data
+for index in fxIndices:
+    a = yf.Ticker(str(index)).history(period="5Y")  # how many years of data
+    a.drop(['Dividends', 'Stock Splits', 'Volume'], inplace=True, axis=1)
+    a = a.assign(Delta=a['Close'].pct_change())
+    # info = yf.Ticker(str(index)).info
+    #filterInfo = {key: info[key] for key in info.keys() & topics}
+    #filterInfo = pd.DataFrame(filterInfo, index=[0, ])
+    fx_appendedData = pd.concat([fx_appendedData, pd.DataFrame(a)])
+    #appendedData = pd.concat([appendedData, filterInfo])
+    if fx_appendedData['Ticker'].isnull:
+        fx_appendedData['Ticker'].fillna(index, inplace=True)
+    else:
+        continue
+
+# resetting our index
+fx_appendedData.reset_index(inplace=True)
+
+# renaming the column holding date values
+fx_appendedData.rename(columns={'index':'Date'}, inplace=True)
+
+# converting our date column to a date value
+fx_appendedData['Date'] = pd.to_datetime(appendedData['Date'])
+
+# converting our close value to float
+fx_appendedData['Close'] = fx_appendedData['Close'].astype(float)
+
+# exporting out data as a csv file
+fx_appendedData.to_csv('.\data_csv_format\FXIndicesHistData.csv', index=False)
+
+# plotting our data
+fig3 = plt.figure()
+allFx = sns.lineplot(data=fx_appendedData,
+                      x='Date', y='Close',
+                   hue='Ticker', linewidth=0.7, ci=None,
+                   legend=True).set(title='All FX Indices - Close')
 
 ################################################################################
 ###
@@ -305,14 +354,14 @@ com_appendedData['Date'] = pd.to_datetime(appendedData['Date'])
 com_appendedData['Close'] = com_appendedData['Close'].astype(float)
 
 # purpose is to plot all commodity indices with values greater than 500
-fig3 = plt.figure()
+fig4 = plt.figure()
 allComa = sns.lineplot(data=com_appendedData[com_appendedData['Close'] > 500],
                       x='Date', y='Close',
                    hue='Ticker', linewidth=0.7, ci=None,
                    legend=True).set(title='All Commodity Indices - Close')
 
 # purpose is to plot all commodity indices with values less than 500
-fig4 = plt.figure()
+fig5 = plt.figure()
 allComb = sns.lineplot(data=com_appendedData[com_appendedData['Close'] < 500],
                       x='Date', y='Close',
                    hue='Ticker', linewidth=0.7, ci=None,
