@@ -92,7 +92,6 @@ r = requests.get(url=electricityPricesURL)
 # extracting data in json format
 data = r.json()
 
-
 # grabbing only data object
 entries = data['response']["data"]
 

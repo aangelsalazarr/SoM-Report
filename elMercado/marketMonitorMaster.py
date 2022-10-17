@@ -7,6 +7,8 @@ import dataframe_image as dfi
 from pdfConverter import save_multi_image
 from matplotlib import rc
 from datetime import date
+from dateutil.relativedelta import relativedelta
+import requests
 
 # some params related to the framework of output that we will need
 rc('mathtext', default='regular')
@@ -16,7 +18,6 @@ pd.set_option('display.max_columns', None)
 # purpose is to create current date and current year function
 today = date.today()
 currentDate = today.strftime('%m%d%y')
-
 
 '''
 The purpose of this file is to grab all relevant data on equity indices. The 
@@ -42,25 +43,24 @@ topics = {'shortName'}
 
 # process to grab historical data
 for index in equityIndices:
-    a = yf.Ticker(str(index)).history(period="5Y") # how many years of data
+    a = yf.Ticker(str(index)).history(period="5Y")  # how many years of data
     a.drop(['Dividends', 'Stock Splits', 'Volume'], inplace=True, axis=1)
     a = a.assign(Delta=a['Close'].pct_change())
     # info = yf.Ticker(str(index)).info
-    #filterInfo = {key: info[key] for key in info.keys() & topics}
-    #filterInfo = pd.DataFrame(filterInfo, index=[0, ])
+    # filterInfo = {key: info[key] for key in info.keys() & topics}
+    # filterInfo = pd.DataFrame(filterInfo, index=[0, ])
     appendedData = pd.concat([appendedData, pd.DataFrame(a)])
-    #appendedData = pd.concat([appendedData, filterInfo])
+    # appendedData = pd.concat([appendedData, filterInfo])
     if appendedData['Ticker'].isnull:
         appendedData['Ticker'].fillna(index, inplace=True)
     else:
         continue
 
-
 # resetting our index
 appendedData.reset_index(inplace=True)
 
 # renaming the column holding date values
-appendedData.rename(columns={'index':'Date'}, inplace=True)
+appendedData.rename(columns={'index': 'Date'}, inplace=True)
 
 # converting our date column to a date value
 appendedData['Date'] = pd.to_datetime(appendedData['Date'])
@@ -85,7 +85,6 @@ ruoOnly = appendedData[appendedData['Ticker'] == '^RUO']
 ndxOnly = appendedData[appendedData['Ticker'] == '^NDX']
 djiOnly = appendedData[appendedData['Ticker'] == '^DJI']
 
-
 # setting up our graph information
 sns.set(font_scale=0.5)
 fig, axes = plt.subplots(3, 3)
@@ -97,11 +96,11 @@ dji = sns.lineplot(ax=axes[0, 0], data=djiOnly, x='Date', y='Close',
                    linewidth=0.7,
                    ci=None).set(title='Dow Jones Industrial Average (^DJI)')
 
-ixic = sns.lineplot(ax=axes[0,1], data=ixicOnly, x='Date', y='Close',
+ixic = sns.lineplot(ax=axes[0, 1], data=ixicOnly, x='Date', y='Close',
                     linewidth=0.7,
                     ci=None).set(title='NASDAQ Composite (^IXIC)')
 
-rui = sns.lineplot(ax=axes[0,2], data=ruiOnly, x='Date', y='Close',
+rui = sns.lineplot(ax=axes[0, 2], data=ruiOnly, x='Date', y='Close',
                    linewidth=0.7, ci=None).set(title='Russell 1000 (^RUI)')
 
 rlv = sns.lineplot(ax=axes[1, 0], data=rlvOnly, x='Date', y='Close',
@@ -155,42 +154,44 @@ fig.suptitle('Equity Indices Historical % Change')
 
 # purpose is to create a facet grid of % change of all indices
 dji_delta = sns.lineplot(ax=axes[0, 0], data=djiOnly, x='Date', y='Delta',
-                   linewidth=0.5,
-                   ci=None).set(title='Dow Jones Industrial Average (^DJI)')
+                         linewidth=0.5,
+                         ci=None).set(
+    title='Dow Jones Industrial Average (^DJI)')
 
-ixic_delta = sns.lineplot(ax=axes[0,1], data=ixicOnly, x='Date', y='Delta',
-                    linewidth=0.5,
-                    ci=None).set(title='NASDAQ Composite (^IXIC)')
+ixic_delta = sns.lineplot(ax=axes[0, 1], data=ixicOnly, x='Date', y='Delta',
+                          linewidth=0.5,
+                          ci=None).set(title='NASDAQ Composite (^IXIC)')
 
-rui_delta = sns.lineplot(ax=axes[0,2], data=ruiOnly, x='Date', y='Delta',
-                   linewidth=0.5, ci=None).set(title='Russell 1000 (^RUI)')
+rui_delta = sns.lineplot(ax=axes[0, 2], data=ruiOnly, x='Date', y='Delta',
+                         linewidth=0.5, ci=None).set(
+    title='Russell 1000 (^RUI)')
 
 rlv_delta = sns.lineplot(ax=axes[1, 0], data=rlvOnly, x='Date', y='Delta',
-                   linewidth=0.5,
-                   ci=None).set(title='Russell 1000 Value (^RLV)')
+                         linewidth=0.5,
+                         ci=None).set(title='Russell 1000 Value (^RLV)')
 
 rlg_delta = sns.lineplot(ax=axes[2, 0], data=rlgOnly, x='Date', y='Delta',
-                   linewidth=0.5,
-                   ci=None).set(title='Russell 1000 Growth (^RLG)')
+                         linewidth=0.5,
+                         ci=None).set(title='Russell 1000 Growth (^RLG)')
 
 rut_delta = sns.lineplot(ax=axes[1, 2], data=rutOnly, x='Date', y='Delta',
-                   linewidth=0.5,
-                   ci=None).set(title='Russell 2000 (^RUT)')
+                         linewidth=0.5,
+                         ci=None).set(title='Russell 2000 (^RUT)')
 
 ruj_delta = sns.lineplot(ax=axes[1, 1], data=rujOnly, x='Date', y='Delta',
-                   linewidth=0.5,
-                   ci=None).set(title='Russell 2000 Value (^RUJ)')
+                         linewidth=0.5,
+                         ci=None).set(title='Russell 2000 Value (^RUJ)')
 
 ruo_delta = sns.lineplot(ax=axes[2, 1], data=ruoOnly, x='Date', y='Delta',
-                   linewidth=0.5,
-                   ci=None).set(title='Russell 2000 Growth (^RUO)')
+                         linewidth=0.5,
+                         ci=None).set(title='Russell 2000 Growth (^RUO)')
 
 ndx_delta = sns.lineplot(ax=axes[2, 2], data=ndxOnly, x='Date', y='Delta',
-                   linewidth=0.5,
-                   ci=None).set(title='NASDAQ 100 (^NDX)')
+                         linewidth=0.5,
+                         ci=None).set(title='NASDAQ 100 (^NDX)')
 
 ################################################################################
-
+################################################################################
 ################################################################################
 
 '''
@@ -214,14 +215,14 @@ fi_appendedData = pd.DataFrame(columns=['Ticker'])
 
 # process to grab historical data
 for index in fi_indices:
-    a = yf.Ticker(str(index)).history(period="5Y") # how many years of data
+    a = yf.Ticker(str(index)).history(period="5Y")  # how many years of data
     a.drop(['Dividends', 'Stock Splits', 'Volume'], inplace=True, axis=1)
     a = a.assign(Delta=a['Close'].pct_change())
     # info = yf.Ticker(str(index)).info
-    #filterInfo = {key: info[key] for key in info.keys() & topics}
-    #filterInfo = pd.DataFrame(filterInfo, index=[0, ])
+    # filterInfo = {key: info[key] for key in info.keys() & topics}
+    # filterInfo = pd.DataFrame(filterInfo, index=[0, ])
     fi_appendedData = pd.concat([fi_appendedData, pd.DataFrame(a)])
-    #appendedData = pd.concat([appendedData, filterInfo])
+    # appendedData = pd.concat([appendedData, filterInfo])
     if fi_appendedData['Ticker'].isnull:
         fi_appendedData['Ticker'].fillna(index, inplace=True)
     else:
@@ -231,7 +232,7 @@ for index in fi_indices:
 fi_appendedData.reset_index(inplace=True)
 
 # renaming the column holding date values
-fi_appendedData.rename(columns={'index':'Date'}, inplace=True)
+fi_appendedData.rename(columns={'index': 'Date'}, inplace=True)
 
 # converting our date column to a date value
 fi_appendedData['Date'] = pd.to_datetime(appendedData['Date'])
@@ -242,13 +243,13 @@ fi_appendedData['Close'] = fi_appendedData['Close'].astype(float)
 # purpose is to plot all fi indices
 fig2 = plt.figure()
 allFi = sns.lineplot(data=fi_appendedData, x='Date', y='Close',
-                   hue='Ticker', linewidth=0.7, ci=None,
-                   legend=True).set(title='All FI Indices - Close')
+                     hue='Ticker', linewidth=0.7, ci=None,
+                     legend=True).set(title='All FI Indices - Close')
 
 # exporting out data as a csv file
 fi_appendedData.to_csv('.\data_csv_format\FIIndicesHistData.csv', index=False)
 ################################################################################
-###
+################################################################################
 ################################################################################
 '''
 Now, we will be gathering data for foreign exchange rates
@@ -272,10 +273,10 @@ for index in fxIndices:
     a.drop(['Dividends', 'Stock Splits', 'Volume'], inplace=True, axis=1)
     a = a.assign(Delta=a['Close'].pct_change())
     # info = yf.Ticker(str(index)).info
-    #filterInfo = {key: info[key] for key in info.keys() & topics}
-    #filterInfo = pd.DataFrame(filterInfo, index=[0, ])
+    # filterInfo = {key: info[key] for key in info.keys() & topics}
+    # filterInfo = pd.DataFrame(filterInfo, index=[0, ])
     fx_appendedData = pd.concat([fx_appendedData, pd.DataFrame(a)])
-    #appendedData = pd.concat([appendedData, filterInfo])
+    # appendedData = pd.concat([appendedData, filterInfo])
     if fx_appendedData['Ticker'].isnull:
         fx_appendedData['Ticker'].fillna(index, inplace=True)
     else:
@@ -285,7 +286,7 @@ for index in fxIndices:
 fx_appendedData.reset_index(inplace=True)
 
 # renaming the column holding date values
-fx_appendedData.rename(columns={'index':'Date'}, inplace=True)
+fx_appendedData.rename(columns={'index': 'Date'}, inplace=True)
 
 # converting our date column to a date value
 fx_appendedData['Date'] = pd.to_datetime(appendedData['Date'])
@@ -307,7 +308,6 @@ cadUSDOnly = fx_appendedData[fx_appendedData['Ticker'] == 'CADUSD=X']
 nzdUSDOnly = fx_appendedData[fx_appendedData['Ticker'] == 'NZDUSD=X']
 rubUSDOnly = fx_appendedData[fx_appendedData['Ticker'] == 'RUB=X']
 
-
 # setting up our graph information
 sns.set(font_scale=0.5)
 fig, axes = plt.subplots(3, 3)
@@ -315,42 +315,43 @@ fig.suptitle('FX Indices Historical Data, Close')
 
 # purpose is to create a facet grid of % change of all indices
 eur_usd = sns.lineplot(ax=axes[0, 0], data=eurUSDOnly, x='Date', y='Close',
-                   linewidth=0.5,
-                   ci=None).set(title='EUR-USD Spot Rate, Close')
+                       linewidth=0.5,
+                       ci=None).set(title='EUR-USD Spot Rate, Close')
 
-jpy_usd = sns.lineplot(ax=axes[0,1], data=jpyUSDOnly, x='Date', y='Close',
-                    linewidth=0.5,
-                    ci=None).set(title='JPY-USD Spot Rate, Close')
+jpy_usd = sns.lineplot(ax=axes[0, 1], data=jpyUSDOnly, x='Date', y='Close',
+                       linewidth=0.5,
+                       ci=None).set(title='JPY-USD Spot Rate, Close')
 
-gbp_usd = sns.lineplot(ax=axes[0,2], data=gbpUSDOnly, x='Date', y='Close',
-                   linewidth=0.5, ci=None).set(title='GBP-USD Spot Rate, Close')
+gbp_usd = sns.lineplot(ax=axes[0, 2], data=gbpUSDOnly, x='Date', y='Close',
+                       linewidth=0.5, ci=None).set(
+    title='GBP-USD Spot Rate, Close')
 
 aud_usd = sns.lineplot(ax=axes[1, 0], data=audUSDOnly, x='Date', y='Close',
-                   linewidth=0.5,
-                   ci=None).set(title='AUD-USD Spot Rate, Close')
+                       linewidth=0.5,
+                       ci=None).set(title='AUD-USD Spot Rate, Close')
 
 mxn_usd = sns.lineplot(ax=axes[2, 0], data=mxnUSDOnly, x='Date', y='Close',
-                   linewidth=0.5,
-                   ci=None).set(title='MXN-USD Spot Rate, Close')
+                       linewidth=0.5,
+                       ci=None).set(title='MXN-USD Spot Rate, Close')
 
 chf_usd = sns.lineplot(ax=axes[1, 2], data=chfUSDOnly, x='Date', y='Close',
-                   linewidth=0.5,
-                   ci=None).set(title='CHF-USD Spot Rate, Close')
+                       linewidth=0.5,
+                       ci=None).set(title='CHF-USD Spot Rate, Close')
 
 cad_usd = sns.lineplot(ax=axes[1, 1], data=cadUSDOnly, x='Date', y='Close',
-                   linewidth=0.5,
-                   ci=None).set(title='CAD-USD Spot Rate, Close')
+                       linewidth=0.5,
+                       ci=None).set(title='CAD-USD Spot Rate, Close')
 
 nzd_usd = sns.lineplot(ax=axes[2, 1], data=nzdUSDOnly, x='Date', y='Close',
-                   linewidth=0.5,
-                   ci=None).set(title='NZD-USD Spot Rate, Close')
+                       linewidth=0.5,
+                       ci=None).set(title='NZD-USD Spot Rate, Close')
 
 rub_usd = sns.lineplot(ax=axes[2, 2], data=rubUSDOnly, x='Date', y='Close',
-                   linewidth=0.5,
-                   ci=None).set(title='RUB-USD Spot Rate, Close')
+                       linewidth=0.5,
+                       ci=None).set(title='RUB-USD Spot Rate, Close')
 
 ################################################################################
-###
+################################################################################
 ################################################################################
 '''
 Now, we will be gathering data for commodities in the following order
@@ -378,10 +379,10 @@ for index in commodityIndices:
     a.drop(['Dividends', 'Stock Splits', 'Volume'], inplace=True, axis=1)
     a = a.assign(Delta=a['Close'].pct_change())
     # info = yf.Ticker(str(index)).info
-    #filterInfo = {key: info[key] for key in info.keys() & topics}
-    #filterInfo = pd.DataFrame(filterInfo, index=[0, ])
+    # filterInfo = {key: info[key] for key in info.keys() & topics}
+    # filterInfo = pd.DataFrame(filterInfo, index=[0, ])
     com_appendedData = pd.concat([com_appendedData, pd.DataFrame(a)])
-    #appendedData = pd.concat([appendedData, filterInfo])
+    # appendedData = pd.concat([appendedData, filterInfo])
     if com_appendedData['Ticker'].isnull:
         com_appendedData['Ticker'].fillna(index, inplace=True)
     else:
@@ -391,7 +392,7 @@ for index in commodityIndices:
 com_appendedData.reset_index(inplace=True)
 
 # renaming the column holding date values
-com_appendedData.rename(columns={'index':'Date'}, inplace=True)
+com_appendedData.rename(columns={'index': 'Date'}, inplace=True)
 
 # converting our date column to a date value
 com_appendedData['Date'] = pd.to_datetime(appendedData['Date'])
@@ -402,20 +403,104 @@ com_appendedData['Close'] = com_appendedData['Close'].astype(float)
 # purpose is to plot all commodity indices with values greater than 500
 fig4 = plt.figure()
 allComa = sns.lineplot(data=com_appendedData[com_appendedData['Close'] > 500],
-                      x='Date', y='Close',
-                   hue='Ticker', linewidth=0.7, ci=None,
-                   legend=True).set(title='All Commodity Indices - Close')
+                       x='Date', y='Close',
+                       hue='Ticker', linewidth=0.7, ci=None,
+                       legend=True).set(title='All Commodity Indices - Close')
 
 # purpose is to plot all commodity indices with values less than 500
 fig5 = plt.figure()
 allComb = sns.lineplot(data=com_appendedData[com_appendedData['Close'] < 500],
-                      x='Date', y='Close',
-                   hue='Ticker', linewidth=0.7, ci=None,
-                   legend=True).set(title='All Commodity Indices - Close')
+                       x='Date', y='Close',
+                       hue='Ticker', linewidth=0.7, ci=None,
+                       legend=True).set(title='All Commodity Indices - Close')
 
 # exporting out data as a csv file
 com_appendedData.to_csv('.\data_csv_format\ComIndicesHistData.csv', index=False)
 
+# the purpose of this section is to grab petroleum data from the EIA open data
+# first we want to retrieve our api key and make sure it is good to go
+apiKey = os.environ.get('eiaAPI')
+
+# api endpoint; will be adding specifics at the end of URL
+URL = "https://api.eia.gov/v2/"
+
+# here are the specifics of what we are looking for
+specificReq = "petroleum/pri/spt/data/"
+
+# petroleum pricing API endpoint
+petroPricesURL = URL + specificReq + "?api_key=" + str(apiKey)
+
+'''
+X-Params: {
+    "frequency": "daily",
+    "data": [
+        "value"
+    ],
+    "facets": {},
+    "start": null,
+    "end": null,
+    "sort": [
+        {
+            "column": "period",
+            "direction": "desc"
+        }
+    ],
+    "offset": 0,
+    "length": 5000,
+    "api-version": "2.0.2"
+}
+'''
+# purpose is to create a date specific to eia req
+startDate = today - relativedelta(years=5)
+startDateEIA = startDate.strftime("%Y-%m-%d")
+
+# now we will be translating our params into the url request
+dataInput = "&data[0]=value"
+facetsInput = ""
+frequencyInput = "&frequency=weekly"
+startDateInput = "&start=" + str(startDateEIA)
+
+# adding everything up
+petroPricesURL = petroPricesURL + dataInput + frequencyInput + startDateInput
+
+# sending get request and saving the response as a response object
+r = requests.get(url=petroPricesURL)
+
+# extracting data in json format
+data = r.json()
+
+# grabbing only data object
+entries = data['response']["data"]
+
+# converting our json data format to pandas
+petro_df = pd.DataFrame(data=entries)
+
+# making sure our date function is set as a type = date
+petro_df['period'] = pd.to_datetime(petro_df['period'])
+
+# creating specific data with and without wti data
+value_list = ["EPCWTI", "EPCBRENT"]
+petro_df_wti = petro_df[petro_df['product'].isin(value_list)]
+petro_df_non_wti = petro_df[~petro_df['product'].isin(value_list)]
+
+# purpose is to plot all petro spot prices but split between wti and non wti
+fig6 = plt.figure()
+petro_exclude_wti = sns.lineplot(data=petro_df_non_wti,
+                       x='period', y='value',
+                       hue='product-name', linewidth=0.7, ci=None,
+                       legend=True).set(title='Petroleum Spot Prices, Weekly')
+
+fig7 = plt.figure()
+petro_wti = sns.lineplot(data=petro_df_wti, x='period', y='value',
+                         hue='product-name', linewidth=0.7, ci=None,
+                         legend=True).set(title='WTI Spot Prices, Weekly')
+
+
+# exporting out data as a csv file
+# petro_df.to_csv('.\data_csv_format\petro_spot_prices_eia.csv', index=False)
+
+################################################################################
+################################################################################
 ################################################################################
 
 # some stylistic changes
@@ -425,8 +510,4 @@ for ax in fig.axes:
 
 filename = 'marketMonitor_'
 save_multi_image(filename + currentDate + '.pdf')
-
-# checking our dfs
-print(appendedData.tail())
-print(fi_appendedData.tail())
 
