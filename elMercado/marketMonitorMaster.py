@@ -296,12 +296,58 @@ fx_appendedData['Close'] = fx_appendedData['Close'].astype(float)
 # exporting out data as a csv file
 fx_appendedData.to_csv('.\data_csv_format\FXIndicesHistData.csv', index=False)
 
-# plotting our data
-fig3 = plt.figure()
-allFx = sns.lineplot(data=fx_appendedData,
-                      x='Date', y='Close',
-                   hue='Ticker', linewidth=0.7, ci=None,
-                   legend=True).set(title='All FX Indices - Close')
+# partitioning our dfs
+eurUSDOnly = fx_appendedData[fx_appendedData['Ticker'] == 'EURUSD=X']
+jpyUSDOnly = fx_appendedData[fx_appendedData['Ticker'] == 'JPY=X']
+gbpUSDOnly = fx_appendedData[fx_appendedData['Ticker'] == 'GBPUSD=X']
+audUSDOnly = fx_appendedData[fx_appendedData['Ticker'] == 'AUDUSD=X']
+mxnUSDOnly = fx_appendedData[fx_appendedData['Ticker'] == 'MXN=X']
+chfUSDOnly = fx_appendedData[fx_appendedData['Ticker'] == 'CHFUSD=X']
+cadUSDOnly = fx_appendedData[fx_appendedData['Ticker'] == 'CADUSD=X']
+nzdUSDOnly = fx_appendedData[fx_appendedData['Ticker'] == 'NZDUSD=X']
+rubUSDOnly = fx_appendedData[fx_appendedData['Ticker'] == 'RUB=X']
+
+
+# setting up our graph information
+sns.set(font_scale=0.5)
+fig, axes = plt.subplots(3, 3)
+fig.suptitle('FX Indices Historical Data, Close')
+
+# purpose is to create a facet grid of % change of all indices
+eur_usd = sns.lineplot(ax=axes[0, 0], data=eurUSDOnly, x='Date', y='Close',
+                   linewidth=0.5,
+                   ci=None).set(title='EUR-USD Spot Rate, Close')
+
+jpy_usd = sns.lineplot(ax=axes[0,1], data=jpyUSDOnly, x='Date', y='Close',
+                    linewidth=0.5,
+                    ci=None).set(title='JPY-USD Spot Rate, Close')
+
+gbp_usd = sns.lineplot(ax=axes[0,2], data=gbpUSDOnly, x='Date', y='Close',
+                   linewidth=0.5, ci=None).set(title='GBP-USD Spot Rate, Close')
+
+aud_usd = sns.lineplot(ax=axes[1, 0], data=audUSDOnly, x='Date', y='Close',
+                   linewidth=0.5,
+                   ci=None).set(title='AUD-USD Spot Rate, Close')
+
+mxn_usd = sns.lineplot(ax=axes[2, 0], data=mxnUSDOnly, x='Date', y='Close',
+                   linewidth=0.5,
+                   ci=None).set(title='MXN-USD Spot Rate, Close')
+
+chf_usd = sns.lineplot(ax=axes[1, 2], data=chfUSDOnly, x='Date', y='Close',
+                   linewidth=0.5,
+                   ci=None).set(title='CHF-USD Spot Rate, Close')
+
+cad_usd = sns.lineplot(ax=axes[1, 1], data=cadUSDOnly, x='Date', y='Close',
+                   linewidth=0.5,
+                   ci=None).set(title='CAD-USD Spot Rate, Close')
+
+nzd_usd = sns.lineplot(ax=axes[2, 1], data=nzdUSDOnly, x='Date', y='Close',
+                   linewidth=0.5,
+                   ci=None).set(title='NZD-USD Spot Rate, Close')
+
+rub_usd = sns.lineplot(ax=axes[2, 2], data=rubUSDOnly, x='Date', y='Close',
+                   linewidth=0.5,
+                   ci=None).set(title='RUB-USD Spot Rate, Close')
 
 ################################################################################
 ###
