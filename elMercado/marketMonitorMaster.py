@@ -478,6 +478,7 @@ petro_df = pd.DataFrame(data=entries)
 # making sure our date function is set as a type = date
 petro_df['period'] = pd.to_datetime(petro_df['period'])
 
+
 # creating specific data with and without wti data
 value_list = ["EPCWTI", "EPCBRENT"]
 petro_df_wti = petro_df[petro_df['product'].isin(value_list)]
@@ -510,4 +511,5 @@ for ax in fig.axes:
 
 filename = 'marketMonitor_'
 save_multi_image(filename + currentDate + '.pdf')
+
 
