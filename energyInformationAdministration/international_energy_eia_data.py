@@ -97,8 +97,11 @@ df = df[df['value'].apply(lambda x: is_float(x))]
 # let's visualize some of our data now, beginning with period as x-axis and
 # value as y axis. We will compartmentalize by activityName
 fig1 = plt.figure()
-visual_1 = sns.lineplot(data=df[df['activityId'] == 1], x='period', y='value',
-                        hue='productName')
+visual_1 = sns.relplot(data=df[df['activityId'] == 1],
+                       x='period', y='value',
+                       col='productName', col_wrap=3,
+                       # col='countryRegionName', col_wrap=10,
+                       kind='line')
 
 fig2 = plt.figure()
 visual_2 = sns.lineplot(data=df[df['activityId'] == 2],
@@ -108,8 +111,10 @@ visual_2 = sns.lineplot(data=df[df['activityId'] == 2],
                                                      'Consumption')
 
 fig3 = plt.figure()
-visual_3 = sns.lineplot(data=df[df['activityId'] == 3], x='period',
-                        y='value', hue='productName')
+visual_3 = sns.lineplot(data=df[df['activityId'] == 3],
+                       x='period',
+                       y='value',
+                       hue='productName')
 
 fig4 = plt.figure()
 visual_4 = sns.lineplot(data=df[df['activityId'] == 5],
