@@ -1,6 +1,6 @@
 # State of the Market Report
 Purpose: gather data into a 20 page report laying out the state of the market
-- Market Monitor, Master [(Link to code)](https://github.com/aangelsalazarr/SoM-Report/blob/main/elMercado/marketMonitorMaster.py)
+- Market Monitor, Master [[Code]](https://github.com/aangelsalazarr/SoM-Report/blob/main/elMercado/marketMonitorMaster.py)
     - [Link to Report](https://github.com/aangelsalazarr/SoM-Report/tree/main/elMercado)
 
 ## Analysis From Exisiting Entities
@@ -27,11 +27,7 @@ Purpose: gather data into a 20 page report laying out the state of the market
 - Real Assets
 - Foreign Exchange
 - Decentralized Finance [[Code]](https://github.com/aangelsalazarr/SoM-Report/blob/main/market/decentralized_finance.py)
-    - Bitcoin
-    - Ethereum
-    - Tether
-    - USD Coin
-    - BNB
+    - Bitcoin, Ethereum, Tether, USD Coin, BNB
 - Commodities
     - [Metals Market](https://github.com/aangelsalazarr/SoM-Report/blob/main/market/commodities_metals.py)
     - [Energy Market](https://github.com/aangelsalazarr/SoM-Report/blob/main/market/commodities_energy.py)
