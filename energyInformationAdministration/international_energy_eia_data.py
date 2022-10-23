@@ -73,6 +73,12 @@ Looking at the csv file, the following are the columns
     unitName, value
 
 '''
+# splitting df to include/exclude oecd data
+value_list = ['NOEC', 'OEAO', 'OECD', 'OEEU', 'OENA', 'WP18', 'WP21',
+              'WP22', 'WP23', 'WP24', 'WP26']
+df_oecd = df[df['countryRegionId'].isin(value_list)]
+df = df[~df['countryRegionId'].isin(value_list)]
+
 
 # let's visualize some of our data now, beginning with period as x-axis and
 # value as y axis. We will compartmentalize by activityName
