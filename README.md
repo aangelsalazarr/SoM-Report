@@ -26,12 +26,12 @@ Purpose: gather data into a 20 page report laying out the state of the market
 - Fixed Income Yields
 - Real Assets
 - Foreign Exchange
-- Decentralized Finance [[Code]](https://github.com/aangelsalazarr/SoM-Report/blob/main/market/decentralized_finance.py)
+- [Decentralized Finance](https://github.com/aangelsalazarr/SoM-Report/blob/main/market/decentralized_finance.py)
     - Bitcoin, Ethereum, Tether, USD Coin, BNB
 - Commodities
     - [Metals Market](https://github.com/aangelsalazarr/SoM-Report/blob/main/market/commodities_metals.py)
     - [Energy Market](https://github.com/aangelsalazarr/SoM-Report/blob/main/market/commodities_energy.py)
-- Equities
+- Equities [[Visuals]](https://github.com/aangelsalazarr/SoM-Report/tree/main/market/market_visuals)
     - [Energy](https://github.com/aangelsalazarr/SoM-Report/blob/main/market/equities_energy.py)
     - [Materials](https://github.com/aangelsalazarr/SoM-Report/blob/main/market/equities_materials.py)
     - [Industrials](https://github.com/aangelsalazarr/SoM-Report/blob/main/market/equities_indsutrials.py)
@@ -43,9 +43,9 @@ Purpose: gather data into a 20 page report laying out the state of the market
     - [Information Technology](https://github.com/aangelsalazarr/SoM-Report/blob/main/market/equities_technology.py)
     - [Communications](https://github.com/aangelsalazarr/SoM-Report/blob/main/market/equities_communications.py)
     - [Real Estate](https://github.com/aangelsalazarr/SoM-Report/blob/main/market/equities_real_estate.py)
-    
-## Frequency
-- Beginning of Day, 7 AM ET
+
+## Saved Data
+- [Equities](https://github.com/aangelsalazarr/SoM-Report/tree/main/market/data_csv_format)
 
 ## Sources
 - [Yahoo Finance](https://finance.yahoo.com/)
