@@ -354,12 +354,12 @@ petroPricesURL = petroPricesURL + dataInput + frequencyInput + startDateInput
 print(petroPricesURL)
 
 # sending get request and saving the response as a response object
-eia_df = grab_eia_data(url=petroPricesURL)
+petro_df = grab_eia_data(url=petroPricesURL)
 
 # creating specific data with and without wti data
 value_list = ["EPCWTI", "EPCBRENT"]
-petro_df_wti = eia_df[eia_df['product'].isin(value_list)]
-petro_df_non_wti = eia_df[~eia_df['product'].isin(value_list)]
+petro_df_wti = petro_df[petro_df['product'].isin(value_list)]
+petro_df_non_wti = petro_df[~petro_df['product'].isin(value_list)]
 
 # purpose is to plot all petro spot prices but split between wti and non wti
 fig6 = plt.figure()
