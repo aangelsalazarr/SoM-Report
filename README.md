@@ -32,17 +32,17 @@ Purpose: gather data into a 20 page report laying out the state of the market
     - [Metals Market](https://github.com/aangelsalazarr/SoM-Report/blob/main/market/commodities_metals.py)
     - [Energy Market](https://github.com/aangelsalazarr/SoM-Report/blob/main/market/commodities_energy.py)
 - Equities
-    - Energy
-    - Materials
-    - Industrials
-    - Utilities
-    - Health Care
-    - Financials
-    - Consumer Discretionary
-    - Consumer Staples
-    - Information Technology
-    - Communications
-    - Real Estate
+    - [Energy](https://github.com/aangelsalazarr/SoM-Report/blob/main/market/equities_energy.py)
+    - [Materials](https://github.com/aangelsalazarr/SoM-Report/blob/main/market/equities_materials.py)
+    - [Industrials](https://github.com/aangelsalazarr/SoM-Report/blob/main/market/equities_indsutrials.py)
+    - [Utilities](https://github.com/aangelsalazarr/SoM-Report/blob/main/market/equities_utilities.py)
+    - [Health Care](https://github.com/aangelsalazarr/SoM-Report/blob/main/market/equities_healthcare.py)
+    - [Financial Services](https://github.com/aangelsalazarr/SoM-Report/blob/main/market/equities_financial.py)
+    - [Consumer Defensive](https://github.com/aangelsalazarr/SoM-Report/blob/main/market/equities_consumer_defensive.py)
+    - [Consumer Cyclical](https://github.com/aangelsalazarr/SoM-Report/blob/main/market/equities_consumer_cyclical.py)
+    - [Information Technology](https://github.com/aangelsalazarr/SoM-Report/blob/main/market/equities_technology.py)
+    - [Communications](https://github.com/aangelsalazarr/SoM-Report/blob/main/market/equities_communications.py)
+    - [Real Estate](https://github.com/aangelsalazarr/SoM-Report/blob/main/market/equities_real_estate.py)
     
 ## Frequency
 - Beginning of Day, 7 AM ET
