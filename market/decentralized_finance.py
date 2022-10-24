@@ -76,5 +76,5 @@ for df in dfs:
 
 
 # saving plots in pdf format
-filename = 'defi_visuals_'
+filename = '.\market_visuals\defi_visuals_'
 save_multi_image(filename + currentDate + '.pdf')

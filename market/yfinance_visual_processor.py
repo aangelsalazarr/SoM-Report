@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-def visual_maker(list):
+def visual_maker(ticker_list, dfs):
 
     # setting up params for our visuals
     sns.set(font_scale=0.5)
@@ -10,9 +10,9 @@ def visual_maker(list):
     # will be used to name the title of each figure
     count = 0
 
-    for item in list:
+    for item in dfs:
         fig, axes = plt.subplots(2, 3)
-        fig.suptitle(list[count])
+        fig.suptitle(ticker_list[count])
 
         sns.lineplot(ax=axes[0, 0], data=item, x='Date', y='Close',
                      linewidth=0.5, color='maroon')

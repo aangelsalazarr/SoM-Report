@@ -1,5 +1,4 @@
 import pandas as pd
-import seaborn as sns
 import matplotlib.pyplot as plt
 from pdfConverter import save_multi_image
 from matplotlib import rc
@@ -46,10 +45,10 @@ dfs = [google, meta, disney, tmobile, verizon, comcast, netflix, att,
        activision, americaMovil]
 
 # creating figures
-visual_maker(list=dfs)
+visual_maker(ticker_list=comsList, dfs=dfs)
 
 # saving plots in pdf format
-filename = 'comms_visuals_'
+filename = '.\market_visuals\comms_visuals_'
 save_multi_image(filename + currentDate + '.pdf')
 
 
