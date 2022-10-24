@@ -47,6 +47,14 @@ Purpose: gather data into a 20 page report laying out the state of the market
 ## Saved Data
 - [Equities](https://github.com/aangelsalazarr/SoM-Report/tree/main/market/data_csv_format)
 
+## Functions
+- [yfinance Data Processor](https://github.com/aangelsalazarr/SoM-Report/blob/main/market/yfinance_data_processor.py)
+- [yfinance Data Visualizer](https://github.com/aangelsalazarr/SoM-Report/blob/main/market/yfinance_visual_processor.py)
+- [PDF Converter](https://github.com/aangelsalazarr/SoM-Report/blob/main/market/pdfConverter.py)
+- [BLS Data Processor](https://github.com/aangelsalazarr/SoM-Report/blob/main/blackBox/bls_data_processor.py)
+- [JSON Data Processor](https://github.com/aangelsalazarr/SoM-Report/blob/main/blackBox/json_data_parser.py)
+- [EIA Data Processor](https://github.com/aangelsalazarr/SoM-Report/blob/main/energyInformationAdministration/eia_data_processor.py)
+
 ## Sources
 - [Yahoo Finance](https://finance.yahoo.com/)
 - [Energy Information Administration](https://www.eia.gov/)
