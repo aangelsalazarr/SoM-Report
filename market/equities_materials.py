@@ -20,6 +20,9 @@ materialsList = ['BHP', 'LIN', 'RIO', 'CTA-PB', 'SHW', 'APD', 'CTVA', 'FCX',
                  'NTR', 'ECL']
 
 # topics we want to grab from info
+topics = {'shortName'}
+
+# processing our df
 df_main = data_processor(list=materialsList, period='1Y')
 
 # use this code snippet once

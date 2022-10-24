@@ -1,45 +1,22 @@
-# purpose of this file is to grab data on the top 10 energy companies in the
-# equities market
-import yfinance as yf
 import pandas as pd
 import matplotlib.pyplot as plt
+from pdfConverter import save_multi_image
+from matplotlib import rc
+from yfinance_data_processor import data_processor
+from yfinance_visual_processor import visual_maker
+from datetime import date
 
-# exxon mobil coroporation
-exxon = yf.Ticker("XOM")
+# parameter set up
+rc('mathtext', default='regular')
+plt.rcParams['figure.autolayout'] = True
+pd.set_option('display.max_columns', None)
 
-# chevron corporation
-chevron = yf.Ticker("CVX")
-
-# shell plc
-shell = yf.Ticker("SHEL")
-
-# conocophillips
-conoco = yf.Ticker("COP")
-
-# petrochina company limited
-petrochina = yf.Ticker("PTR")
-
-# total energy se
-totalEnergy = yf.Ticker("TTE")
-
-# equinor asa
-equinor = yf.Ticker("EQNR")
-
-# bp plc
-bp = yf.Ticker("BP")
-
-# petroleo brasileiro S.A - petrobas
-petroBrasil = yf.Ticker("PBR")
-
-# enbridge inc
-enbridge = yf.Ticker("ENB")
-
-# combining all energy related stocks into a list
-energyMarketList = [exxon, chevron, shell, conoco, petrochina, totalEnergy,
-                    equinor, bp, petroBrasil, enbridge]
+# time related code
+today = date.today()
+currentDate = today.strftime('%m_%d_%y')
 
 # now we will find topics of interest aka data that we want to grab
-energyTopics = {
+topics = {
     'fullTimeEmployees', 'ebitdaMargins', 'profitMargins', 'grossMargins',
     'operatingCashflow', 'revenueGrowth', 'operatingMargins', 'ebitda',
     'targetLowPrice', 'recommendationKey', 'grossProfits', 'freeCashflow',
@@ -67,4 +44,49 @@ energyTopics = {
     'dividendYield', 'bidSize', 'dayHigh', 'regularMarketPrice',
     'preMarketPrice', 'trailingPegRatio',
 }
+
+# creating a list of ticker symbols we want to pull from yfinance api
+energyList = ['XOM', 'CVX', 'SHEL', 'COP', 'TTE', 'EQNR', 'BP', 'PBR',
+              'EOG', 'ENB', 'SLB', 'CNQ', 'OXY', 'PXD', 'MPC', 'BKR',
+              'NEE']
+
+# processing our df
+df_main = data_processor(list=energyList, period='1Y')
+
+# run this code snippet once
+df_main.to_csv('.\data_csv_format\energy_data.csv', index=False)
+
+# creating a list related to ticker symbol
+xom = df_main[df_main['Ticker'] == energyList[0]]
+cvx = df_main[df_main['Ticker'] == energyList[1]]
+shel = df_main[df_main['Ticker'] == energyList[2]]
+cop = df_main[df_main['Ticker'] == energyList[3]]
+tte = df_main[df_main['Ticker'] == energyList[4]]
+eqnr = df_main[df_main['Ticker'] == energyList[5]]
+bp = df_main[df_main['Ticker'] == energyList[6]]
+pbr = df_main[df_main['Ticker'] == energyList[7]]
+eog = df_main[df_main['Ticker'] == energyList[8]]
+enb = df_main[df_main['Ticker'] == energyList[9]]
+slb = df_main[df_main['Ticker'] == energyList[10]]
+cnq = df_main[df_main['Ticker'] == energyList[11]]
+oxy = df_main[df_main['Ticker'] == energyList[12]]
+pxd = df_main[df_main['Ticker'] == energyList[13]]
+mpc = df_main[df_main['Ticker'] == energyList[14]]
+bkr = df_main[df_main['Ticker'] == energyList[15]]
+nee = df_main[df_main['Ticker'] == energyList[16]]
+
+# creating a list of our specific dfs
+dfs = [xom, cvx, shel, cop, tte, eqnr, bp, pbr, eog, enb, slb, cnq, oxy, pxd,
+       mpc, bkr, nee]
+
+# creating our figures
+visual_maker(ticker_list=energyList, dfs=dfs)
+
+# saving plots in pdf format
+filename = '.\market_visuals\energy_visuals_'
+save_multi_image(filename + currentDate + '.pdf')
+
+
+
+
 
