@@ -9,6 +9,8 @@ from matplotlib import rc
 from datetime import date
 from dateutil.relativedelta import relativedelta
 import requests
+from yfinance_data_processor import data_processor
+from eia_data_processor import grab_eia_data
 
 # some params related to the framework of output that we will need
 rc('mathtext', default='regular')
@@ -36,38 +38,16 @@ equityIndices = ['^IXIC', '^RUI', '^RLV', '^RLG', '^RUT', '^RUJ',
                  '^RUO', '^NDX', '^DJI']
 
 # create a empty dataframe
-appendedData = pd.DataFrame(columns=['Ticker'])
+ei_df = pd.DataFrame(columns=['Ticker'])
 
 # what we want to grab from info
 topics = {'shortName'}
 
 # process to grab historical data
-for index in equityIndices:
-    a = yf.Ticker(str(index)).history(period="5Y")  # how many years of data
-    a.drop(['Dividends', 'Stock Splits', 'Volume'], inplace=True, axis=1)
-    a = a.assign(Delta=a['Close'].pct_change())
-    # info = yf.Ticker(str(index)).info
-    # filterInfo = {key: info[key] for key in info.keys() & topics}
-    # filterInfo = pd.DataFrame(filterInfo, index=[0, ])
-    appendedData = pd.concat([appendedData, pd.DataFrame(a)])
-    # appendedData = pd.concat([appendedData, filterInfo])
-    if appendedData['Ticker'].isnull:
-        appendedData['Ticker'].fillna(index, inplace=True)
-    else:
-        continue
-
-# resetting our index
-appendedData.reset_index(inplace=True)
-
-# renaming the column holding date values
-appendedData.rename(columns={'index': 'Date'}, inplace=True)
-
-# converting our date column to a date value
-appendedData['Date'] = pd.to_datetime(appendedData['Date'])
-appendedData['Close'] = appendedData['Close'].astype(float)
+ei_df = data_processor(list=equityIndices, period='ytd')
 
 # exporting out data as a csv file
-appendedData.to_csv('.\data_csv_format\equityIndicesHistData.csv', index=False)
+ei_df.to_csv('.\data_csv_format\equityIndicesHistData.csv', index=False)
 
 '''
 at this point we want to create a number of figures that provides us with 
@@ -75,15 +55,15 @@ insights on the historical data we have now collected
 '''
 
 # creating subsets of data to present in a figure format
-ixicOnly = appendedData[appendedData['Ticker'] == '^IXIC']
-ruiOnly = appendedData[appendedData['Ticker'] == '^RUI']
-rlvOnly = appendedData[appendedData['Ticker'] == '^RLV']
-rlgOnly = appendedData[appendedData['Ticker'] == '^RLG']
-rutOnly = appendedData[appendedData['Ticker'] == '^RUT']
-rujOnly = appendedData[appendedData['Ticker'] == '^RUJ']
-ruoOnly = appendedData[appendedData['Ticker'] == '^RUO']
-ndxOnly = appendedData[appendedData['Ticker'] == '^NDX']
-djiOnly = appendedData[appendedData['Ticker'] == '^DJI']
+ixicOnly = ei_df[ei_df['Ticker'] == equityIndices[0]]
+ruiOnly = ei_df[ei_df['Ticker'] == equityIndices[1]]
+rlvOnly = ei_df[ei_df['Ticker'] == equityIndices[2]]
+rlgOnly = ei_df[ei_df['Ticker'] == equityIndices[3]]
+rutOnly = ei_df[ei_df['Ticker'] == equityIndices[4]]
+rujOnly = ei_df[ei_df['Ticker'] == equityIndices[5]]
+ruoOnly = ei_df[ei_df['Ticker'] == equityIndices[6]]
+ndxOnly = ei_df[ei_df['Ticker'] == equityIndices[7]]
+djiOnly = ei_df[ei_df['Ticker'] == equityIndices[8]]
 
 # setting up our graph information
 sns.set(font_scale=0.5)
@@ -129,21 +109,21 @@ ndx = sns.lineplot(ax=axes[2, 2], data=ndxOnly, x='Date', y='Close',
 
 # purpose is to plot all indices close in figure 2 of the pdf above 5k in value
 fig0a = plt.figure()
-all = sns.lineplot(data=appendedData[appendedData['Close'] > 5000],
+all = sns.lineplot(data=ei_df[ei_df['Close'] > 5000],
                    x='Date', y='Close',
                    hue='Ticker', linewidth=0.7, ci=None,
                    legend=True).set(title='All Indices - Close')
 
 # purpose is to plot all indices close in figure 2 of the pdf above 5k in value
 fig0b = plt.figure()
-all = sns.lineplot(data=appendedData[appendedData['Close'] < 5000],
+all = sns.lineplot(data=ei_df[ei_df['Close'] < 5000],
                    x='Date', y='Close',
                    hue='Ticker', linewidth=0.7, ci=None,
                    legend=True).set(title='All Indices - Close')
 
 # plan is to plot all % change of all indices in one figure aka figure 3 above
 fig1 = plt.figure()
-delta = sns.lineplot(data=appendedData, x='Date', y='Delta',
+delta = sns.lineplot(data=ei_df, x='Date', y='Delta',
                      hue='Ticker', linewidth=0.6, ci=None,
                      legend=True).set(title='% Change All Indices')
 
@@ -211,43 +191,20 @@ the hue change in color is tracked by year
 fi_indices = ['^IRX', '^FVX', '^TNX', '^TYX']
 
 # where we will be adding gathered data
-fi_appendedData = pd.DataFrame(columns=['Ticker'])
+fi_df = pd.DataFrame(columns=['Ticker'])
 
 # process to grab historical data
-for index in fi_indices:
-    a = yf.Ticker(str(index)).history(period="5Y")  # how many years of data
-    a.drop(['Dividends', 'Stock Splits', 'Volume'], inplace=True, axis=1)
-    a = a.assign(Delta=a['Close'].pct_change())
-    # info = yf.Ticker(str(index)).info
-    # filterInfo = {key: info[key] for key in info.keys() & topics}
-    # filterInfo = pd.DataFrame(filterInfo, index=[0, ])
-    fi_appendedData = pd.concat([fi_appendedData, pd.DataFrame(a)])
-    # appendedData = pd.concat([appendedData, filterInfo])
-    if fi_appendedData['Ticker'].isnull:
-        fi_appendedData['Ticker'].fillna(index, inplace=True)
-    else:
-        continue
-
-# resetting our index
-fi_appendedData.reset_index(inplace=True)
-
-# renaming the column holding date values
-fi_appendedData.rename(columns={'index': 'Date'}, inplace=True)
-
-# converting our date column to a date value
-fi_appendedData['Date'] = pd.to_datetime(appendedData['Date'])
-
-# converting our close value to float
-fi_appendedData['Close'] = fi_appendedData['Close'].astype(float)
+fi_df = data_processor(list=fi_indices, period='ytd')
 
 # purpose is to plot all fi indices
 fig2 = plt.figure()
-allFi = sns.lineplot(data=fi_appendedData, x='Date', y='Close',
+allFi = sns.lineplot(data=fi_df, x='Date', y='Close',
                      hue='Ticker', linewidth=0.7, ci=None,
                      legend=True).set(title='All FI Indices - Close')
 
 # exporting out data as a csv file
-fi_appendedData.to_csv('.\data_csv_format\FIIndicesHistData.csv', index=False)
+fi_df.to_csv('.\data_csv_format\FIIndicesHistData.csv', index=False)
+
 ################################################################################
 ################################################################################
 ################################################################################
@@ -265,48 +222,24 @@ fxIndices = ['EURUSD=X', 'JPY=X', 'GBPUSD=X', 'AUDUSD=X', 'MXN=X',
              'CHFUSD=X', 'CADUSD=X', 'NZDUSD=X', 'RUB=X']
 
 # where we will be adding gathered data
-fx_appendedData = pd.DataFrame(columns=['Ticker'])
+fx_df = pd.DataFrame(columns=['Ticker'])
 
 # process to grab historical data
-for index in fxIndices:
-    a = yf.Ticker(str(index)).history(period="5Y")  # how many years of data
-    a.drop(['Dividends', 'Stock Splits', 'Volume'], inplace=True, axis=1)
-    a = a.assign(Delta=a['Close'].pct_change())
-    # info = yf.Ticker(str(index)).info
-    # filterInfo = {key: info[key] for key in info.keys() & topics}
-    # filterInfo = pd.DataFrame(filterInfo, index=[0, ])
-    fx_appendedData = pd.concat([fx_appendedData, pd.DataFrame(a)])
-    # appendedData = pd.concat([appendedData, filterInfo])
-    if fx_appendedData['Ticker'].isnull:
-        fx_appendedData['Ticker'].fillna(index, inplace=True)
-    else:
-        continue
-
-# resetting our index
-fx_appendedData.reset_index(inplace=True)
-
-# renaming the column holding date values
-fx_appendedData.rename(columns={'index': 'Date'}, inplace=True)
-
-# converting our date column to a date value
-fx_appendedData['Date'] = pd.to_datetime(appendedData['Date'])
-
-# converting our close value to float
-fx_appendedData['Close'] = fx_appendedData['Close'].astype(float)
+fx_df = data_processor(list=fxIndices, period='ytd')
 
 # exporting out data as a csv file
-fx_appendedData.to_csv('.\data_csv_format\FXIndicesHistData.csv', index=False)
+fx_df.to_csv('.\data_csv_format\FXIndicesHistData.csv', index=False)
 
 # partitioning our dfs
-eurUSDOnly = fx_appendedData[fx_appendedData['Ticker'] == 'EURUSD=X']
-jpyUSDOnly = fx_appendedData[fx_appendedData['Ticker'] == 'JPY=X']
-gbpUSDOnly = fx_appendedData[fx_appendedData['Ticker'] == 'GBPUSD=X']
-audUSDOnly = fx_appendedData[fx_appendedData['Ticker'] == 'AUDUSD=X']
-mxnUSDOnly = fx_appendedData[fx_appendedData['Ticker'] == 'MXN=X']
-chfUSDOnly = fx_appendedData[fx_appendedData['Ticker'] == 'CHFUSD=X']
-cadUSDOnly = fx_appendedData[fx_appendedData['Ticker'] == 'CADUSD=X']
-nzdUSDOnly = fx_appendedData[fx_appendedData['Ticker'] == 'NZDUSD=X']
-rubUSDOnly = fx_appendedData[fx_appendedData['Ticker'] == 'RUB=X']
+eurUSDOnly = fx_df[fx_df['Ticker'] == 'EURUSD=X']
+jpyUSDOnly = fx_df[fx_df['Ticker'] == 'JPY=X']
+gbpUSDOnly = fx_df[fx_df['Ticker'] == 'GBPUSD=X']
+audUSDOnly = fx_df[fx_df['Ticker'] == 'AUDUSD=X']
+mxnUSDOnly = fx_df[fx_df['Ticker'] == 'MXN=X']
+chfUSDOnly = fx_df[fx_df['Ticker'] == 'CHFUSD=X']
+cadUSDOnly = fx_df[fx_df['Ticker'] == 'CADUSD=X']
+nzdUSDOnly = fx_df[fx_df['Ticker'] == 'NZDUSD=X']
+rubUSDOnly = fx_df[fx_df['Ticker'] == 'RUB=X']
 
 # setting up our graph information
 sns.set(font_scale=0.5)
@@ -371,51 +304,27 @@ commodityIndices = ['NG=F', 'GC=F', 'HG=F', 'ALI=F', 'PL=F', 'PA=F',
                     'SI=F']
 
 # where we will be adding gathered data
-com_appendedData = pd.DataFrame(columns=['Ticker'])
+commodities_df = pd.DataFrame(columns=['Ticker'])
 
 # process to grab historical data
-for index in commodityIndices:
-    a = yf.Ticker(str(index)).history(period="5Y")  # how many years of data
-    a.drop(['Dividends', 'Stock Splits', 'Volume'], inplace=True, axis=1)
-    a = a.assign(Delta=a['Close'].pct_change())
-    # info = yf.Ticker(str(index)).info
-    # filterInfo = {key: info[key] for key in info.keys() & topics}
-    # filterInfo = pd.DataFrame(filterInfo, index=[0, ])
-    com_appendedData = pd.concat([com_appendedData, pd.DataFrame(a)])
-    # appendedData = pd.concat([appendedData, filterInfo])
-    if com_appendedData['Ticker'].isnull:
-        com_appendedData['Ticker'].fillna(index, inplace=True)
-    else:
-        continue
-
-# resetting our index
-com_appendedData.reset_index(inplace=True)
-
-# renaming the column holding date values
-com_appendedData.rename(columns={'index': 'Date'}, inplace=True)
-
-# converting our date column to a date value
-com_appendedData['Date'] = pd.to_datetime(appendedData['Date'])
-
-# converting our close value to float
-com_appendedData['Close'] = com_appendedData['Close'].astype(float)
+commodities_df = data_processor(list=commodityIndices, period='ytd')
 
 # purpose is to plot all commodity indices with values greater than 500
 fig4 = plt.figure()
-allComa = sns.lineplot(data=com_appendedData[com_appendedData['Close'] > 500],
+allComa = sns.lineplot(data=commodities_df[commodities_df['Close'] > 500],
                        x='Date', y='Close',
                        hue='Ticker', linewidth=0.7, ci=None,
                        legend=True).set(title='All Commodity Indices - Close')
 
 # purpose is to plot all commodity indices with values less than 500
 fig5 = plt.figure()
-allComb = sns.lineplot(data=com_appendedData[com_appendedData['Close'] < 500],
+allComb = sns.lineplot(data=commodities_df[commodities_df['Close'] < 500],
                        x='Date', y='Close',
                        hue='Ticker', linewidth=0.7, ci=None,
                        legend=True).set(title='All Commodity Indices - Close')
 
 # exporting out data as a csv file
-com_appendedData.to_csv('.\data_csv_format\ComIndicesHistData.csv', index=False)
+commodities_df.to_csv('.\data_csv_format\ComIndicesHistData.csv', index=False)
 
 # the purpose of this section is to grab petroleum data from the EIA open data
 # first we want to retrieve our api key and make sure it is good to go
@@ -462,27 +371,15 @@ startDateInput = "&start=" + str(startDateEIA)
 
 # adding everything up
 petroPricesURL = petroPricesURL + dataInput + frequencyInput + startDateInput
+print(petroPricesURL)
 
 # sending get request and saving the response as a response object
-r = requests.get(url=petroPricesURL)
-
-# extracting data in json format
-data = r.json()
-
-# grabbing only data object
-entries = data['response']["data"]
-
-# converting our json data format to pandas
-petro_df = pd.DataFrame(data=entries)
-
-# making sure our date function is set as a type = date
-petro_df['period'] = pd.to_datetime(petro_df['period'])
-
+eia_df = grab_eia_data(url=petroPricesURL)
 
 # creating specific data with and without wti data
 value_list = ["EPCWTI", "EPCBRENT"]
-petro_df_wti = petro_df[petro_df['product'].isin(value_list)]
-petro_df_non_wti = petro_df[~petro_df['product'].isin(value_list)]
+petro_df_wti = eia_df[eia_df['product'].isin(value_list)]
+petro_df_non_wti = eia_df[~eia_df['product'].isin(value_list)]
 
 # purpose is to plot all petro spot prices but split between wti and non wti
 fig6 = plt.figure()
@@ -509,7 +406,7 @@ for ax in fig.axes:
     ax.tick_params(labelrotation=90, axis='x')
     ax.set(xlabel=None)
 
-filename = 'marketMonitor_'
+filename = '.\market_monitor_visuals\marketMonitor_'
 save_multi_image(filename + currentDate + '.pdf')
 
 

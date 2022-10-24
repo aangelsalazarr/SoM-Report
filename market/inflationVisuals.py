@@ -1,5 +1,5 @@
 '''
-Purpose of the script is to present some key visuals as it relates to inflation
+Purpose of the script is to present some key market_monitor_visuals as it relates to inflation
 1. Inflation over time, USD
     a. data: [1] CPI, CPI (seasonally adjusted), PPI, GDP Deflator
     b. data: [2] SD in CPI
