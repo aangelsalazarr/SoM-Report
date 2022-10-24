@@ -1,14 +1,11 @@
 import pandas as pd
 import seaborn as sns
 import os
-import yfinance as yf
 import matplotlib.pyplot as plt
-import dataframe_image as dfi
 from pdfConverter import save_multi_image
 from matplotlib import rc
 from datetime import date
 from dateutil.relativedelta import relativedelta
-import requests
 from yfinance_data_processor import data_processor
 from eia_data_processor import grab_eia_data
 
@@ -24,14 +21,9 @@ currentDate = today.strftime('%m%d%y')
 '''
 The purpose of this file is to grab all relevant data on equity indices. The 
 following will be tracked along with date data type:
-- s&p 500 index
-- nasdaq composite index
-- russell 1000 index
-- russell 1000 value index
-- russell 1000 growth index
-- russell 2000 index
-- russell 2000 value index
-- russell 2000 growth index
+    s&p 500 index, nasdaq composite index, russell 1000 index, russell 1000 
+    value index, russell 1000 growth index, russell 2000 index, russell 2000 
+    value index, russell 2000 growth index
 '''
 # creating a list of equity indices
 equityIndices = ['^IXIC', '^RUI', '^RLV', '^RLG', '^RUT', '^RUJ',
@@ -116,7 +108,7 @@ all = sns.lineplot(data=ei_df[ei_df['Close'] > 5000],
 
 # purpose is to plot all indices close in figure 2 of the pdf above 5k in value
 fig0b = plt.figure()
-all = sns.lineplot(data=ei_df[ei_df['Close'] < 5000],
+allb = sns.lineplot(data=ei_df[ei_df['Close'] < 5000],
                    x='Date', y='Close',
                    hue='Ticker', linewidth=0.7, ci=None,
                    legend=True).set(title='All Indices - Close')
@@ -177,15 +169,8 @@ ndx_delta = sns.lineplot(ax=axes[2, 2], data=ndxOnly, x='Date', y='Delta',
 '''
 Okay now that we are able to grab and transform data from equity indices, let's
 do it for fixed income yield aka the following:
-- US fed rate
-- us 3 month
-- us 1 year
-- us 2 year
-- us 5 year
-- us 10 year
-- us 30 year
-further we will want to create a visual of this newly plotted yield curve where
-the hue change in color is tracked by year
+    US fed rate, us 3 month, us 1 year, us 2 year, us 5 year, us 10 year, 
+    us 30 year
 '''
 # purpose is to create ticker symbol for fixed income indices
 fi_indices = ['^IRX', '^FVX', '^TNX', '^TYX']
@@ -207,15 +192,11 @@ fi_df.to_csv('.\data_csv_format\FIIndicesHistData.csv', index=False)
 
 ################################################################################
 ################################################################################
-################################################################################
 '''
 Now, we will be gathering data for foreign exchange rates
-- EUR-USD Spot Rate
-- USD-JPY spot rate
-- GBP-USD spot rate
-- CHF-USD spot rate (USD-CHF spot rate inverted)
-- AUD-USD spot rate
-- CAD-USD spot rate (USD-CAD spot rate inverted)
+    EUR-USD Spot Rate, USD-JPY spot rate, GBP-USD spot rate, CHF-USD spot rate (
+    USD-CHF spot rate inverted), AUD-USD spot rate, CAD-USD spot rate (USD-CAD 
+    spot rate inverted)
 '''
 # creating a list of tickery symbols for the ticker we want specifically
 fxIndices = ['EURUSD=X', 'JPY=X', 'GBPUSD=X', 'AUDUSD=X', 'MXN=X',
@@ -283,7 +264,6 @@ rub_usd = sns.lineplot(ax=axes[2, 2], data=rubUSDOnly, x='Date', y='Close',
                        linewidth=0.5,
                        ci=None).set(title='RUB-USD Spot Rate, Close')
 
-################################################################################
 ################################################################################
 ################################################################################
 '''
@@ -395,9 +375,8 @@ petro_wti = sns.lineplot(data=petro_df_wti, x='period', y='value',
 
 
 # exporting out data as a csv file
-# petro_df.to_csv('.\data_csv_format\petro_spot_prices_eia.csv', index=False)
+petro_df.to_csv('.\data_csv_format\petro_spot_prices_eia.csv', index=False)
 
-################################################################################
 ################################################################################
 ################################################################################
 
