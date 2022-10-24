@@ -44,7 +44,8 @@
     - [Real Estate](https://github.com/aangelsalazarr/SoM-Report/blob/main/market/equities_real_estate.py)
 
 ## Saved Data
-- [Equities](https://github.com/aangelsalazarr/SoM-Report/tree/main/market/data_csv_format)
+- [Equities Data](https://github.com/aangelsalazarr/SoM-Report/tree/main/market/data_csv_format)
+- [Market Monitor Data](https://github.com/aangelsalazarr/SoM-Report/tree/main/elMercado/data_csv_format)
 
 ## Functions
 - [yfinance Data Processor](https://github.com/aangelsalazarr/SoM-Report/blob/main/market/yfinance_data_processor.py)
