@@ -8,6 +8,8 @@ from datetime import date
 from dateutil.relativedelta import relativedelta
 from yfinance_data_processor import data_processor
 from eia_data_processor import grab_eia_data
+from itertools import permutations, chain
+from three_by_three_grapher import visualizer
 
 # some params related to the framework of output that we will need
 rc('mathtext', default='regular')
@@ -47,57 +49,23 @@ insights on the historical data we have now collected
 '''
 
 # creating subsets of data to present in a figure format
-ixicOnly = ei_df[ei_df['Ticker'] == equityIndices[0]]
-ruiOnly = ei_df[ei_df['Ticker'] == equityIndices[1]]
-rlvOnly = ei_df[ei_df['Ticker'] == equityIndices[2]]
-rlgOnly = ei_df[ei_df['Ticker'] == equityIndices[3]]
-rutOnly = ei_df[ei_df['Ticker'] == equityIndices[4]]
-rujOnly = ei_df[ei_df['Ticker'] == equityIndices[5]]
-ruoOnly = ei_df[ei_df['Ticker'] == equityIndices[6]]
-ndxOnly = ei_df[ei_df['Ticker'] == equityIndices[7]]
-djiOnly = ei_df[ei_df['Ticker'] == equityIndices[8]]
+ixic = ei_df[ei_df['Ticker'] == equityIndices[0]]
+rui = ei_df[ei_df['Ticker'] == equityIndices[1]]
+rlv = ei_df[ei_df['Ticker'] == equityIndices[2]]
+rlg = ei_df[ei_df['Ticker'] == equityIndices[3]]
+rut = ei_df[ei_df['Ticker'] == equityIndices[4]]
+ruj = ei_df[ei_df['Ticker'] == equityIndices[5]]
+ruo = ei_df[ei_df['Ticker'] == equityIndices[6]]
+ndx = ei_df[ei_df['Ticker'] == equityIndices[7]]
+dji = ei_df[ei_df['Ticker'] == equityIndices[8]]
 
-# setting up our graph information
-sns.set(font_scale=0.5)
-fig, axes = plt.subplots(3, 3)
-fig.suptitle('Equity Indices Historical Information')
 
-# purpose is to create a number of figures reflecting data
-# this will cover one figure and will be faceted
-dji = sns.lineplot(ax=axes[0, 0], data=djiOnly, x='Date', y='Close',
-                   linewidth=0.7,
-                   ci=None).set(title='Dow Jones Industrial Average (^DJI)')
+# creating a list of the subset dfs
+eisubsetList = [ixic, rui, rlv, rlg, rut, ruj, ruo, ndx, dji]
 
-ixic = sns.lineplot(ax=axes[0, 1], data=ixicOnly, x='Date', y='Close',
-                    linewidth=0.7,
-                    ci=None).set(title='NASDAQ Composite (^IXIC)')
-
-rui = sns.lineplot(ax=axes[0, 2], data=ruiOnly, x='Date', y='Close',
-                   linewidth=0.7, ci=None).set(title='Russell 1000 (^RUI)')
-
-rlv = sns.lineplot(ax=axes[1, 0], data=rlvOnly, x='Date', y='Close',
-                   linewidth=0.7,
-                   ci=None).set(title='Russell 1000 Value (^RLV)')
-
-rlg = sns.lineplot(ax=axes[2, 0], data=rlgOnly, x='Date', y='Close',
-                   linewidth=0.7,
-                   ci=None).set(title='Russell 1000 Growth (^RLG)')
-
-rut = sns.lineplot(ax=axes[1, 2], data=rutOnly, x='Date', y='Close',
-                   linewidth=0.7,
-                   ci=None).set(title='Russell 2000 (^RUT)')
-
-ruj = sns.lineplot(ax=axes[1, 1], data=rujOnly, x='Date', y='Close',
-                   linewidth=0.7,
-                   ci=None).set(title='Russell 2000 Value (^RUJ)')
-
-ruo = sns.lineplot(ax=axes[2, 1], data=ruoOnly, x='Date', y='Close',
-                   linewidth=0.7,
-                   ci=None).set(title='Russell 2000 Growth (^RUO)')
-
-ndx = sns.lineplot(ax=axes[2, 2], data=ndxOnly, x='Date', y='Close',
-                   linewidth=0.7,
-                   ci=None).set(title='NASDAQ 100 (^NDX)')
+# graphing equity indices, where y-axis is close
+visualizer(list=eisubsetList, tickerlist=equityIndices, y_axis='Close',
+           fig_title='Equity Indices, Close (YTD)')
 
 # purpose is to plot all indices close in figure 2 of the pdf above 5k in value
 fig0a = plt.figure()
@@ -119,50 +87,10 @@ delta = sns.lineplot(data=ei_df, x='Date', y='Delta',
                      hue='Ticker', linewidth=0.6, ci=None,
                      legend=True).set(title='% Change All Indices')
 
-# setting up our graph information
-sns.set(font_scale=0.5)
-fig, axes = plt.subplots(3, 3)
-fig.suptitle('Equity Indices Historical % Change')
+# graphing equity indices, where y-axis is Delta
+visualizer(list=eisubsetList, tickerlist=equityIndices, y_axis='Delta',
+           fig_title='Equity Indices, Delta (YTD)')
 
-# purpose is to create a facet grid of % change of all indices
-dji_delta = sns.lineplot(ax=axes[0, 0], data=djiOnly, x='Date', y='Delta',
-                         linewidth=0.5,
-                         ci=None).set(
-    title='Dow Jones Industrial Average (^DJI)')
-
-ixic_delta = sns.lineplot(ax=axes[0, 1], data=ixicOnly, x='Date', y='Delta',
-                          linewidth=0.5,
-                          ci=None).set(title='NASDAQ Composite (^IXIC)')
-
-rui_delta = sns.lineplot(ax=axes[0, 2], data=ruiOnly, x='Date', y='Delta',
-                         linewidth=0.5, ci=None).set(
-    title='Russell 1000 (^RUI)')
-
-rlv_delta = sns.lineplot(ax=axes[1, 0], data=rlvOnly, x='Date', y='Delta',
-                         linewidth=0.5,
-                         ci=None).set(title='Russell 1000 Value (^RLV)')
-
-rlg_delta = sns.lineplot(ax=axes[2, 0], data=rlgOnly, x='Date', y='Delta',
-                         linewidth=0.5,
-                         ci=None).set(title='Russell 1000 Growth (^RLG)')
-
-rut_delta = sns.lineplot(ax=axes[1, 2], data=rutOnly, x='Date', y='Delta',
-                         linewidth=0.5,
-                         ci=None).set(title='Russell 2000 (^RUT)')
-
-ruj_delta = sns.lineplot(ax=axes[1, 1], data=rujOnly, x='Date', y='Delta',
-                         linewidth=0.5,
-                         ci=None).set(title='Russell 2000 Value (^RUJ)')
-
-ruo_delta = sns.lineplot(ax=axes[2, 1], data=ruoOnly, x='Date', y='Delta',
-                         linewidth=0.5,
-                         ci=None).set(title='Russell 2000 Growth (^RUO)')
-
-ndx_delta = sns.lineplot(ax=axes[2, 2], data=ndxOnly, x='Date', y='Delta',
-                         linewidth=0.5,
-                         ci=None).set(title='NASDAQ 100 (^NDX)')
-
-################################################################################
 ################################################################################
 ################################################################################
 
@@ -212,57 +140,22 @@ fx_df = data_processor(list=fxIndices, period='ytd')
 fx_df.to_csv('.\data_csv_format\FXIndicesHistData.csv', index=False)
 
 # partitioning our dfs
-eurUSDOnly = fx_df[fx_df['Ticker'] == 'EURUSD=X']
-jpyUSDOnly = fx_df[fx_df['Ticker'] == 'JPY=X']
-gbpUSDOnly = fx_df[fx_df['Ticker'] == 'GBPUSD=X']
-audUSDOnly = fx_df[fx_df['Ticker'] == 'AUDUSD=X']
-mxnUSDOnly = fx_df[fx_df['Ticker'] == 'MXN=X']
-chfUSDOnly = fx_df[fx_df['Ticker'] == 'CHFUSD=X']
-cadUSDOnly = fx_df[fx_df['Ticker'] == 'CADUSD=X']
-nzdUSDOnly = fx_df[fx_df['Ticker'] == 'NZDUSD=X']
-rubUSDOnly = fx_df[fx_df['Ticker'] == 'RUB=X']
+eurUSD = fx_df[fx_df['Ticker'] == 'EURUSD=X']
+jpyUSD = fx_df[fx_df['Ticker'] == 'JPY=X']
+gbpUSD = fx_df[fx_df['Ticker'] == 'GBPUSD=X']
+audUSD = fx_df[fx_df['Ticker'] == 'AUDUSD=X']
+mxnUSD = fx_df[fx_df['Ticker'] == 'MXN=X']
+chfUSD = fx_df[fx_df['Ticker'] == 'CHFUSD=X']
+cadUSD = fx_df[fx_df['Ticker'] == 'CADUSD=X']
+nzdUSD = fx_df[fx_df['Ticker'] == 'NZDUSD=X']
+rubUSD = fx_df[fx_df['Ticker'] == 'RUB=X']
 
-# setting up our graph information
-sns.set(font_scale=0.5)
-fig, axes = plt.subplots(3, 3)
-fig.suptitle('FX Indices Historical Data, Close')
+fx_sub_dfs = [eurUSD, jpyUSD, gbpUSD, audUSD, mxnUSD, chfUSD, cadUSD, nzdUSD,
+              rubUSD]
 
-# purpose is to create a facet grid of % change of all indices
-eur_usd = sns.lineplot(ax=axes[0, 0], data=eurUSDOnly, x='Date', y='Close',
-                       linewidth=0.5,
-                       ci=None).set(title='EUR-USD Spot Rate, Close')
-
-jpy_usd = sns.lineplot(ax=axes[0, 1], data=jpyUSDOnly, x='Date', y='Close',
-                       linewidth=0.5,
-                       ci=None).set(title='JPY-USD Spot Rate, Close')
-
-gbp_usd = sns.lineplot(ax=axes[0, 2], data=gbpUSDOnly, x='Date', y='Close',
-                       linewidth=0.5, ci=None).set(
-    title='GBP-USD Spot Rate, Close')
-
-aud_usd = sns.lineplot(ax=axes[1, 0], data=audUSDOnly, x='Date', y='Close',
-                       linewidth=0.5,
-                       ci=None).set(title='AUD-USD Spot Rate, Close')
-
-mxn_usd = sns.lineplot(ax=axes[2, 0], data=mxnUSDOnly, x='Date', y='Close',
-                       linewidth=0.5,
-                       ci=None).set(title='MXN-USD Spot Rate, Close')
-
-chf_usd = sns.lineplot(ax=axes[1, 2], data=chfUSDOnly, x='Date', y='Close',
-                       linewidth=0.5,
-                       ci=None).set(title='CHF-USD Spot Rate, Close')
-
-cad_usd = sns.lineplot(ax=axes[1, 1], data=cadUSDOnly, x='Date', y='Close',
-                       linewidth=0.5,
-                       ci=None).set(title='CAD-USD Spot Rate, Close')
-
-nzd_usd = sns.lineplot(ax=axes[2, 1], data=nzdUSDOnly, x='Date', y='Close',
-                       linewidth=0.5,
-                       ci=None).set(title='NZD-USD Spot Rate, Close')
-
-rub_usd = sns.lineplot(ax=axes[2, 2], data=rubUSDOnly, x='Date', y='Close',
-                       linewidth=0.5,
-                       ci=None).set(title='RUB-USD Spot Rate, Close')
+# plotting fx currency rate closing data
+visualizer(list=fx_sub_dfs, tickerlist=fxIndices, y_axis='Close',
+           fig_title='FX Indices Historical Data, Close')
 
 ################################################################################
 ################################################################################
@@ -379,11 +272,6 @@ petro_df.to_csv('.\data_csv_format\petro_spot_prices_eia.csv', index=False)
 
 ################################################################################
 ################################################################################
-
-# some stylistic changes
-for ax in fig.axes:
-    ax.tick_params(labelrotation=90, axis='x')
-    ax.set(xlabel=None)
 
 filename = '.\market_monitor_visuals\marketMonitor_'
 save_multi_image(filename + currentDate + '.pdf')
