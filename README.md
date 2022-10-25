@@ -14,8 +14,8 @@
 - [EIA, Short Term Energy Outlook](https://github.com/aangelsalazarr/SoM-Report/blob/main/outlookInsights/eia_seo.py)
     - Updated on a monthly basis
     - [Folder containing PDFs](https://github.com/aangelsalazarr/SoM-Report/tree/main/outlookInsights/eia_seo_pdfs)
-- [UBS CIO Daily Notes]()
-- [Goldman Sachs Global Market Monitor]()
+- [UBS CIO Daily Notes](https://github.com/aangelsalazarr/SoM-Report/blob/main/outlookInsights/ubsCIODailyUpdates.py)
+- [Goldman Sachs Global Market Monitor](https://github.com/aangelsalazarr/SoM-Report/blob/main/outlookInsights/gsMarketMonitor.py)
 
 ## Topics
 - [U.S. Electricity Market](https://github.com/aangelsalazarr/SoM-Report/tree/main/energyInformationAdministration)
