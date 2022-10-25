@@ -1,5 +1,5 @@
 # State of the Market Report
-- Market Monitor, Master [[Code]](https://github.com/aangelsalazarr/SoM-Report/blob/main/elMercado/marketMonitorMaster.py)
+- [Market Monitor, Master](https://github.com/aangelsalazarr/SoM-Report/blob/main/elMercado/marketMonitorMaster.py)
     - [Link to Report](https://github.com/aangelsalazarr/SoM-Report/tree/main/elMercado)
 
 ## Analysis From Exisiting Entities
@@ -9,10 +9,9 @@
     - [Folder containing PDFs](https://github.com/aangelsalazarr/SoM-Report/tree/main/outlookInsights/jpmMarketRecap)
 - [JPMorgan Economic Update](https://github.com/aangelsalazarr/SoM-Report/blob/main/outlookInsights/jpmEconomicUpdate.py)
     - [Folder containing PDFs](https://github.com/aangelsalazarr/SoM-Report/tree/main/outlookInsights/jpmEconomicUpdates)
-- [World Bank Commodity Markets](https://github.com/aangelsalazarr/SoM-Report/blob/main/outlookInsights/wbCMO.py)
+- [World Bank Commodity Markets](https://github.com/aangelsalazarr/SoM-Report/blob/main/outlookInsights/wbCMO.py) (Quarterly)
     - [Folder Containing PDFs](https://github.com/aangelsalazarr/SoM-Report/tree/main/outlookInsights/wbCMO)
-- [EIA, Short Term Energy Outlook](https://github.com/aangelsalazarr/SoM-Report/blob/main/outlookInsights/eia_seo.py)
-    - Updated on a monthly basis
+- [EIA, Short Term Energy Outlook](https://github.com/aangelsalazarr/SoM-Report/blob/main/outlookInsights/eia_seo.py) (Monthly)
     - [Folder containing PDFs](https://github.com/aangelsalazarr/SoM-Report/tree/main/outlookInsights/eia_seo_pdfs)
 - [UBS CIO Daily Notes](https://github.com/aangelsalazarr/SoM-Report/blob/main/outlookInsights/ubsCIODailyUpdates.py)
 - [Goldman Sachs Global Market Monitor](https://github.com/aangelsalazarr/SoM-Report/blob/main/outlookInsights/gsMarketMonitor.py)
