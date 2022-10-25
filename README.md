@@ -18,7 +18,8 @@
 - [Goldman Sachs Global Market Monitor](https://github.com/aangelsalazarr/SoM-Report/blob/main/outlookInsights/gsMarketMonitor.py)
 
 ## Topics
-- [U.S. Electricity Market](https://github.com/aangelsalazarr/SoM-Report/tree/main/energyInformationAdministration)
+- [U.S. Electricity Market](https://github.com/aangelsalazarr/SoM-Report/blob/main/energyInformationAdministration/electricityMarkets.py)
+    - [Visuals](https://github.com/aangelsalazarr/SoM-Report/tree/main/energyInformationAdministration)
 - Equity Indices
 - Fixed Income / Credit
 - [Volatility / CPI](https://github.com/aangelsalazarr/SoM-Report/blob/main/market/volatility_and_cpi.py)
