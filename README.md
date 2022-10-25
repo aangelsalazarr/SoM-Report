@@ -1,6 +1,6 @@
 # State of the Market Report
 - [Market Monitor, Master](https://github.com/aangelsalazarr/SoM-Report/blob/main/elMercado/marketMonitorMaster.py)
-    - [Link to Report](https://github.com/aangelsalazarr/SoM-Report/tree/main/elMercado)
+    - [Link to Report](https://github.com/aangelsalazarr/SoM-Report/tree/main/elMercado/market_monitor_visuals)
 
 ## Analysis From Exisiting Entities
 - [Merrill Lynch, Capital Markets Outlook](https://github.com/aangelsalazarr/SoM-Report/blob/main/outlookInsights/merrillCMO.py)
