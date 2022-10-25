@@ -31,7 +31,7 @@
 - Foreign Exchange
 - [Decentralized Finance](https://github.com/aangelsalazarr/SoM-Report/blob/main/market/decentralized_finance.py)
     - Bitcoin, Ethereum, Tether, USD Coin, BNB
-- Commodities
+- Commodities [Visuals](https://github.com/aangelsalazarr/SoM-Report/tree/main/blackBox)
     - [Metals Market](https://github.com/aangelsalazarr/SoM-Report/blob/main/market/commodities_metals.py)
     - [Energy Market](https://github.com/aangelsalazarr/SoM-Report/blob/main/market/commodities_energy.py)
 - Equities [[Visuals]](https://github.com/aangelsalazarr/SoM-Report/tree/main/market/market_visuals)
