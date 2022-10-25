@@ -54,6 +54,7 @@
 - [BLS Data Processor](https://github.com/aangelsalazarr/SoM-Report/blob/main/blackBox/bls_data_processor.py)
 - [JSON Data Processor](https://github.com/aangelsalazarr/SoM-Report/blob/main/blackBox/json_data_parser.py)
 - [EIA Data Processor](https://github.com/aangelsalazarr/SoM-Report/blob/main/energyInformationAdministration/eia_data_processor.py)
+- [3 by 3 Facet Grid Graph Visualizer](https://github.com/aangelsalazarr/SoM-Report/blob/main/elMercado/three_by_three_grapher.py)
 
 ## Sources
 - [Yahoo Finance](https://finance.yahoo.com/)
