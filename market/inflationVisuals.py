@@ -1,3 +1,4 @@
+from pdfConverter import save_multi_image
 '''
 Purpose of the script is to present some key market_monitor_visuals as it relates to inflation
 1. Inflation over time, USD
@@ -24,6 +25,11 @@ from blackBox.bls_data_processor import fetch_bls_series
 import seaborn as sns
 import matplotlib.pyplot as plt
 import numpy as np
+from datetime import date
+
+# time related stuff
+today = date.today()
+currentDate = today.strftime('%m_%d_%y')
 
 # setting up any api keys that we may need
 fredKey = os.environ.get('FREDKEY')
@@ -82,7 +88,7 @@ fig1 = plt.figure()
 line1 = sns.lineplot(data=fredDf, x='Date', y='GDP Def')
 line2 = sns.lineplot(data=blsMainDF, x='Date', y='value', hue='seriesID')
 
-print(fredDf)
-print(blsMainDF)
 
-plt.show()
+filename = '.\market_visuals\inflation_visuals'
+
+save_multi_image(filename + currentDate + '.pdf')

@@ -198,5 +198,5 @@ def save_multi_image(filename):
     pp.close()
 
 
-filename = 'BLSDataGraphs.pdf'
+filename = '.\market_visuals\BLSDataGraphs.pdf'
 save_multi_image(filename)
