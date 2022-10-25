@@ -31,5 +31,8 @@ def grab_eia_data(url):
     entries = data['response']['data']  # only grabbing data aspect of return
     df = pd.DataFrame(data=entries)  # converting our data into a pandas df
     df.reset_index(drop=True)  # resetting df index
-    df['period'] = pd.to_datetime(df['period'])  # convert period type to date
-    return df  # return our now transformed df
+    if 'monthly' in url:
+        df['period'] = pd.to_datetime(df['period'])  # convert period type
+        return df
+    else:
+        return df  # return our now transformed df
