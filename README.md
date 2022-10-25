@@ -19,7 +19,9 @@
 
 ## Topics
 - [U.S. Electricity Market](https://github.com/aangelsalazarr/SoM-Report/blob/main/energyInformationAdministration/electricityMarkets.py)
-    - [Visuals](https://github.com/aangelsalazarr/SoM-Report/tree/main/energyInformationAdministration)
+    - [Visuals](https://github.com/aangelsalazarr/SoM-Report/tree/main/energyInformationAdministration/data_visuals)
+- [International Energy Data](https://github.com/aangelsalazarr/SoM-Report/blob/main/energyInformationAdministration/international_energy_eia_data.py)
+    - [Visuals](https://github.com/aangelsalazarr/SoM-Report/tree/main/energyInformationAdministration/data_visuals)
 - Equity Indices
 - Fixed Income / Credit
 - [Volatility / CPI](https://github.com/aangelsalazarr/SoM-Report/blob/main/market/volatility_and_cpi.py)
