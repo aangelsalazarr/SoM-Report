@@ -22,6 +22,7 @@
 - Equity Indices
 - Fixed Income / Credit
 - [Volatility / CPI](https://github.com/aangelsalazarr/SoM-Report/blob/main/market/volatility_and_cpi.py)
+    - [Visuals](https://github.com/aangelsalazarr/SoM-Report/tree/main/market/market_visuals)
 - Fixed Income Yields
 - Real Assets
 - Foreign Exchange
