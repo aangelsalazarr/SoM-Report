@@ -22,6 +22,8 @@
     - [Visuals](https://github.com/aangelsalazarr/SoM-Report/tree/main/energyInformationAdministration/data_visuals)
 - [International Energy Data](https://github.com/aangelsalazarr/SoM-Report/blob/main/energyInformationAdministration/international_energy_eia_data.py)
     - [Visuals](https://github.com/aangelsalazarr/SoM-Report/tree/main/energyInformationAdministration/data_visuals)
+- [U.S. CO2 Emissions](https://github.com/aangelsalazarr/SoM-Report/blob/main/energyInformationAdministration/emissions_data.py)
+    - [Visuals](https://github.com/aangelsalazarr/SoM-Report/tree/main/energyInformationAdministration/data_visuals)
 - Equity Indices
 - Fixed Income / Credit
 - [Volatility / CPI](https://github.com/aangelsalazarr/SoM-Report/blob/main/market/volatility_and_cpi.py)
@@ -50,6 +52,7 @@
 ## Saved Data
 - [Equities Data](https://github.com/aangelsalazarr/SoM-Report/tree/main/market/data_csv_format)
 - [Market Monitor Data](https://github.com/aangelsalazarr/SoM-Report/tree/main/elMercado/data_csv_format)
+- [EIA Data](https://github.com/aangelsalazarr/SoM-Report/tree/main/energyInformationAdministration/data_csv_format)
 
 ## Functions
 - [yfinance Data Processor](https://github.com/aangelsalazarr/SoM-Report/blob/main/market/yfinance_data_processor.py)
