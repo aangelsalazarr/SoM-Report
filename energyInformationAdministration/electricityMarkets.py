@@ -8,6 +8,8 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_pdf import PdfPages
 from matplotlib import rc
+from pdfConverter import save_multi_image
+
 rc('mathtext', default='regular')
 
 plt.rcParams["figure.autolayout"] = True
@@ -59,8 +61,6 @@ endDateInput = "&start=" + str(startDateEIA)
 electricityPricesURL = electricityPricesURL + dataInput + facetsInput \
                        + frequencyInput + endDateInput
 
-# helping us visualize our url
-# print(electricityPricesURL)
 
 # purpose is to define parameters
 PARAMS = {
@@ -171,16 +171,6 @@ fig2 = sns.lineplot(data=df2, x='sectorName', y='sales')
 fig2.set_xticklabels(fig2.get_xticklabels(), rotation=90)
 '''
 
-def save_multi_image(filename):
-    pp = PdfPages(filename)
-    fig_nums = plt.get_fignums()
-    figs = [plt.figure(n) for n in fig_nums]
-    for fig in figs:
-        fig.savefig(pp, format='pdf')
-    pp.close()
+filename = '.\data_visuals\eia_USElectricityPriceBySector.pdf'
+save_multi_image(filename)
 
-
-# filename = 'USElectricityPriceBySector.pdf'
-# save_multi_image(filename)
-
-plt.show()

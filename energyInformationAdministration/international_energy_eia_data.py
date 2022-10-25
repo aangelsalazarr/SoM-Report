@@ -110,7 +110,7 @@ visual_4 = sns.lineplot(data=df[df['activityId'] == 5],
 
 
 # creating file name to output plots as pdf
-filename = 'international_data_eia_'
+filename = '.\data_visuals\international_data_eia_'
 
 # saving our graphs as a pdf
 save_multi_image(filename + currentDate + '.pdf')
