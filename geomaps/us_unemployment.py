@@ -13,5 +13,8 @@ ca_unem = ['LASST060000000000003', 'LASST060000000000004',
 df = fetch_bls_series(series=ca_unem)
 
 # output df as csv file
-df.to_csv('.\data_files\data_ca_unemployment_bls.csv')
+# df.to_csv('.\data_files\data_ca_unemployment_bls.csv')
+
+fig1 = plt.figure()
+all = sns.lineplot(data=df, x='Date', y='value', hue='seriesID')
 

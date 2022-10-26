@@ -40,6 +40,7 @@ def fetch_bls_series(series, **kwargs):
 
     # parse through the json result
     result = response.json()
+
     if result['status'] != 'REQUEST_SUCCEEDED':
         raise Exception(result['message'][0])
 
