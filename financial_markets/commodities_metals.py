@@ -4,6 +4,7 @@ from matplotlib.backends.backend_pdf import PdfPages
 import seaborn as sns
 from matplotlib import rc
 from black_box.pdfConverter import save_multi_image
+from black_box.yfinance_data_processor import data_processor
 
 rc('mathtext', default='regular')
 
@@ -17,78 +18,70 @@ information. best case scenario, we create a process where we input a list of
 commodities and a pdf report is created presenting all the relevant graphs
 """
 
-# metals futures that can be access via yahoofinance
-gold = yf.Ticker("GC=F")
-platinum = yf.Ticker("PL=F")
-palladium = yf.Ticker("PA=F")
-silver = yf.Ticker("SI=F")
-lmeCu = yf.Ticker("HG=F")
-aluminum = yf.Ticker("ALI=F")
+metals_list = ['GC=F', 'PL=F', 'PA=F', 'SI=F', 'HG=F', 'ALI=F']
+metals_names = ['gold', 'platinum', 'palladium', 'silver', 'copper', 'aluminum']
 
-# need to convert to .history to grab historical data
-goldHistory = gold.history(period="1Y")
-platinumHistory = platinum.history(period='1Y')
-palladiumHistory = palladium.history(period='1Y')
-silverHistory = silver.history(period='1Y')
-copperHistory = lmeCu.history(period='1Y')
-aluminumHistory = aluminum.history(period='1Y')
+# requesting list historical data
+df_main = data_processor(list=metals_list, period='ytd')
 
-# commodities history list
-commoditiesHistories = [goldHistory, platinumHistory, palladiumHistory,
-                        silverHistory, copperHistory, aluminumHistory]
+# printing out df as csv
+df_main.to_csv('.\data_files\commodities_metals_hist_data.csv', index=False)
 
-# create a for loop to clean the data
-for commodity in commoditiesHistories:
-    commodity.reset_index(inplace=True)
-    commodity.drop(['Dividends', 'Stock Splits'], inplace=True, axis=1)
+# sub dfs
+gold = df_main[df_main['Ticker'] == metals_list[0]]
+platinum = df_main[df_main['Ticker'] == metals_list[1]]
+palladium = df_main[df_main['Ticker'] == metals_list[2]]
+silver = df_main[df_main['Ticker'] == metals_list[3]]
+copper = df_main[df_main['Ticker'] == metals_list[4]]
+aluminum = df_main[df_main['Ticker'] == metals_list[5]]
 
 # now we will create multiple figures and put them into one pdf
 fig1 = plt.figure()
-golda = sns.lineplot(data=goldHistory, x='Date', y='Open',
-                     color='green').set(title=gold.info['shortName'])
+golda = sns.lineplot(data=gold, x='Date', y='Open',
+                     color='green').set(title='Gold')
 ax2_1 = plt.twinx()
-goldb = sns.lineplot(data=goldHistory, x='Date', y='Volume', color='lightgreen')
+goldb = sns.lineplot(data=gold, x='Date', y='Volume', color='lightgreen')
 
 fig2 = plt.figure()
-platinuma = sns.lineplot(data=platinumHistory, x='Date', y='Open',
+platinuma = sns.lineplot(data=platinum, x='Date', y='Open',
                     color='green').set(
-    title=platinum.info['shortName'])
+    title='Platinum')
 ax2_2 = plt.twinx()
-platinumb = sns.lineplot(data=platinumHistory, x='Date', y='Volume',
+platinumb = sns.lineplot(data=platinum, x='Date', y='Volume',
                   color='lightgreen')
 
 fig3 = plt.figure()
-palladiuma = sns.lineplot(data=palladiumHistory, x='Date', y='Open',
+palladiuma = sns.lineplot(data=palladium, x='Date', y='Open',
                    color='green').set(
-    title=palladium.info['shortName'])
+    title='Palladium')
 ax2_3 = plt.twinx()
-palladiumb = sns.lineplot(data=palladiumHistory, x='Date', y='Volume',
+palladiumb = sns.lineplot(data=palladium, x='Date', y='Volume',
                  color='lightgreen')
 
 fig4 = plt.figure()
-silvera = sns.lineplot(data=silverHistory, x='Date', y='Open',
+silvera = sns.lineplot(data=silver, x='Date', y='Open',
                       color='green').set(
-    title=silver.info['shortName'])
+    title='silver')
 ax2_4 = plt.twinx()
-silverb = sns.lineplot(data=silverHistory, x='Date', y='Volume',
+silverb = sns.lineplot(data=silver, x='Date', y='Volume',
                     color='lightgreen')
 
 fig5 = plt.figure()
-coppera = sns.lineplot(data=copperHistory, x='Date', y='Open',
+coppera = sns.lineplot(data=copper, x='Date', y='Open',
                       color='green').set(
-    title=lmeCu.info['shortName'])
+    title='copper')
 ax2_5 = plt.twinx()
-copperb = sns.lineplot(data=copperHistory, x='Date', y='Volume',
+copperb = sns.lineplot(data=copper, x='Date', y='Volume',
                     color='lightgreen')
 
 fig6 = plt.figure()
-aluminuma = sns.lineplot(data=aluminumHistory, x='Date', y='Open',
+aluminuma = sns.lineplot(data=aluminum, x='Date', y='Open',
                     color='green').set(
-    title=aluminum.info['shortName'])
+    title='aluminum')
 ax2_6 = plt.twinx()
-aluminumb = sns.lineplot(data=aluminumHistory, x='Date', y='Volume',
+aluminumb = sns.lineplot(data=aluminum, x='Date', y='Volume',
                   color='lightgreen')
 
 
-filename = '.\data_files\CommoditiesFuturesInformation.pdf'
+filename = '.\data_visuals\CommoditiesFuturesInformation.pdf'
 save_multi_image(filename)

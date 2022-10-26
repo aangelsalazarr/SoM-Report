@@ -1,9 +1,9 @@
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
-from pdfConverter import save_multi_image
+from black_box.pdfConverter import save_multi_image
 from matplotlib import rc
-from yfinance_data_processor import data_processor
+from black_box.yfinance_data_processor import data_processor
 from datetime import date
 
 #
