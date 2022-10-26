@@ -50,7 +50,7 @@
 ## Saved Data
 - [Financial Markets Data](https://github.com/aangelsalazarr/SoM-Report/tree/main/financial_markets/data_files)
 - [Energy Information Administration Data](https://github.com/aangelsalazarr/SoM-Report/tree/main/energy_information_administration/data_files)
-- [Electricity Market Data]()
+- [Electricity Market Data](https://github.com/aangelsalazarr/SoM-Report/tree/main/electricity_markets/data_files)
 - [The World Bank Data]()
 - [Macro Economic Data](https://github.com/aangelsalazarr/SoM-Report/tree/main/macroeconomics/data_files)
 - [International Energy Agency Data]()
