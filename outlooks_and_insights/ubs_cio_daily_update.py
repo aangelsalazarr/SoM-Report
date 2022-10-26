@@ -58,6 +58,6 @@ for element in textElements:
 # when we grabbed the data or when the data was posted
 
 # purpose is to store our pdf in the specified directory
-pdf.output("./ubsDailyUpdate\CIO_Daily_Update_" + url6 + ".pdf",
+pdf.output("./ubs_cio_daily_update\CIO_Daily_Update_" + url6 + ".pdf",
            dest='F')
 
