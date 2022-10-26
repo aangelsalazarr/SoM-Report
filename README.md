@@ -5,7 +5,7 @@
 
 ## Exisiting Analysis
 - [Personal Research on Clean Energy](https://github.com/aangelsalazarr/SoM-Report/tree/main/black_box/motivations_and_readings)
-- [Merrill Lynch, Capital Markets Outlook](https://github.com/aangelsalazarr/SoM-Report/blob/main/outlooks_and_insights/merrillCMO.py)
+- [Merrill Lynch, Capital Markets Outlook](https://github.com/aangelsalazarr/SoM-Report/blob/main/outlooks_and_insights/merrill_capital_markets_outlook.py)
     - [Folder containing PDFs](https://github.com/aangelsalazarr/SoM-Report/tree/main/outlooks_and_insights/merrill_pdfs)
 - [JPMorgan Weekly, Market Recap](https://github.com/aangelsalazarr/SoM-Report/blob/main/outlooks_and_insights/jpmWeeklyMarketRecap.py)
     - [Folder containing PDFs]()
