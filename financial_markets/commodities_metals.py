@@ -3,6 +3,8 @@ import matplotlib.pyplot as plt
 from matplotlib.backends.backend_pdf import PdfPages
 import seaborn as sns
 from matplotlib import rc
+from black_box.pdfConverter import save_multi_image
+
 rc('mathtext', default='regular')
 
 # plt.rcParams["figure.figsize"] = [7.00, 3.50]
@@ -88,14 +90,5 @@ aluminumb = sns.lineplot(data=aluminumHistory, x='Date', y='Volume',
                   color='lightgreen')
 
 
-def save_multi_image(filename):
-    pp = PdfPages(filename)
-    fig_nums = plt.get_fignums()
-    figs = [plt.figure(n) for n in fig_nums]
-    for fig in figs:
-        fig.savefig(pp, format='pdf')
-    pp.close()
-
-
-filename = 'CommoditiesFuturesInformation.pdf'
+filename = '.\data_files\CommoditiesFuturesInformation.pdf'
 save_multi_image(filename)

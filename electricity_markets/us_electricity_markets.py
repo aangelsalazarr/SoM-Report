@@ -8,6 +8,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 from matplotlib import rc
 from black_box.pdfConverter import save_multi_image
+from black_box.eia_data_processor import grab_eia_data
 
 rc('mathtext', default='regular')
 
@@ -53,12 +54,12 @@ facetsInput = "&facets[sectorid][0]=ALL&facets[sectorid][1]=COM&facets[" \
               "sectorid][2]=IND&facets[sectorid][3]=OTH&facets[" \
               "sectorid][4]=RES&facets[" \
               "sectorid][5]=TRA"
-frequencyInput = "&frequency=monthly"
-endDateInput = "&start=" + str(startDateEIA)
+freq_input = "&frequency=monthly"
+start_input = "&start=" + str(startDateEIA)
 
 # adding everything up
 electricityPricesURL = electricityPricesURL + dataInput + facetsInput \
-                       + frequencyInput + endDateInput
+                       + freq_input + start_input
 
 
 # purpose is to define parameters
@@ -85,21 +86,11 @@ PARAMS = {
     'api-version': '2.0.2'
 }
 
-# sending get request and saving the response as a response object
-r = requests.get(url=electricityPricesURL)
+# processing into df
+df = grab_eia_data(url=electricityPricesURL)
 
-# extracting data in json format
-data = r.json()
-
-# grabbing only data object
-entries = data['response']["data"]
-
-# converting our json data format to pandas
-df = pd.DataFrame(data=entries)
-df2 = df[df['stateid'] != 'US']
-
-# making sure our date function is set as a type = date
-df2['period'] = pd.to_datetime(df2['period'])
+# outputting df as csv file
+df.to_csv('.\data_files\electricity_prices_us.csv')
 
 '''
 Let it be noted that the entries contains all the data that we need and has the
@@ -132,34 +123,34 @@ sns.set(font_scale = 0.3)
 fig, axes = plt.subplots(2, 3)
 fig.suptitle('U.S. Electricity Price by Sector')
 
-fig1 = sns.lineplot(ax=axes[0, 0], data=df2[df2['sectorid'] == 'ALL'],
+fig1 = sns.lineplot(ax=axes[0, 0], data=df[df['sectorid'] == 'ALL'],
                     x='period', y='price', linewidth= 0.7,
                     ci=None).set(title='All Sectors (Average)')  # total
 
-fig2 = sns.lineplot(ax=axes[0, 1], data=df2[df2['sectorid'] == 'COM'],
+fig2 = sns.lineplot(ax=axes[0, 1], data=df[df['sectorid'] == 'COM'],
                     x='period', y='price', linewidth= 0.7,
                     ci = None).set(title='Commercial')  #
 # commercial
 
-fig3 = sns.lineplot(ax=axes[0, 2], data=df2[df2['sectorid'] == 'IND'],
+fig3 = sns.lineplot(ax=axes[0, 2], data=df[df['sectorid'] == 'IND'],
                     x='period', y='price', linewidth= 0.7,
                     ci = None).set(title='Industrial')  # industrial
 
-fig4 = sns.lineplot(ax=axes[1, 0], data=df2[df2['sectorid'] == 'RES'],
+fig4 = sns.lineplot(ax=axes[1, 0], data=df[df['sectorid'] == 'RES'],
                     x='period', y='price', linewidth= 0.7,
                     ci = None).set(title='Residential')  # residential
 
-fig5 = sns.lineplot(ax=axes[1, 1], data=df2[df2['sectorid'] == 'TRA'],
+fig5 = sns.lineplot(ax=axes[1, 1], data=df[df['sectorid'] == 'TRA'],
                     x='period', y='price', linewidth= 0.7,
                     ci = None).set(title='Transportation')  # transportation
 
-fig6 = sns.lineplot(ax=axes[1, 2], data=df2, x='period', y='price',
+fig6 = sns.lineplot(ax=axes[1, 2], data=df, x='period', y='price',
                        hue='sectorid', linewidth= 0.7,
                     ci = None).set(title='All Sectors Split')  # all
 
 # rotating period access
 for ax in fig.axes:
-  ax.set_ylabel(df2['price-units'][0])
+  ax.set_ylabel(df['price-units'][0])
   ax.tick_params(labelrotation=90, axis='x')
 
 '''
@@ -170,6 +161,6 @@ fig2 = sns.lineplot(data=df2, x='sectorName', y='sales')
 fig2.set_xticklabels(fig2.get_xticklabels(), rotation=90)
 '''
 
-filename = '../energy_information_administration/data_visuals/eia_USElectricityPriceBySector.pdf'
+filename = './data_visuals/eia_USElectricityPriceBySector.pdf'
 save_multi_image(filename)
 

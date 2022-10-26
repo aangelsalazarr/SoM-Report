@@ -40,7 +40,7 @@ topics = {'shortName'}
 ei_df = data_processor(list=equityIndices, period='ytd')
 
 # exporting out data as a csv file
-ei_df.to_csv('.\data_csv_format\equityIndicesHistData.csv', index=False)
+ei_df.to_csv('.\data_files\equityIndicesHistData.csv', index=False)
 
 '''
 at this point we want to create a number of figures that provides us with 
@@ -115,7 +115,7 @@ allFi = sns.lineplot(data=fi_df, x='Date', y='Close',
                      legend=True).set(title='All FI Indices - Close')
 
 # exporting out data as a csv file
-fi_df.to_csv('.\data_csv_format\FIIndicesHistData.csv', index=False)
+fi_df.to_csv('.\data_files\FIIndicesHistData.csv', index=False)
 
 ################################################################################
 ################################################################################
@@ -136,7 +136,7 @@ fx_df = pd.DataFrame(columns=['Ticker'])
 fx_df = data_processor(list=fxIndices, period='ytd')
 
 # exporting out data as a csv file
-fx_df.to_csv('.\data_csv_format\FXIndicesHistData.csv', index=False)
+fx_df.to_csv('.\data_files\FXIndicesHistData.csv', index=False)
 
 # partitioning our dfs
 eurUSD = fx_df[fx_df['Ticker'] == 'EURUSD=X']
@@ -196,7 +196,7 @@ allComb = sns.lineplot(data=commodities_df[commodities_df['Close'] < 500],
                        legend=True).set(title='All Commodity Indices - Close')
 
 # exporting out data as a csv file
-commodities_df.to_csv('.\data_csv_format\ComIndicesHistData.csv', index=False)
+commodities_df.to_csv('.\data_files\ComIndicesHistData.csv', index=False)
 
 # the purpose of this section is to grab petroleum data from the EIA open data
 # first we want to retrieve our api key and make sure it is good to go
@@ -243,7 +243,6 @@ startDateInput = "&start=" + str(startDateEIA)
 
 # adding everything up
 petroPricesURL = petroPricesURL + dataInput + frequencyInput + startDateInput
-print(petroPricesURL)
 
 # sending get request and saving the response as a response object
 petro_df = grab_eia_data(url=petroPricesURL)
@@ -267,7 +266,7 @@ petro_wti = sns.lineplot(data=petro_df_wti, x='period', y='value',
 
 
 # exporting out data as a csv file
-petro_df.to_csv('.\data_csv_format\petro_spot_prices_eia.csv', index=False)
+petro_df.to_csv('.\data_files\petro_spot_prices_eia.csv', index=False)
 
 ################################################################################
 ################################################################################
