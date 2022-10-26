@@ -20,7 +20,7 @@
 - [Goldman Sachs Global Market Monitor](https://github.com/aangelsalazarr/SoM-Report/blob/main/outlooks_and_insights/gs_market_monitor.py)
 
 ## Topics
-- [U.S. Electricity Market](https://github.com/aangelsalazarr/SoM-Report/blob/main/electricity_markets/electricityMarkets.py)
+- [U.S. Electricity Market](https://github.com/aangelsalazarr/SoM-Report/blob/main/electricity_markets/us_electricity_markets.py)
 - [International Energy Data](https://github.com/aangelsalazarr/SoM-Report/blob/main/energy_information_administration/international_energy_eia_data.py)
 - [U.S. CO2 Emissions](https://github.com/aangelsalazarr/SoM-Report/blob/main/energy_information_administration/emissions_data.py)
 - Equity Indices
@@ -48,10 +48,12 @@
     - [Real Estate](https://github.com/aangelsalazarr/SoM-Report/blob/main/financial_markets/equities_real_estate.py)
 
 ## Saved Data
-- [Equities Data](https://github.com/aangelsalazarr/SoM-Report/tree/main/financial_markets/data_files)
-- [EIA Data](https://github.com/aangelsalazarr/SoM-Report/tree/main/energy_information_administration/data_files)
+- [Financial Markets Data](https://github.com/aangelsalazarr/SoM-Report/tree/main/financial_markets/data_files)
+- [Energy Information Administration Data](https://github.com/aangelsalazarr/SoM-Report/tree/main/energy_information_administration/data_files)
+- [Electricity Market Data]()
 - [The World Bank Data]()
 - [Macro Economic Data](https://github.com/aangelsalazarr/SoM-Report/tree/main/macroeconomics/data_files)
+- [International Energy Agency Data]()
 
 ## Functions
 - [yfinance Data Processor](https://github.com/aangelsalazarr/SoM-Report/blob/main/black_box/yfinance_data_processor.py)
