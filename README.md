@@ -8,14 +8,15 @@
 - [Merrill Lynch, Capital Markets Outlook](https://github.com/aangelsalazarr/SoM-Report/blob/main/outlooks_and_insights/merrillCMO.py)
     - [Folder containing PDFs](https://github.com/aangelsalazarr/SoM-Report/tree/main/outlooks_and_insights/merrill_pdfs)
 - [JPMorgan Weekly, Market Recap](https://github.com/aangelsalazarr/SoM-Report/blob/main/outlooks_and_insights/jpmWeeklyMarketRecap.py)
-    - [Folder containing PDFs](https://github.com/aangelsalazarr/SoM-Report/tree/main/outlooks_and_insights/jpmMarketRecap)
+    - [Folder containing PDFs]()
 - [JPMorgan Economic Update](https://github.com/aangelsalazarr/SoM-Report/blob/main/outlooks_and_insights/jpmEconomicUpdate.py)
-    - [Folder containing PDFs](https://github.com/aangelsalazarr/SoM-Report/tree/main/outlooks_and_insights/jpmEconomicUpdates)
+    - [Folder containing PDFs]()
 - [World Bank Commodity Markets](https://github.com/aangelsalazarr/SoM-Report/blob/main/outlooks_and_insights/wbCMO.py)
     - [Folder Containing PDFs](https://github.com/aangelsalazarr/SoM-Report/tree/main/outlooks_and_insights/wbCMO)
 - [EIA, Short Term Energy Outlook](https://github.com/aangelsalazarr/SoM-Report/blob/main/outlooks_and_insights/eia_seo.py)
     - [Folder containing PDFs](https://github.com/aangelsalazarr/SoM-Report/tree/main/outlooks_and_insights/eia_seo_pdfs)
 - [UBS CIO Daily Notes](https://github.com/aangelsalazarr/SoM-Report/blob/main/outlooks_and_insights/ubsCIODailyUpdates.py)
+    - [Folder containing PDFs](https://github.com/aangelsalazarr/SoM-Report/tree/main/outlooks_and_insights/ubsDailyUpdate)
 - [Goldman Sachs Global Market Monitor](https://github.com/aangelsalazarr/SoM-Report/blob/main/outlooks_and_insights/gsMarketMonitor.py)
 
 ## Topics
@@ -33,7 +34,7 @@
 - Commodities
     - [Metals Market]()
     - [Energy Market]()
-- Equities [[Visuals]](https://github.com/aangelsalazarr/SoM-Report/tree/main/financial_markets/data_visuals)
+- Equities
     - [Energy](https://github.com/aangelsalazarr/SoM-Report/blob/main/financial_markets/equities_energy.py)
     - [Materials](https://github.com/aangelsalazarr/SoM-Report/blob/main/financial_markets/equities_materials.py)
     - [Industrials](https://github.com/aangelsalazarr/SoM-Report/blob/main/financial_markets/equities_indsutrials.py)
