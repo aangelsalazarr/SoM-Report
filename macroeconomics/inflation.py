@@ -1,4 +1,4 @@
-from pdfConverter import save_multi_image
+from black_box.pdfConverter import save_multi_image
 '''
 Purpose of the script is to present some key data_visuals as it relates to inflation
 1. Inflation over time, USD
@@ -59,11 +59,15 @@ start_year = end_year - 15
 blsMainDF = fetch_bls_series(series, startyear=start_year, endyear=end_year,
                             registrationKey=blsKey)
 
+fredDf.to_csv('.\data_files\economic_fred_data.csv', index=False)
+blsMainDF.to_csv('.\data_files\economic_bls_data.csv', index=False)
+
+
 fig1 = plt.figure()
 line1 = sns.lineplot(data=fredDf, x='Date', y='GDP Def')
 line2 = sns.lineplot(data=blsMainDF, x='Date', y='value', hue='seriesID')
 
 
-filename = '.\market_visuals\inflation_visuals'
+filename = '.\data_visuals\inflation_visuals'
 
 save_multi_image(filename + currentDate + '.pdf')
