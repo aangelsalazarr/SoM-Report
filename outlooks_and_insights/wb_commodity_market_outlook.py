@@ -18,8 +18,8 @@ segment3: .pdf
 '''
 
 # path for the cmo & commodity prices pinksgeet
-output_dir1 = '.\wbCMO'
-output_dir2 = '.\wbCMO'
+output_dir1 = '.\wb_commodity_markets_outlook'
+output_dir2 = '.\wb_commodity_markets_outlook'
 
 # grabbing today's date to be used in our url_date variable
 today = date.today()

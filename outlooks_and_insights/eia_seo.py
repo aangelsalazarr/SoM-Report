@@ -18,7 +18,7 @@ today = date.today()
 # need to convert our date to fit format used in url
 today_rfmt = today.strftime("%B_%Y")
 
-output_dir = '.\eia_seo_pdfs'
+output_dir = '.\eia_short_term_energy_outlook'
 response = requests.get(seoUrl)
 
 # process to eia seo

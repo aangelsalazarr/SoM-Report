@@ -30,7 +30,7 @@ newest_cmo_url = url_segment_1 + url_date + url_segment_2
 '''
 
 # where the pdfs will be stored
-output_dir = '.\merrill_pdfs'
+output_dir = '.\merrill_capital_markets_outlook'
 
 # grabbing today's date to be used in our url_date variable
 today = date.today()
@@ -41,7 +41,7 @@ today_reformat = today.strftime("%#m-%#d-%y")
 
 # combining our url segments
 url_sgmnt_1 = 'https://olui2.fs.ml.com/Publish/Content/application/pdf/GWMOL/CMO_'
-url_date = today_reformat
+url_date = '10-24-22' # today_reformat
 url_sgmnt_2 = '_Merrill.pdf'
 
 newest_cmo_url = url_sgmnt_1 + url_date + url_sgmnt_2

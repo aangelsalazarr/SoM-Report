@@ -3,7 +3,7 @@ import requests  # pip install requests
 import os
 from datetime import date
 
-output_dir = '.\jpmMarketRecap'
+output_dir = '.\jpm_market_recap'
 
 # grabbing today's date to be used in our url_date variable
 today = date.today()
@@ -15,7 +15,7 @@ wmrUrl = 'https://am.jpmorgan.com/content/dam/jpm-am-aem/americas/us/en/insights
 
 response = requests.get(wmrUrl)
 
-file = open(r'.\outlookLogger\jpmWMRLogger.txt', 'a')
+file = open(r'.\report_processing_log\jpmWMRLogger.txt', 'a')
 
 if response.status_code == 200:
     file_path = os.path.join(output_dir, str(today_reformat) + '_' +
