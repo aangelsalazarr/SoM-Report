@@ -3,7 +3,7 @@ import seaborn as sns
 
 def visual_maker(ticker_list, dfs):
 
-    # setting up params for our market_monitor_visuals
+    # setting up params for our data_visuals
     sns.set(font_scale=0.5)
     sns.set_style('dark')
 

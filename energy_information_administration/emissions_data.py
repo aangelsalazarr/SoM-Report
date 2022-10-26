@@ -1,5 +1,5 @@
 from eia_data_processor import grab_eia_data, is_float
-from blackBox.pdfConverter import save_multi_image
+from black_box.pdfConverter import save_multi_image
 import os
 from datetime import date
 from dateutil.relativedelta import relativedelta
@@ -42,7 +42,7 @@ df = grab_eia_data(url=mainUrl)
 df = df[df['value'].apply(lambda x: is_float(x))]
 
 # converting df to csv data file
-## df.to_csv('.\data_csv_format\emissions_data.csv', index=False)
+## df.to_csv('.\data_files\emissions_data.csv', index=False)
 
 # bifurcating into two types of dfs w and w/o total emissions data
 df_non_total = df[(df['sectorId'] != 'TT') & (df['fuelId'] != 'TO') & (df[

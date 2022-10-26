@@ -14,7 +14,7 @@ rcParams['axes.spines.right'] = False
 # create a PDF page structure
 # creates a folder for charts (deletes if its exists and recreates)
 # saves data for every time t
-# creates a pdf matric from the market_monitor_visuals
+# creates a pdf matric from the data_visuals
 
 PLOT_DIR = 'plots'
 
@@ -32,7 +32,7 @@ def construct():
     counter = 0
     pages_data = []
     temp = []
-    n = 3 # number of market_monitor_visuals that we want per page
+    n = 3 # number of data_visuals that we want per page
     # get all plots
     files = os.listdir(PLOT_DIR)
     # sot them by metric - a bit tricky because the file names are strings

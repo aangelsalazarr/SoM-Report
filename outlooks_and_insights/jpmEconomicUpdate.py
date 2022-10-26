@@ -12,7 +12,7 @@ today = date.today()
 today_reformat = today.strftime("%#m-%#d-%y")
 
 eoUrl = 'https://am.jpmorgan.com/content/dam/jpm-am-aem/americas/us/en' \
-       '/insights/market-insights/wmr/economic_update.pdf'
+       '/insights/financial_markets-insights/wmr/economic_update.pdf'
 
 response = requests.get(eoUrl)
 

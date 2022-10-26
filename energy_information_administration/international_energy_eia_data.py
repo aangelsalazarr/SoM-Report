@@ -1,8 +1,8 @@
 import os  # allows us to access api key from our environment
-import matplotlib.pyplot as plt  # will be used for market_monitor_visuals
+import matplotlib.pyplot as plt  # will be used for data_visuals
 from matplotlib import rc
 import seaborn as sns  # used for plotting purposes
-from blackBox.pdfConverter import save_multi_image  # used to create pdf files
+from black_box.pdfConverter import save_multi_image  # used to create pdf files
 from datetime import date
 from eia_data_processor import grab_eia_data
 from eia_data_processor import is_float
@@ -62,7 +62,7 @@ df = grab_eia_data(url=main_url)
 
 df = df[df['value'].apply(lambda x: is_float(x))]
 # let's export our df into a csv file one time to store it and then comment out
-# df.to_csv('.\data_csv_format\international_energy_data_eia.csv', index=False)
+# df.to_csv('.\data_files\international_energy_data_eia.csv', index=False)
 
 '''
 Looking at the csv file, the following are the columns

@@ -12,7 +12,7 @@ currentYear = today.strftime('%Y')
 
 # breaking our very long url into segments to take into account variable aspects
 url1 = "https://www.gsam.com/content/gsam/us/en/individual/market-insights/"
-url2 = "market-strategy/global-market-monitor/"
+url2 = "financial_markets-strategy/global-financial_markets-monitor/"
 url3 = str(currentYear)
 url4 = "/market_monitor_"
 url5 = "093022"  #str(currentDate)
@@ -33,7 +33,7 @@ results = soup.find(class_="contentArea gm-clear_both")
 
 '''
 Following, we are going to break down the website into different sections of 
-code that reflects general themes of the market monitor, each section will be
+code that reflects general themes of the financial_markets monitor, each section will be
 denoted as x_i and a sub section as x_i_j where i = [0, 1, .., N], j = [a, b,..]
 
 #### Section 1
@@ -44,8 +44,8 @@ x_3: summary title related to the graph
     x_3_a: graph summary
     
 #### Section 2
-x_4: "market summary" title 
-x_5: container where market summaries are stored
+x_4: "financial_markets summary" title 
+x_5: container where financial_markets summaries are stored
     x_5_a: global equity title
         x_5_aa: global equity summary
     x_5_b: commodities title
@@ -77,7 +77,7 @@ x_8
 # "Chart of the Week" Title
 cowTitle = results.find("h2", class_="title2 titleSpacing2 js-title")
 
-# contains market monitor theme title
+# contains financial_markets monitor theme title
 themeTitle = results.find("div", class_="titleSummaryLink")
 
 # contains chart of the week
@@ -86,10 +86,10 @@ chart = results.find("div", class_="imageleftRight__img gm-showScroll_touch")
 # contains chart description
 chartDescription = results.find("div", class_="imageleftRightDesc bm-spacing")
 
-# contains "market summary" title
+# contains "financial_markets summary" title
 marketSumTitle = results.find("h2", class_="title3 titleSpacing3 js-title")
 
-# contains market summary section titles and descriptions
+# contains financial_markets summary section titles and descriptions
 marketSumContent = results.find("div", class_="compCont")
 
 # let's actually just try converting html to pdf lol

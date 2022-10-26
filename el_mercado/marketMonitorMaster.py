@@ -2,13 +2,13 @@ import pandas as pd
 import seaborn as sns
 import os
 import matplotlib.pyplot as plt
-from blackBox.pdfConverter import save_multi_image
+from black_box.pdfConverter import save_multi_image
 from matplotlib import rc
 from datetime import date
 from dateutil.relativedelta import relativedelta
-from blackBox.yfinance_data_processor import data_processor
-from blackBox.eia_data_processor import grab_eia_data
-from blackBox.three_by_three_grapher import visualizer
+from black_box.yfinance_data_processor import data_processor
+from black_box.eia_data_processor import grab_eia_data
+from black_box.three_by_three_grapher import visualizer
 
 # some params related to the framework of output that we will need
 rc('mathtext', default='regular')
@@ -272,7 +272,7 @@ petro_df.to_csv('.\data_csv_format\petro_spot_prices_eia.csv', index=False)
 ################################################################################
 ################################################################################
 
-filename = '.\market_monitor_visuals\marketMonitor_'
+filename = 'data_visuals\marketMonitor_'
 save_multi_image(filename + currentDate + '.pdf')
 
 

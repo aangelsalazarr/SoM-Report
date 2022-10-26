@@ -1,7 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-from blackBox.bls_data_processor import fetch_bls_series
-from blackBox.bls_data_processor_2 import bls_fetch_data
+from black_box.bls_data_processor import fetch_bls_series
+from black_box.bls_data_processor_2 import bls_fetch_data
 import seaborn as sns
 
 

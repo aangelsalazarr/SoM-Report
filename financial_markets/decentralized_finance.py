@@ -20,7 +20,7 @@ The purpose of this file is to grab data related to the top 5 cryptocurrencies
 and create visualizations that are helpful in getting a sense of what is going
 on. Looking at the following cryptos:
     - Bitcoin, Ethereum, Tether, USD Coin, BNB
-We would also like to compare the 5 to other indexes in the market and sector
+We would also like to compare the 5 to other indexes in the financial_markets and sector
 '''
 # creating list of ticker symbols we want to pull from yahoofinance api
 cryptoList = ['BTC-USD', 'ETH-USD', 'USDT-USD', 'USDC-USD', 'BNB-USD']
@@ -33,7 +33,7 @@ df_main = data_processor(list=cryptoList, period='1Y')
 
 # storing our now transformed data into a csv file to reference in future
 # only necessary to run this code snippet once
-# df.to_csv('.\data_csv_format\defi_data.csv', index=False)
+# df.to_csv('.\data_files\defi_data.csv', index=False)
 
 # setting params for data and creating sub dfs
 sns.set(font_scale=0.5)

@@ -1,6 +1,6 @@
 from pdfConverter import save_multi_image
 '''
-Purpose of the script is to present some key market_monitor_visuals as it relates to inflation
+Purpose of the script is to present some key data_visuals as it relates to inflation
 1. Inflation over time, USD
     a. data: [1] CPI, CPI (seasonally adjusted), PPI, GDP Deflator
     b. data: [2] SD in CPI
@@ -10,7 +10,7 @@ Purpose of the script is to present some key market_monitor_visuals as it relate
     b. data: [2] NY fed survey of consumer expectation
 3. TreasuryMarket Expected Inflation
     a. data: [1] implied expected inflation, T. Bond Rate, TIPs rate
-    b. dataSetup: [1] delta(tbond, tips) == measure of market expexted inflation
+    b. dataSetup: [1] delta(tbond, tips) == measure of financial_markets expexted inflation
     c. x axis: 1 year
 4. Expected inflation term sttructure
     a. extension of [3]
@@ -21,7 +21,7 @@ import os
 import fredapi as fa
 import pandas as pd
 import datetime
-from blackBox.bls_data_processor import fetch_bls_series
+from black_box.bls_data_processor import fetch_bls_series
 import seaborn as sns
 import matplotlib.pyplot as plt
 import numpy as np

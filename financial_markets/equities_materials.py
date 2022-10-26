@@ -26,7 +26,7 @@ topics = {'shortName'}
 df_main = data_processor(list=materialsList, period='1Y')
 
 # use this code snippet once
-# df_main.to_csv('.\data_csv_format\materials_data.csv', index=False)
+# df_main.to_csv('.\data_files\materials_data.csv', index=False)
 
 # creating df list related to ticker symbol
 bhp = df_main[df_main['Ticker'] == materialsList[0]]

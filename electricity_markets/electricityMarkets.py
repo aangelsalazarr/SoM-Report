@@ -7,7 +7,7 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 from matplotlib import rc
-from blackBox.pdfConverter import save_multi_image
+from black_box.pdfConverter import save_multi_image
 
 rc('mathtext', default='regular')
 
@@ -16,7 +16,7 @@ plt.rcParams["figure.autolayout"] = True
 pd.set_option('display.max_columns', None)
 
 '''
-Purpose of this is to grab relevant price data on the electricity market in the
+Purpose of this is to grab relevant price data on the electricity financial_markets in the
 USA
 '''
 
@@ -170,6 +170,6 @@ fig2 = sns.lineplot(data=df2, x='sectorName', y='sales')
 fig2.set_xticklabels(fig2.get_xticklabels(), rotation=90)
 '''
 
-filename = '.\data_visuals\eia_USElectricityPriceBySector.pdf'
+filename = '../energy_information_administration/data_visuals/eia_USElectricityPriceBySector.pdf'
 save_multi_image(filename)
 

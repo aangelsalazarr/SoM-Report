@@ -26,7 +26,7 @@ topics = {'shortName'}
 df_main = data_processor(list=comsList, period='1Y')
 
 # use this code snippet once
-# df_main.to_csv('.\data_csv_format\comms_data.csv', index=False)
+# df_main.to_csv('.\data_files\comms_data.csv', index=False)
 
 # creating firm specific dfs to use in out visual creation
 google = df_main[df_main['Ticker'] == comsList[0]]

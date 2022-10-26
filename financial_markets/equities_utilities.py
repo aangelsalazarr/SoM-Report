@@ -26,7 +26,7 @@ topics = {}
 df_main = data_processor(list=utilitiesList, period='1Y')
 
 # use this code snippet once
-# df_main.to_csv('.\data_csv_format\market_utilities_data.csv', index=False)
+# df_main.to_csv('.\data_files\market_utilities_data.csv', index=False)
 
 # creating df list related to ticker symbol
 nee = df_main[df_main['Ticker'] == utilitiesList[0]]

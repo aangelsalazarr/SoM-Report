@@ -3,7 +3,7 @@ import yfinance as yf
 import pandas as pd
 import matplotlib.pyplot as plt
 import os
-from blackBox.bls_data_processor import fetch_bls_series
+from black_box.bls_data_processor import fetch_bls_series
 import seaborn as sns
 from datetime import datetime
 import datetime
@@ -20,7 +20,7 @@ pd.set_option('display.max_columns', None)
 volatility_index = yf.Ticker("^VIX")
 # converting information on vix --> dictionary
 vix_dict = volatility_index.info
-# getting historical market data
+# getting historical financial_markets data
 hist_data = volatility_index.history(period='1Y')
 
 # now we will be filtering out to only data that we need into a df
@@ -198,5 +198,5 @@ def save_multi_image(filename):
     pp.close()
 
 
-filename = '.\market_visuals\BLSDataGraphs.pdf'
+filename = '../financial_markets/data_visuals/BLSDataGraphs.pdf'
 save_multi_image(filename)
