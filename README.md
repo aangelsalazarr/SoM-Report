@@ -1,5 +1,5 @@
 ## State of the Market Report
-- [Market Monitor, Master](https://github.com/aangelsalazarr/SoM-Report/blob/main/el_mercado/marketMonitorMaster.py)
+- [Market Monitor, Master](https://github.com/aangelsalazarr/SoM-Report/blob/main/el_mercado/market_monitor_master.py)
     - [Link to Report](https://github.com/aangelsalazarr/SoM-Report/tree/main/el_mercado/data_visuals)
     - [Link to Data](https://github.com/aangelsalazarr/SoM-Report/tree/main/el_mercado/data_files)
 
