@@ -19,24 +19,20 @@
 - [Goldman Sachs Global Market Monitor](https://github.com/aangelsalazarr/SoM-Report/blob/main/outlooks_and_insights/gsMarketMonitor.py)
 
 ## Topics
-- [U.S. Electricity Market](https://github.com/aangelsalazarr/SoM-Report/blob/main/energyInformationAdministration/electricityMarkets.py)
-    - [Visuals](https://github.com/aangelsalazarr/SoM-Report/tree/main/energyInformationAdministration/data_visuals)
-- [International Energy Data](https://github.com/aangelsalazarr/SoM-Report/blob/main/energyInformationAdministration/international_energy_eia_data.py)
-    - [Visuals](https://github.com/aangelsalazarr/SoM-Report/tree/main/energyInformationAdministration/data_visuals)
-- [U.S. CO2 Emissions](https://github.com/aangelsalazarr/SoM-Report/blob/main/energyInformationAdministration/emissions_data.py)
-    - [Visuals](https://github.com/aangelsalazarr/SoM-Report/tree/main/energyInformationAdministration/data_visuals)
+- [U.S. Electricity Market](https://github.com/aangelsalazarr/SoM-Report/blob/main/electricity_markets/electricityMarkets.py)
+- [International Energy Data](https://github.com/aangelsalazarr/SoM-Report/blob/main/energy_information_administration/international_energy_eia_data.py)
+- [U.S. CO2 Emissions](https://github.com/aangelsalazarr/SoM-Report/blob/main/energy_information_administration/emissions_data.py)
 - Equity Indices
 - Fixed Income / Credit
-- [Volatility / CPI](https://github.com/aangelsalazarr/SoM-Report/blob/main/market/volatility_and_cpi.py)
-    - [Visuals](https://github.com/aangelsalazarr/SoM-Report/tree/main/market/market_visuals)
+- [Volatility / CPI](https://github.com/aangelsalazarr/SoM-Report/blob/main/macroeconomics/volatility_and_cpi.py)
 - Fixed Income Yields
 - Real Assets
 - Foreign Exchange
-- [Decentralized Finance](https://github.com/aangelsalazarr/SoM-Report/blob/main/market/decentralized_finance.py)
+- [Decentralized Finance](https://github.com/aangelsalazarr/SoM-Report/blob/main/financial_markets/decentralized_finance.py)
     - Bitcoin, Ethereum, Tether, USD Coin, BNB
-- Commodities [[Visuals]](https://github.com/aangelsalazarr/SoM-Report/tree/main/blackBox)
-    - [Metals Market](https://github.com/aangelsalazarr/SoM-Report/blob/main/blackBox/comoditiesMetalsDataProcessor.py)
-    - [Energy Market](https://github.com/aangelsalazarr/SoM-Report/blob/main/market/commodities_energy.py)
+- Commodities
+    - [Metals Market]()
+    - [Energy Market]()
 - Equities [[Visuals]](https://github.com/aangelsalazarr/SoM-Report/tree/main/financial_markets/data_visuals)
     - [Energy](https://github.com/aangelsalazarr/SoM-Report/blob/main/financial_markets/equities_energy.py)
     - [Materials](https://github.com/aangelsalazarr/SoM-Report/blob/main/financial_markets/equities_materials.py)
