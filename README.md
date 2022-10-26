@@ -32,7 +32,7 @@
 - [Decentralized Finance](https://github.com/aangelsalazarr/SoM-Report/blob/main/financial_markets/decentralized_finance.py)
     - Bitcoin, Ethereum, Tether, USD Coin, BNB
 - Commodities
-    - [Metals Market]()
+    - [Metals Market](https://github.com/aangelsalazarr/SoM-Report/blob/main/financial_markets/commodities_metals.py)
     - [Energy Market]()
 - Equities
     - [Energy](https://github.com/aangelsalazarr/SoM-Report/blob/main/financial_markets/equities_energy.py)
@@ -47,10 +47,16 @@
     - [Communications](https://github.com/aangelsalazarr/SoM-Report/blob/main/financial_markets/equities_communications.py)
     - [Real Estate](https://github.com/aangelsalazarr/SoM-Report/blob/main/financial_markets/equities_real_estate.py)
 
+## Visuals
+- [Financial Markets](https://github.com/aangelsalazarr/SoM-Report/tree/main/financial_markets/data_visuals)
+- [Electricity Markets](https://github.com/aangelsalazarr/SoM-Report/tree/main/electricity_markets/data_visuals)
+- [Energy (EIA)](https://github.com/aangelsalazarr/SoM-Report/tree/main/energy_information_administration/data_visuals)
+- [Macro Economics](https://github.com/aangelsalazarr/SoM-Report/tree/main/macroeconomics/data_visuals)
+
 ## Saved Data
 - [Financial Markets Data](https://github.com/aangelsalazarr/SoM-Report/tree/main/financial_markets/data_files)
 - [Energy Information Administration Data](https://github.com/aangelsalazarr/SoM-Report/tree/main/energy_information_administration/data_files)
-- [Electricity Market Data]()
+- [Electricity Market Data](https://github.com/aangelsalazarr/SoM-Report/tree/main/electricity_markets/data_files)
 - [The World Bank Data]()
 - [Macro Economic Data](https://github.com/aangelsalazarr/SoM-Report/tree/main/macroeconomics/data_files)
 - [International Energy Agency Data]()
