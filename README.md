@@ -1,9 +1,10 @@
 ## State of the Market Report
-- [Market Monitor, Master](https://github.com/aangelsalazarr/SoM-Report/blob/main/elMercado/marketMonitorMaster.py)
-    - [Link to Report](https://github.com/aangelsalazarr/SoM-Report/tree/main/elMercado/market_monitor_visuals)
+- [Market Monitor, Master](https://github.com/aangelsalazarr/SoM-Report/blob/main/el_mercado/marketMonitorMaster.py)
+    - [Link to Report](https://github.com/aangelsalazarr/SoM-Report/tree/main/el_mercado/data_visuals)
+    - [Link to Data](https://github.com/aangelsalazarr/SoM-Report/tree/main/el_mercado/data_files)
 
 ## Exisiting Analysis
-- [Personal Research on Clean Energy](https://github.com/aangelsalazarr/SoM-Report/tree/main/motivations_and_readings)
+- [Personal Research on Clean Energy](https://github.com/aangelsalazarr/SoM-Report/tree/main/black_box/motivations_and_readings)
 - [Merrill Lynch, Capital Markets Outlook](https://github.com/aangelsalazarr/SoM-Report/blob/main/outlookInsights/merrillCMO.py)
     - [Folder containing PDFs](https://github.com/aangelsalazarr/SoM-Report/tree/main/outlookInsights/merrill_pdfs)
 - [JPMorgan Weekly, Market Recap](https://github.com/aangelsalazarr/SoM-Report/blob/main/outlookInsights/jpmWeeklyMarketRecap.py)
