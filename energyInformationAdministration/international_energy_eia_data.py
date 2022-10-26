@@ -1,10 +1,8 @@
 import os  # allows us to access api key from our environment
-import requests  # will be used make a https get request
-import pandas as pd  # will be used to create dfs
 import matplotlib.pyplot as plt  # will be used for market_monitor_visuals
 from matplotlib import rc
 import seaborn as sns  # used for plotting purposes
-from pdfConverter import save_multi_image  # used to create pdf files
+from blackBox.pdfConverter import save_multi_image  # used to create pdf files
 from datetime import date
 from eia_data_processor import grab_eia_data
 from eia_data_processor import is_float

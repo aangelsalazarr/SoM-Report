@@ -2,14 +2,13 @@ import pandas as pd
 import seaborn as sns
 import os
 import matplotlib.pyplot as plt
-from pdfConverter import save_multi_image
+from blackBox.pdfConverter import save_multi_image
 from matplotlib import rc
 from datetime import date
 from dateutil.relativedelta import relativedelta
-from yfinance_data_processor import data_processor
-from eia_data_processor import grab_eia_data
-from itertools import permutations, chain
-from three_by_three_grapher import visualizer
+from blackBox.yfinance_data_processor import data_processor
+from blackBox.eia_data_processor import grab_eia_data
+from blackBox.three_by_three_grapher import visualizer
 
 # some params related to the framework of output that we will need
 rc('mathtext', default='regular')

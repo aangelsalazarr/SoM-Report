@@ -6,9 +6,8 @@ from dateutil.relativedelta import relativedelta
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
-from matplotlib.backends.backend_pdf import PdfPages
 from matplotlib import rc
-from pdfConverter import save_multi_image
+from blackBox.pdfConverter import save_multi_image
 
 rc('mathtext', default='regular')
 

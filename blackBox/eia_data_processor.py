@@ -3,9 +3,6 @@ import requests
 import pandas as pd
 import matplotlib.pyplot as plt
 from matplotlib import rc
-import seaborn as sns
-from pdfConverter import save_multi_image
-from datetime import date
 
 # setting up params
 rc('mathtext', default='regular')

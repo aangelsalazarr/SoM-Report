@@ -1,5 +1,5 @@
 from eia_data_processor import grab_eia_data, is_float
-from pdfConverter import save_multi_image
+from blackBox.pdfConverter import save_multi_image
 import os
 from datetime import date
 from dateutil.relativedelta import relativedelta

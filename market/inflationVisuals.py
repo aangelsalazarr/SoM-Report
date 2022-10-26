@@ -56,33 +56,8 @@ end_year = datetime.datetime.now().year
 start_year = end_year - 15
 
 # officially grabbing our data with our params
-bls_data = fetch_bls_series(series, startyear=start_year, endyear=end_year,
+blsMainDF = fetch_bls_series(series, startyear=start_year, endyear=end_year,
                             registrationKey=blsKey)
-# purpose is to grab the results -> series list which contains 2 things
-# first, the series ID and second, the data!
-blsDataList = bls_data['Results']['series']
-
-# creating an empty df to add incoming dfs
-blsMainDF = pd.DataFrame(columns=['seriesID'])
-
-# purpose is to loop through each item and add to a general pandas df
-for item in blsDataList:
-    blsMainDF = pd.concat([blsMainDF, pd.DataFrame(data=item['data'])])
-    if blsMainDF['seriesID'].isnull:
-        blsMainDF['seriesID'].fillna(item['seriesID'], inplace=True)
-    else:
-        continue
-
-# removing columns we do not need such as footnotes and latest cols
-blsMainDF = blsMainDF.drop(['latest', 'footnotes'], axis=1)
-
-# purpose is to add a date column and reset the index
-blsMainDF['Date'] = blsMainDF['periodName'] + '-' + blsMainDF['year']
-blsMainDF['Date'] = pd.to_datetime(blsMainDF['Date'])
-blsMainDF = blsMainDF.reset_index(drop=True)
-
-# purpose is to change value type to float
-blsMainDF['value'] = blsMainDF['value'].astype(float)
 
 fig1 = plt.figure()
 line1 = sns.lineplot(data=fredDf, x='Date', y='GDP Def')

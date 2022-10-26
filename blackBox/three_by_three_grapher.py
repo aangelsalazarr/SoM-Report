@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 def visualizer(list, tickerlist, y_axis, fig_title):
 
-    # setting up the parameters for our visuals
+    # setting up the parameters for our data_visuals
     sns.set(font_scale=0.5)
     fig, axes = plt.subplots(3, 3)
     fig.suptitle(str(fig_title))
