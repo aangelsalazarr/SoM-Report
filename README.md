@@ -71,6 +71,7 @@
 - [JSON Data Processor](https://github.com/aangelsalazarr/SoM-Report/blob/main/black_box/json_data_parser.py)
 - [EIA Data Processor](https://github.com/aangelsalazarr/SoM-Report/blob/main/black_box/eia_data_processor.py)
 - [3 by 3 Facet Grid Graph Visualizer](https://github.com/aangelsalazarr/SoM-Report/blob/main/black_box/three_by_three_grapher.py)
+- [The World Bank Data Processor](https://github.com/aangelsalazarr/SoM-Report/blob/main/black_box/wb_data_processor.py)
 
 ## Sources
 - [Yahoo Finance](https://finance.yahoo.com/)
