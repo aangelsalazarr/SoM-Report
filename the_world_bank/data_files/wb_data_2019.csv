@@ -1,267 +1,1597 @@
-economy,Country,EN.ATM.GHGT.KT.CE,SP.POP.TOTL
-ZWE,Zimbabwe,30530.0006866455,14645473.0
-ZMB,Zambia,37569.9996948242,17861034.0
-YEM,"Yemen, Rep.",25260.0002288818,29161922.0
-PSE,West Bank and Gaza,,4685306.0
-VIR,Virgin Islands (U.S.),,106669.0
-VNM,Vietnam,450149.993896484,96462108.0
-VEN,"Venezuela, RB",255740.005493164,28515829.0
-VUT,Vanuatu,870.000004768372,299882.0
-UZB,Uzbekistan,188759.994506836,33580350.0
-URY,Uruguay,36119.9989318848,3461731.0
-USA,United States,6001209.9609375,328329953.0
-GBR,United Kingdom,440079.986572266,66836327.0
-ARE,United Arab Emirates,243550.003051758,9770526.0
-UKR,Ukraine,233259.994506836,44386203.0
-UGA,Uganda,43290.0009155273,44269587.0
-TUV,Tuvalu,29.9999993294477,11655.0
-TCA,Turks and Caicos Islands,,38194.0
-TKM,Turkmenistan,157330.001831055,5942094.0
-TUR,Turkiye,488470.001220703,83429607.0
-TUN,Tunisia,41590.0001525879,11694721.0
-TTO,Trinidad and Tobago,28340.0001525879,1394969.0
-TON,Tonga,310.000002384186,104497.0
-TGO,Togo,7889.9998664856,8082359.0
-TLS,Timor-Leste,5909.99984741211,1293120.0
-THA,Thailand,422089.996337891,69625581.0
-TZA,Tanzania,84000.0,58005461.0
-TJK,Tajikistan,17510.0002288818,9321023.0
-SYR,Syrian Arab Republic,48479.9995422363,17070132.0
-CHE,Switzerland,46500.0,8575280.0
-SWE,Sweden,46189.998626709,10278887.0
-SUR,Suriname,4460.00003814697,581363.0
-SDN,Sudan,106059.997558594,42813237.0
-VCT,St. Vincent and the Grenadines,340.000003576279,110593.0
-MAF,St. Martin (French part),,38002.0
-LCA,St. Lucia,879.999995231628,182795.0
-KNA,St. Kitts and Nevis,349.999994039536,52834.0
-LKA,Sri Lanka,35990.0016784668,21803000.0
-ESP,Spain,306950.012207031,47134837.0
-SSD,South Sudan,50909.9998474121,11062114.0
-ZAF,South Africa,555429.992675781,58558267.0
-SOM,Somalia,25149.9996185303,15442906.0
-SLB,Solomon Islands,939.999997615814,669821.0
-SVN,Slovenia,16459.9990844727,2088385.0
-SVK,Slovak Republic,38060.001373291,5454147.0
-SXM,Sint Maarten (Dutch part),,41608.0
-SGP,Singapore,67230.0033569336,5703569.0
-SLE,Sierra Leone,6079.99992370605,7813207.0
-SYC,Seychelles,779.999971389771,97625.0
-SRB,Serbia,61930.0003051758,6945235.0
-SEN,Senegal,29229.9995422363,16296362.0
-SAU,Saudi Arabia,723150.024414063,34268529.0
-STP,Sao Tome and Principe,180.000007152557,215048.0
-SMR,San Marino,,33864.0
-WSM,Samoa,680.000007152557,197093.0
-RWA,Rwanda,5340.00015258789,12626938.0
-RUS,Russian Federation,2476840.08789063,144406261.0
-ROU,Romania,101239.99786377,19371648.0
-QAT,Qatar,114760.00213623,2832071.0
-PRI,Puerto Rico,,3193694.0
-PRT,Portugal,61380.0010681152,10286263.0
-POL,Poland,353140.014648438,37965475.0
-PHL,Philippines,234279.998779297,108116622.0
-PER,Peru,100730.003356934,32510462.0
-PRY,Paraguay,49549.9992370605,7044639.0
-PNG,Papua New Guinea,22409.9998474121,8776119.0
-PAN,Panama,20879.9991607666,4246440.0
-PLW,Palau,289.99999165535,18001.0
-PAK,Pakistan,432500.0,216565317.0
-OMN,Oman,100260.00213623,4974992.0
-NOR,Norway,45900.0015258789,5347896.0
-MNP,Northern Mariana Islands,,57213.0
-MKD,North Macedonia,11250.0,2076694.0
-NGA,Nigeria,308179.992675781,200963603.0
-NER,Niger,42720.0012207031,23310719.0
-NIC,Nicaragua,18799.9992370605,6545503.0
-NZL,New Zealand,83199.9969482422,4979200.0
-NCL,New Caledonia,,271300.0
-NLD,Netherlands,172229.995727539,17344874.0
-NPL,Nepal,44220.0012207031,28608715.0
-NRU,Nauru,70.0000002980232,10764.0
-NAM,Namibia,10659.9998474121,2494524.0
-MMR,Myanmar,133250.0,54045422.0
-MOZ,Mozambique,35400.0015258789,30366043.0
-MAR,Morocco,93080.0018310547,36471766.0
-MNE,Montenegro,3829.99992370605,622028.0
-MNG,Mongolia,56049.9992370605,3225166.0
-MCO,Monaco,,38967.0
-MDA,Moldova,13390.0003433228,2664974.0
-FSM,"Micronesia, Fed. Sts.",259.999990463257,113811.0
-MEX,Mexico,653869.995117188,127575529.0
-MUS,Mauritius,6849.99990463257,1265711.0
-MRT,Mauritania,14289.999961853,4525698.0
-MHL,Marshall Islands,230.000004172325,58791.0
-MLT,Malta,2140.00010490417,504062.0
-MLI,Mali,44150.0015258789,19658023.0
-MDV,Maldives,2599.99990463257,530957.0
-MYS,Malaysia,313019.989013672,31949789.0
-MWI,Malawi,10949.9998092651,18628749.0
-MDG,Madagascar,29579.9999237061,26969306.0
-MAC,"Macao SAR, China",,640446.0
-LUX,Luxembourg,10479.9995422363,620001.0
-LTU,Lithuania,18930.0003051758,2794137.0
-LIE,Liechtenstein,159.999996423721,38020.0
-LBY,Libya,126690.002441406,6777453.0
-LBR,Liberia,2220.00002861023,4937374.0
-LSO,Lesotho,2529.99997138977,2125267.0
-LBN,Lebanon,35209.9990844727,6855709.0
-LVA,Latvia,11699.9998092651,1913822.0
-LAO,Lao PDR,29280.0006866455,7169456.0
-KGZ,Kyrgyz Republic,16909.9998474121,6456200.0
-KWT,Kuwait,136690.002441406,4207077.0
-XKX,Kosovo,,1788878.0
-KOR,"Korea, Rep.",698460.021972656,51764822.0
-PRK,"Korea, Dem. People's Rep.",79339.9963378906,25666158.0
-KIR,Kiribati,119.999997317791,117608.0
-KEN,Kenya,81010.0021362305,52573967.0
-KAZ,Kazakhstan,274670.013427734,18513673.0
-JOR,Jordan,36569.9996948242,10101697.0
-JPN,Japan,1166510.00976563,126633000.0
-JAM,Jamaica,9970.00026702881,2948277.0
-ITA,Italy,389000.0,59729081.0
-ISR,Israel,87180.0003051758,9054000.0
-IMN,Isle of Man,,84589.0
-IRL,Ireland,61479.9995422363,4934340.0
-IRQ,Iraq,320820.007324219,39309789.0
-IRN,"Iran, Islamic Rep.",893719.970703125,82913893.0
-IDN,Indonesia,1002369.99511719,270625567.0
-IND,India,3394870.1171875,1366417756.0
-ISL,Iceland,2849.99990463257,360563.0
-HUN,Hungary,60590.0001525879,9771141.0
-HKG,"Hong Kong SAR, China",,7507900.0
-HND,Honduras,22389.9993896484,9746115.0
-HTI,Haiti,10500.0,11263079.0
-GUY,Guyana,5679.99982833862,782775.0
-GNB,Guinea-Bissau,2579.99992370605,1920917.0
-GIN,Guinea,28329.9999237061,12771246.0
-GTM,Guatemala,35099.9984741211,16604026.0
-GUM,Guam,,167295.0
-GRD,Grenada,2390.00010490417,112002.0
-GRL,Greenland,,56225.0
-GRC,Greece,78500.0,10721582.0
-GIB,Gibraltar,,33706.0
-GHA,Ghana,37650.0015258789,30417858.0
-DEU,Germany,749710.021972656,83092962.0
-GEO,Georgia,17600.0003814697,3720161.0
-GMB,"Gambia, The",2339.99991416931,2347696.0
-GAB,Gabon,13170.0000762939,2172578.0
-PYF,French Polynesia,,279285.0
-FRA,France,414040.008544922,67248926.0
-FIN,Finland,51479.9995422363,5521606.0
-FJI,Fiji,2380.00011444092,889955.0
-FRO,Faroe Islands,,48677.0
-ETH,Ethiopia,150960.006713867,112078727.0
-SWZ,Eswatini,2789.99996185303,1148133.0
-EST,Estonia,12869.9998855591,1326855.0
-ERI,Eritrea,6329.99992370605,
-GNQ,Equatorial Guinea,11409.9998474121,1355982.0
-SLV,El Salvador,12819.9996948242,6453550.0
-EGY,"Egypt, Arab Rep.",351769.989013672,100388076.0
-ECU,Ecuador,72529.9987792969,17373657.0
-DOM,Dominican Republic,41319.9996948242,10738957.0
-DMA,Dominica,230.000004172325,71808.0
-DJI,Djibouti,1379.99999523163,973557.0
-DNK,Denmark,43200.0007629395,5814422.0
-CZE,Czechia,116589.996337891,10671870.0
-CYP,Cyprus,8539.99996185303,1198574.0
-CUW,Curacao,,157441.0
-CUB,Cuba,41240.0016784668,11333484.0
-HRV,Croatia,22260.0002288818,4065253.0
-CIV,Cote d'Ivoire,24860.0006103516,25716554.0
-CRI,Costa Rica,15750.0,5047561.0
-COG,"Congo, Rep.",19200.0007629395,5380504.0
-COD,"Congo, Dem. Rep.",55000.0,86790568.0
-COM,Comoros,639.999985694885,850891.0
-COL,Colombia,187339.996337891,50339443.0
-CHN,China,12705089.84375,1407745000.0
-CHL,Chile,113019.996643066,18952035.0
-CHI,Channel Islands,,172264.0
-TCD,Chad,81650.0015258789,15946882.0
-CAF,Central African Republic,19729.9995422363,4745179.0
-CYM,Cayman Islands,,64948.0
-CAN,Canada,736929.992675781,37601230.0
-CMR,Cameroon,90120.002746582,25876387.0
-KHM,Cambodia,40060.001373291,16486542.0
-CPV,Cabo Verde,810.000002384186,549936.0
-BDI,Burundi,4559.99994277954,11530577.0
-BFA,Burkina Faso,32209.9990844727,20321383.0
-BGR,Bulgaria,51279.9987792969,6975761.0
-BRN,Brunei Darussalam,9300.00019073486,433296.0
-VGB,British Virgin Islands,,30033.0
-BRA,Brazil,1057260.00976563,211049519.0
-BWA,Botswana,11000.0,2303703.0
-BIH,Bosnia and Herzegovina,26229.9995422363,3300998.0
-BOL,Bolivia,60790.0009155273,11513102.0
-BTN,Bhutan,1679.99994754791,763094.0
-BMU,Bermuda,,63911.0
-BEN,Benin,15020.0004577637,11801151.0
-BLZ,Belize,1549.99995231628,390351.0
-BEL,Belgium,108059.997558594,11488980.0
-BLR,Belarus,86830.0018310547,9419758.0
-BRB,Barbados,3789.99996185303,287021.0
-BGD,Bangladesh,215940.002441406,163046173.0
-BHR,Bahrain,54409.9998474121,1641164.0
-BHS,"Bahamas, The",3160.00008583069,389486.0
-AZE,Azerbaijan,54799.9992370605,10024283.0
-AUT,Austria,76919.9981689453,8879920.0
-AUS,Australia,585979.98046875,25365745.0
-ABW,Aruba,,106310.0
-ARM,Armenia,9960.00003814697,2957728.0
-ARG,Argentina,369049.987792969,44938712.0
-ATG,Antigua and Barbuda,1220.00002861023,97115.0
-AGO,Angola,79680.0003051758,31825299.0
-AND,Andorra,629.999995231628,77146.0
-ASM,American Samoa,,55312.0
-DZA,Algeria,282010.009765625,43053054.0
-ALB,Albania,9010.00022888184,2854191.0
-AFG,Afghanistan,28639.9993896484,38041757.0
-WLD,World,46287620.0335007,7683806444.0
-UMC,Upper middle income,20931299.9263387,2480707519.0
-TSS,Sub-Saharan Africa (IDA & IBRD countries),2261020.00176907,1106957870.0
-SSA,Sub-Saharan Africa (excluding high income),2260240.00179768,1106860245.0
-SSF,Sub-Saharan Africa,2261020.00176907,1106957870.0
-TSA,South Asia (IDA & IBRD),4156440.1217699,1835776769.0
-SAS,South Asia,4156440.1217699,1835776769.0
-SST,Small states,354550.001589581,41254483.0
-PRE,Pre-demographic dividend,1787710.00683308,944902748.0
-PST,Post-demographic dividend,13060959.9804878,1113142897.0
-PSS,Pacific island small states,6180.00010959804,2491878.0
-OSS,Other small states,286010.001063346,31361216.0
-OED,OECD members,14551209.9852562,1365274704.0
-INX,Not classified,,
-NAC,North America,6738139.95361328,365995094.0
-MIC,Middle income,30134349.9978092,5754728710.0
-TMN,Middle East & North Africa (IDA & IBRD countries),2256579.97977734,384771769.0
-MNA,Middle East & North Africa (excluding high income),2256579.97977734,389457075.0
-MEA,Middle East & North Africa,3718720.01421451,456709496.0
-LMC,Lower middle income,9203050.07147044,3274021191.0
-LIC,Low income,1012720.00360489,665731857.0
-LMY,Low & middle income,31147070.0014141,6420460567.0
-LDC,Least developed countries: UN classification,1593780.01346253,1033088986.0
-TLA,Latin America & the Caribbean (IDA & IBRD countries),3188969.98839081,630644771.0
-LAC,Latin America & Caribbean (excluding high income),2774539.98966516,585257302.0
-LCN,Latin America & Caribbean,3237159.99011696,646431661.0
-LTE,Late-demographic dividend,19844109.9478901,2308520840.0
-IDA,IDA total,2891070.00686787,1670692565.0
-IDX,IDA only,1705420.01343332,1109120636.0
-IDB,IDA blend,1185649.99343455,561571929.0
-IBT,IDA & IBRD total,31959650.0165146,6496952025.0
-IBD,IBRD only,29068580.0096467,4826259460.0
-HIC,High income,14884810.0265935,1234830048.0
-HPC,Heavily indebted poor countries (HIPC),1242080.0126195,801708019.0
-FCS,Fragile and conflict affected situations,2185330.01727425,940026046.0
-EUU,European Union,3383420.04179955,447197811.0
-TEC,Europe & Central Asia (IDA & IBRD countries),4676500.10681153,460788476.0
-ECA,Europe & Central Asia (excluding high income),4199860.09407044,399386100.0
-ECS,Europe & Central Asia,8065980.12498022,920807612.0
-EMU,Euro area,2588930.03439903,342283354.0
-TEA,East Asia & Pacific (IDA & IBRD countries),15420139.817996,2078012370.0
-EAP,East Asia & Pacific (excluding high income),15499409.8143335,2103723076.0
-EAS,East Asia & Pacific,18110159.8270368,2351127942.0
-EAR,Early-demographic dividend,11592670.0982973,3290291029.0
-CEB,Central Europe and the Baltics,803120.008468629,102398494.0
-CSS,Caribbean small states,62360.0004166365,7401389.0
-ARB,Arab World,2881820.04022598,427870273.0
-AFW,Africa Western and Central,833840.000689029,446911598.0
-AFE,Africa Eastern and Southern,1427180.00108004,660046272.0
+description,period,country,economy,seriesId,value
+"population, total",2019.0,Zimbabwe,ZWE,SP.POP.TOTL,14645473.0
+"population, total",2019.0,Zambia,ZMB,SP.POP.TOTL,17861034.0
+"population, total",2019.0,"Yemen, Rep.",YEM,SP.POP.TOTL,29161922.0
+"population, total",2019.0,West Bank and Gaza,PSE,SP.POP.TOTL,4685306.0
+"population, total",2019.0,Virgin Islands (U.S.),VIR,SP.POP.TOTL,106669.0
+"population, total",2019.0,Vietnam,VNM,SP.POP.TOTL,96462108.0
+"population, total",2019.0,"Venezuela, RB",VEN,SP.POP.TOTL,28515829.0
+"population, total",2019.0,Vanuatu,VUT,SP.POP.TOTL,299882.0
+"population, total",2019.0,Uzbekistan,UZB,SP.POP.TOTL,33580350.0
+"population, total",2019.0,Uruguay,URY,SP.POP.TOTL,3461731.0
+"population, total",2019.0,United States,USA,SP.POP.TOTL,328329953.0
+"population, total",2019.0,United Kingdom,GBR,SP.POP.TOTL,66836327.0
+"population, total",2019.0,United Arab Emirates,ARE,SP.POP.TOTL,9770526.0
+"population, total",2019.0,Ukraine,UKR,SP.POP.TOTL,44386203.0
+"population, total",2019.0,Uganda,UGA,SP.POP.TOTL,44269587.0
+"population, total",2019.0,Tuvalu,TUV,SP.POP.TOTL,11655.0
+"population, total",2019.0,Turks and Caicos Islands,TCA,SP.POP.TOTL,38194.0
+"population, total",2019.0,Turkmenistan,TKM,SP.POP.TOTL,5942094.0
+"population, total",2019.0,Turkiye,TUR,SP.POP.TOTL,83429607.0
+"population, total",2019.0,Tunisia,TUN,SP.POP.TOTL,11694721.0
+"population, total",2019.0,Trinidad and Tobago,TTO,SP.POP.TOTL,1394969.0
+"population, total",2019.0,Tonga,TON,SP.POP.TOTL,104497.0
+"population, total",2019.0,Togo,TGO,SP.POP.TOTL,8082359.0
+"population, total",2019.0,Timor-Leste,TLS,SP.POP.TOTL,1293120.0
+"population, total",2019.0,Thailand,THA,SP.POP.TOTL,69625581.0
+"population, total",2019.0,Tanzania,TZA,SP.POP.TOTL,58005461.0
+"population, total",2019.0,Tajikistan,TJK,SP.POP.TOTL,9321023.0
+"population, total",2019.0,Syrian Arab Republic,SYR,SP.POP.TOTL,17070132.0
+"population, total",2019.0,Switzerland,CHE,SP.POP.TOTL,8575280.0
+"population, total",2019.0,Sweden,SWE,SP.POP.TOTL,10278887.0
+"population, total",2019.0,Suriname,SUR,SP.POP.TOTL,581363.0
+"population, total",2019.0,Sudan,SDN,SP.POP.TOTL,42813237.0
+"population, total",2019.0,St. Vincent and the Grenadines,VCT,SP.POP.TOTL,110593.0
+"population, total",2019.0,St. Martin (French part),MAF,SP.POP.TOTL,38002.0
+"population, total",2019.0,St. Lucia,LCA,SP.POP.TOTL,182795.0
+"population, total",2019.0,St. Kitts and Nevis,KNA,SP.POP.TOTL,52834.0
+"population, total",2019.0,Sri Lanka,LKA,SP.POP.TOTL,21803000.0
+"population, total",2019.0,Spain,ESP,SP.POP.TOTL,47134837.0
+"population, total",2019.0,South Sudan,SSD,SP.POP.TOTL,11062114.0
+"population, total",2019.0,South Africa,ZAF,SP.POP.TOTL,58558267.0
+"population, total",2019.0,Somalia,SOM,SP.POP.TOTL,15442906.0
+"population, total",2019.0,Solomon Islands,SLB,SP.POP.TOTL,669821.0
+"population, total",2019.0,Slovenia,SVN,SP.POP.TOTL,2088385.0
+"population, total",2019.0,Slovak Republic,SVK,SP.POP.TOTL,5454147.0
+"population, total",2019.0,Sint Maarten (Dutch part),SXM,SP.POP.TOTL,41608.0
+"population, total",2019.0,Singapore,SGP,SP.POP.TOTL,5703569.0
+"population, total",2019.0,Sierra Leone,SLE,SP.POP.TOTL,7813207.0
+"population, total",2019.0,Seychelles,SYC,SP.POP.TOTL,97625.0
+"population, total",2019.0,Serbia,SRB,SP.POP.TOTL,6945235.0
+"population, total",2019.0,Senegal,SEN,SP.POP.TOTL,16296362.0
+"population, total",2019.0,Saudi Arabia,SAU,SP.POP.TOTL,34268529.0
+"population, total",2019.0,Sao Tome and Principe,STP,SP.POP.TOTL,215048.0
+"population, total",2019.0,San Marino,SMR,SP.POP.TOTL,33864.0
+"population, total",2019.0,Samoa,WSM,SP.POP.TOTL,197093.0
+"population, total",2019.0,Rwanda,RWA,SP.POP.TOTL,12626938.0
+"population, total",2019.0,Russian Federation,RUS,SP.POP.TOTL,144406261.0
+"population, total",2019.0,Romania,ROU,SP.POP.TOTL,19371648.0
+"population, total",2019.0,Qatar,QAT,SP.POP.TOTL,2832071.0
+"population, total",2019.0,Puerto Rico,PRI,SP.POP.TOTL,3193694.0
+"population, total",2019.0,Portugal,PRT,SP.POP.TOTL,10286263.0
+"population, total",2019.0,Poland,POL,SP.POP.TOTL,37965475.0
+"population, total",2019.0,Philippines,PHL,SP.POP.TOTL,108116622.0
+"population, total",2019.0,Peru,PER,SP.POP.TOTL,32510462.0
+"population, total",2019.0,Paraguay,PRY,SP.POP.TOTL,7044639.0
+"population, total",2019.0,Papua New Guinea,PNG,SP.POP.TOTL,8776119.0
+"population, total",2019.0,Panama,PAN,SP.POP.TOTL,4246440.0
+"population, total",2019.0,Palau,PLW,SP.POP.TOTL,18001.0
+"population, total",2019.0,Pakistan,PAK,SP.POP.TOTL,216565317.0
+"population, total",2019.0,Oman,OMN,SP.POP.TOTL,4974992.0
+"population, total",2019.0,Norway,NOR,SP.POP.TOTL,5347896.0
+"population, total",2019.0,Northern Mariana Islands,MNP,SP.POP.TOTL,57213.0
+"population, total",2019.0,North Macedonia,MKD,SP.POP.TOTL,2076694.0
+"population, total",2019.0,Nigeria,NGA,SP.POP.TOTL,200963603.0
+"population, total",2019.0,Niger,NER,SP.POP.TOTL,23310719.0
+"population, total",2019.0,Nicaragua,NIC,SP.POP.TOTL,6545503.0
+"population, total",2019.0,New Zealand,NZL,SP.POP.TOTL,4979200.0
+"population, total",2019.0,New Caledonia,NCL,SP.POP.TOTL,271300.0
+"population, total",2019.0,Netherlands,NLD,SP.POP.TOTL,17344874.0
+"population, total",2019.0,Nepal,NPL,SP.POP.TOTL,28608715.0
+"population, total",2019.0,Nauru,NRU,SP.POP.TOTL,10764.0
+"population, total",2019.0,Namibia,NAM,SP.POP.TOTL,2494524.0
+"population, total",2019.0,Myanmar,MMR,SP.POP.TOTL,54045422.0
+"population, total",2019.0,Mozambique,MOZ,SP.POP.TOTL,30366043.0
+"population, total",2019.0,Morocco,MAR,SP.POP.TOTL,36471766.0
+"population, total",2019.0,Montenegro,MNE,SP.POP.TOTL,622028.0
+"population, total",2019.0,Mongolia,MNG,SP.POP.TOTL,3225166.0
+"population, total",2019.0,Monaco,MCO,SP.POP.TOTL,38967.0
+"population, total",2019.0,Moldova,MDA,SP.POP.TOTL,2664974.0
+"population, total",2019.0,"Micronesia, Fed. Sts.",FSM,SP.POP.TOTL,113811.0
+"population, total",2019.0,Mexico,MEX,SP.POP.TOTL,127575529.0
+"population, total",2019.0,Mauritius,MUS,SP.POP.TOTL,1265711.0
+"population, total",2019.0,Mauritania,MRT,SP.POP.TOTL,4525698.0
+"population, total",2019.0,Marshall Islands,MHL,SP.POP.TOTL,58791.0
+"population, total",2019.0,Malta,MLT,SP.POP.TOTL,504062.0
+"population, total",2019.0,Mali,MLI,SP.POP.TOTL,19658023.0
+"population, total",2019.0,Maldives,MDV,SP.POP.TOTL,530957.0
+"population, total",2019.0,Malaysia,MYS,SP.POP.TOTL,31949789.0
+"population, total",2019.0,Malawi,MWI,SP.POP.TOTL,18628749.0
+"population, total",2019.0,Madagascar,MDG,SP.POP.TOTL,26969306.0
+"population, total",2019.0,"Macao SAR, China",MAC,SP.POP.TOTL,640446.0
+"population, total",2019.0,Luxembourg,LUX,SP.POP.TOTL,620001.0
+"population, total",2019.0,Lithuania,LTU,SP.POP.TOTL,2794137.0
+"population, total",2019.0,Liechtenstein,LIE,SP.POP.TOTL,38020.0
+"population, total",2019.0,Libya,LBY,SP.POP.TOTL,6777453.0
+"population, total",2019.0,Liberia,LBR,SP.POP.TOTL,4937374.0
+"population, total",2019.0,Lesotho,LSO,SP.POP.TOTL,2125267.0
+"population, total",2019.0,Lebanon,LBN,SP.POP.TOTL,6855709.0
+"population, total",2019.0,Latvia,LVA,SP.POP.TOTL,1913822.0
+"population, total",2019.0,Lao PDR,LAO,SP.POP.TOTL,7169456.0
+"population, total",2019.0,Kyrgyz Republic,KGZ,SP.POP.TOTL,6456200.0
+"population, total",2019.0,Kuwait,KWT,SP.POP.TOTL,4207077.0
+"population, total",2019.0,Kosovo,XKX,SP.POP.TOTL,1788878.0
+"population, total",2019.0,"Korea, Rep.",KOR,SP.POP.TOTL,51764822.0
+"population, total",2019.0,"Korea, Dem. People's Rep.",PRK,SP.POP.TOTL,25666158.0
+"population, total",2019.0,Kiribati,KIR,SP.POP.TOTL,117608.0
+"population, total",2019.0,Kenya,KEN,SP.POP.TOTL,52573967.0
+"population, total",2019.0,Kazakhstan,KAZ,SP.POP.TOTL,18513673.0
+"population, total",2019.0,Jordan,JOR,SP.POP.TOTL,10101697.0
+"population, total",2019.0,Japan,JPN,SP.POP.TOTL,126633000.0
+"population, total",2019.0,Jamaica,JAM,SP.POP.TOTL,2948277.0
+"population, total",2019.0,Italy,ITA,SP.POP.TOTL,59729081.0
+"population, total",2019.0,Israel,ISR,SP.POP.TOTL,9054000.0
+"population, total",2019.0,Isle of Man,IMN,SP.POP.TOTL,84589.0
+"population, total",2019.0,Ireland,IRL,SP.POP.TOTL,4934340.0
+"population, total",2019.0,Iraq,IRQ,SP.POP.TOTL,39309789.0
+"population, total",2019.0,"Iran, Islamic Rep.",IRN,SP.POP.TOTL,82913893.0
+"population, total",2019.0,Indonesia,IDN,SP.POP.TOTL,270625567.0
+"population, total",2019.0,India,IND,SP.POP.TOTL,1366417756.0
+"population, total",2019.0,Iceland,ISL,SP.POP.TOTL,360563.0
+"population, total",2019.0,Hungary,HUN,SP.POP.TOTL,9771141.0
+"population, total",2019.0,"Hong Kong SAR, China",HKG,SP.POP.TOTL,7507900.0
+"population, total",2019.0,Honduras,HND,SP.POP.TOTL,9746115.0
+"population, total",2019.0,Haiti,HTI,SP.POP.TOTL,11263079.0
+"population, total",2019.0,Guyana,GUY,SP.POP.TOTL,782775.0
+"population, total",2019.0,Guinea-Bissau,GNB,SP.POP.TOTL,1920917.0
+"population, total",2019.0,Guinea,GIN,SP.POP.TOTL,12771246.0
+"population, total",2019.0,Guatemala,GTM,SP.POP.TOTL,16604026.0
+"population, total",2019.0,Guam,GUM,SP.POP.TOTL,167295.0
+"population, total",2019.0,Grenada,GRD,SP.POP.TOTL,112002.0
+"population, total",2019.0,Greenland,GRL,SP.POP.TOTL,56225.0
+"population, total",2019.0,Greece,GRC,SP.POP.TOTL,10721582.0
+"population, total",2019.0,Gibraltar,GIB,SP.POP.TOTL,33706.0
+"population, total",2019.0,Ghana,GHA,SP.POP.TOTL,30417858.0
+"population, total",2019.0,Germany,DEU,SP.POP.TOTL,83092962.0
+"population, total",2019.0,Georgia,GEO,SP.POP.TOTL,3720161.0
+"population, total",2019.0,"Gambia, The",GMB,SP.POP.TOTL,2347696.0
+"population, total",2019.0,Gabon,GAB,SP.POP.TOTL,2172578.0
+"population, total",2019.0,French Polynesia,PYF,SP.POP.TOTL,279285.0
+"population, total",2019.0,France,FRA,SP.POP.TOTL,67248926.0
+"population, total",2019.0,Finland,FIN,SP.POP.TOTL,5521606.0
+"population, total",2019.0,Fiji,FJI,SP.POP.TOTL,889955.0
+"population, total",2019.0,Faroe Islands,FRO,SP.POP.TOTL,48677.0
+"population, total",2019.0,Ethiopia,ETH,SP.POP.TOTL,112078727.0
+"population, total",2019.0,Eswatini,SWZ,SP.POP.TOTL,1148133.0
+"population, total",2019.0,Estonia,EST,SP.POP.TOTL,1326855.0
+"population, total",2019.0,Eritrea,ERI,SP.POP.TOTL,
+"population, total",2019.0,Equatorial Guinea,GNQ,SP.POP.TOTL,1355982.0
+"population, total",2019.0,El Salvador,SLV,SP.POP.TOTL,6453550.0
+"population, total",2019.0,"Egypt, Arab Rep.",EGY,SP.POP.TOTL,100388076.0
+"population, total",2019.0,Ecuador,ECU,SP.POP.TOTL,17373657.0
+"population, total",2019.0,Dominican Republic,DOM,SP.POP.TOTL,10738957.0
+"population, total",2019.0,Dominica,DMA,SP.POP.TOTL,71808.0
+"population, total",2019.0,Djibouti,DJI,SP.POP.TOTL,973557.0
+"population, total",2019.0,Denmark,DNK,SP.POP.TOTL,5814422.0
+"population, total",2019.0,Czechia,CZE,SP.POP.TOTL,10671870.0
+"population, total",2019.0,Cyprus,CYP,SP.POP.TOTL,1198574.0
+"population, total",2019.0,Curacao,CUW,SP.POP.TOTL,157441.0
+"population, total",2019.0,Cuba,CUB,SP.POP.TOTL,11333484.0
+"population, total",2019.0,Croatia,HRV,SP.POP.TOTL,4065253.0
+"population, total",2019.0,Cote d'Ivoire,CIV,SP.POP.TOTL,25716554.0
+"population, total",2019.0,Costa Rica,CRI,SP.POP.TOTL,5047561.0
+"population, total",2019.0,"Congo, Rep.",COG,SP.POP.TOTL,5380504.0
+"population, total",2019.0,"Congo, Dem. Rep.",COD,SP.POP.TOTL,86790568.0
+"population, total",2019.0,Comoros,COM,SP.POP.TOTL,850891.0
+"population, total",2019.0,Colombia,COL,SP.POP.TOTL,50339443.0
+"population, total",2019.0,China,CHN,SP.POP.TOTL,1407745000.0
+"population, total",2019.0,Chile,CHL,SP.POP.TOTL,18952035.0
+"population, total",2019.0,Channel Islands,CHI,SP.POP.TOTL,172264.0
+"population, total",2019.0,Chad,TCD,SP.POP.TOTL,15946882.0
+"population, total",2019.0,Central African Republic,CAF,SP.POP.TOTL,4745179.0
+"population, total",2019.0,Cayman Islands,CYM,SP.POP.TOTL,64948.0
+"population, total",2019.0,Canada,CAN,SP.POP.TOTL,37601230.0
+"population, total",2019.0,Cameroon,CMR,SP.POP.TOTL,25876387.0
+"population, total",2019.0,Cambodia,KHM,SP.POP.TOTL,16486542.0
+"population, total",2019.0,Cabo Verde,CPV,SP.POP.TOTL,549936.0
+"population, total",2019.0,Burundi,BDI,SP.POP.TOTL,11530577.0
+"population, total",2019.0,Burkina Faso,BFA,SP.POP.TOTL,20321383.0
+"population, total",2019.0,Bulgaria,BGR,SP.POP.TOTL,6975761.0
+"population, total",2019.0,Brunei Darussalam,BRN,SP.POP.TOTL,433296.0
+"population, total",2019.0,British Virgin Islands,VGB,SP.POP.TOTL,30033.0
+"population, total",2019.0,Brazil,BRA,SP.POP.TOTL,211049519.0
+"population, total",2019.0,Botswana,BWA,SP.POP.TOTL,2303703.0
+"population, total",2019.0,Bosnia and Herzegovina,BIH,SP.POP.TOTL,3300998.0
+"population, total",2019.0,Bolivia,BOL,SP.POP.TOTL,11513102.0
+"population, total",2019.0,Bhutan,BTN,SP.POP.TOTL,763094.0
+"population, total",2019.0,Bermuda,BMU,SP.POP.TOTL,63911.0
+"population, total",2019.0,Benin,BEN,SP.POP.TOTL,11801151.0
+"population, total",2019.0,Belize,BLZ,SP.POP.TOTL,390351.0
+"population, total",2019.0,Belgium,BEL,SP.POP.TOTL,11488980.0
+"population, total",2019.0,Belarus,BLR,SP.POP.TOTL,9419758.0
+"population, total",2019.0,Barbados,BRB,SP.POP.TOTL,287021.0
+"population, total",2019.0,Bangladesh,BGD,SP.POP.TOTL,163046173.0
+"population, total",2019.0,Bahrain,BHR,SP.POP.TOTL,1641164.0
+"population, total",2019.0,"Bahamas, The",BHS,SP.POP.TOTL,389486.0
+"population, total",2019.0,Azerbaijan,AZE,SP.POP.TOTL,10024283.0
+"population, total",2019.0,Austria,AUT,SP.POP.TOTL,8879920.0
+"population, total",2019.0,Australia,AUS,SP.POP.TOTL,25365745.0
+"population, total",2019.0,Aruba,ABW,SP.POP.TOTL,106310.0
+"population, total",2019.0,Armenia,ARM,SP.POP.TOTL,2957728.0
+"population, total",2019.0,Argentina,ARG,SP.POP.TOTL,44938712.0
+"population, total",2019.0,Antigua and Barbuda,ATG,SP.POP.TOTL,97115.0
+"population, total",2019.0,Angola,AGO,SP.POP.TOTL,31825299.0
+"population, total",2019.0,Andorra,AND,SP.POP.TOTL,77146.0
+"population, total",2019.0,American Samoa,ASM,SP.POP.TOTL,55312.0
+"population, total",2019.0,Algeria,DZA,SP.POP.TOTL,43053054.0
+"population, total",2019.0,Albania,ALB,SP.POP.TOTL,2854191.0
+"population, total",2019.0,Afghanistan,AFG,SP.POP.TOTL,38041757.0
+"population, total",2019.0,World,WLD,SP.POP.TOTL,7683806444.0
+"population, total",2019.0,Upper middle income,UMC,SP.POP.TOTL,2480707519.0
+"population, total",2019.0,Sub-Saharan Africa (IDA & IBRD countries),TSS,SP.POP.TOTL,1106957870.0
+"population, total",2019.0,Sub-Saharan Africa (excluding high income),SSA,SP.POP.TOTL,1106860245.0
+"population, total",2019.0,Sub-Saharan Africa,SSF,SP.POP.TOTL,1106957870.0
+"population, total",2019.0,South Asia (IDA & IBRD),TSA,SP.POP.TOTL,1835776769.0
+"population, total",2019.0,South Asia,SAS,SP.POP.TOTL,1835776769.0
+"population, total",2019.0,Small states,SST,SP.POP.TOTL,41254483.0
+"population, total",2019.0,Pre-demographic dividend,PRE,SP.POP.TOTL,944902748.0
+"population, total",2019.0,Post-demographic dividend,PST,SP.POP.TOTL,1113142897.0
+"population, total",2019.0,Pacific island small states,PSS,SP.POP.TOTL,2491878.0
+"population, total",2019.0,Other small states,OSS,SP.POP.TOTL,31361216.0
+"population, total",2019.0,OECD members,OED,SP.POP.TOTL,1365274704.0
+"population, total",2019.0,Not classified,INX,SP.POP.TOTL,
+"population, total",2019.0,North America,NAC,SP.POP.TOTL,365995094.0
+"population, total",2019.0,Middle income,MIC,SP.POP.TOTL,5754728710.0
+"population, total",2019.0,Middle East & North Africa (IDA & IBRD countries),TMN,SP.POP.TOTL,384771769.0
+"population, total",2019.0,Middle East & North Africa (excluding high income),MNA,SP.POP.TOTL,389457075.0
+"population, total",2019.0,Middle East & North Africa,MEA,SP.POP.TOTL,456709496.0
+"population, total",2019.0,Lower middle income,LMC,SP.POP.TOTL,3274021191.0
+"population, total",2019.0,Low income,LIC,SP.POP.TOTL,665731857.0
+"population, total",2019.0,Low & middle income,LMY,SP.POP.TOTL,6420460567.0
+"population, total",2019.0,Least developed countries: UN classification,LDC,SP.POP.TOTL,1033088986.0
+"population, total",2019.0,Latin America & the Caribbean (IDA & IBRD countries),TLA,SP.POP.TOTL,630644771.0
+"population, total",2019.0,Latin America & Caribbean (excluding high income),LAC,SP.POP.TOTL,585257302.0
+"population, total",2019.0,Latin America & Caribbean,LCN,SP.POP.TOTL,646431661.0
+"population, total",2019.0,Late-demographic dividend,LTE,SP.POP.TOTL,2308520840.0
+"population, total",2019.0,IDA total,IDA,SP.POP.TOTL,1670692565.0
+"population, total",2019.0,IDA only,IDX,SP.POP.TOTL,1109120636.0
+"population, total",2019.0,IDA blend,IDB,SP.POP.TOTL,561571929.0
+"population, total",2019.0,IDA & IBRD total,IBT,SP.POP.TOTL,6496952025.0
+"population, total",2019.0,IBRD only,IBD,SP.POP.TOTL,4826259460.0
+"population, total",2019.0,High income,HIC,SP.POP.TOTL,1234830048.0
+"population, total",2019.0,Heavily indebted poor countries (HIPC),HPC,SP.POP.TOTL,801708019.0
+"population, total",2019.0,Fragile and conflict affected situations,FCS,SP.POP.TOTL,940026046.0
+"population, total",2019.0,European Union,EUU,SP.POP.TOTL,447197811.0
+"population, total",2019.0,Europe & Central Asia (IDA & IBRD countries),TEC,SP.POP.TOTL,460788476.0
+"population, total",2019.0,Europe & Central Asia (excluding high income),ECA,SP.POP.TOTL,399386100.0
+"population, total",2019.0,Europe & Central Asia,ECS,SP.POP.TOTL,920807612.0
+"population, total",2019.0,Euro area,EMU,SP.POP.TOTL,342283354.0
+"population, total",2019.0,East Asia & Pacific (IDA & IBRD countries),TEA,SP.POP.TOTL,2078012370.0
+"population, total",2019.0,East Asia & Pacific (excluding high income),EAP,SP.POP.TOTL,2103723076.0
+"population, total",2019.0,East Asia & Pacific,EAS,SP.POP.TOTL,2351127942.0
+"population, total",2019.0,Early-demographic dividend,EAR,SP.POP.TOTL,3290291029.0
+"population, total",2019.0,Central Europe and the Baltics,CEB,SP.POP.TOTL,102398494.0
+"population, total",2019.0,Caribbean small states,CSS,SP.POP.TOTL,7401389.0
+"population, total",2019.0,Arab World,ARB,SP.POP.TOTL,427870273.0
+"population, total",2019.0,Africa Western and Central,AFW,SP.POP.TOTL,446911598.0
+"population, total",2019.0,Africa Eastern and Southern,AFE,SP.POP.TOTL,660046272.0
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Zimbabwe,ZWE,EN.ATM.GHGT.KT.CE,30530.0006866455
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Zambia,ZMB,EN.ATM.GHGT.KT.CE,37569.9996948242
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,"Yemen, Rep.",YEM,EN.ATM.GHGT.KT.CE,25260.0002288818
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,West Bank and Gaza,PSE,EN.ATM.GHGT.KT.CE,
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Virgin Islands (U.S.),VIR,EN.ATM.GHGT.KT.CE,
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Vietnam,VNM,EN.ATM.GHGT.KT.CE,450149.993896484
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,"Venezuela, RB",VEN,EN.ATM.GHGT.KT.CE,255740.005493164
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Vanuatu,VUT,EN.ATM.GHGT.KT.CE,870.000004768372
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Uzbekistan,UZB,EN.ATM.GHGT.KT.CE,188759.994506836
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Uruguay,URY,EN.ATM.GHGT.KT.CE,36119.9989318848
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,United States,USA,EN.ATM.GHGT.KT.CE,6001209.9609375
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,United Kingdom,GBR,EN.ATM.GHGT.KT.CE,440079.986572266
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,United Arab Emirates,ARE,EN.ATM.GHGT.KT.CE,243550.003051758
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Ukraine,UKR,EN.ATM.GHGT.KT.CE,233259.994506836
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Uganda,UGA,EN.ATM.GHGT.KT.CE,43290.0009155273
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Tuvalu,TUV,EN.ATM.GHGT.KT.CE,29.9999993294477
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Turks and Caicos Islands,TCA,EN.ATM.GHGT.KT.CE,
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Turkmenistan,TKM,EN.ATM.GHGT.KT.CE,157330.001831055
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Turkiye,TUR,EN.ATM.GHGT.KT.CE,488470.001220703
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Tunisia,TUN,EN.ATM.GHGT.KT.CE,41590.0001525879
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Trinidad and Tobago,TTO,EN.ATM.GHGT.KT.CE,28340.0001525879
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Tonga,TON,EN.ATM.GHGT.KT.CE,310.000002384186
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Togo,TGO,EN.ATM.GHGT.KT.CE,7889.9998664856
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Timor-Leste,TLS,EN.ATM.GHGT.KT.CE,5909.99984741211
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Thailand,THA,EN.ATM.GHGT.KT.CE,422089.996337891
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Tanzania,TZA,EN.ATM.GHGT.KT.CE,84000.0
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Tajikistan,TJK,EN.ATM.GHGT.KT.CE,17510.0002288818
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Syrian Arab Republic,SYR,EN.ATM.GHGT.KT.CE,48479.9995422363
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Switzerland,CHE,EN.ATM.GHGT.KT.CE,46500.0
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Sweden,SWE,EN.ATM.GHGT.KT.CE,46189.998626709
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Suriname,SUR,EN.ATM.GHGT.KT.CE,4460.00003814697
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Sudan,SDN,EN.ATM.GHGT.KT.CE,106059.997558594
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,St. Vincent and the Grenadines,VCT,EN.ATM.GHGT.KT.CE,340.000003576279
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,St. Martin (French part),MAF,EN.ATM.GHGT.KT.CE,
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,St. Lucia,LCA,EN.ATM.GHGT.KT.CE,879.999995231628
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,St. Kitts and Nevis,KNA,EN.ATM.GHGT.KT.CE,349.999994039536
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Sri Lanka,LKA,EN.ATM.GHGT.KT.CE,35990.0016784668
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Spain,ESP,EN.ATM.GHGT.KT.CE,306950.012207031
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,South Sudan,SSD,EN.ATM.GHGT.KT.CE,50909.9998474121
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,South Africa,ZAF,EN.ATM.GHGT.KT.CE,555429.992675781
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Somalia,SOM,EN.ATM.GHGT.KT.CE,25149.9996185303
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Solomon Islands,SLB,EN.ATM.GHGT.KT.CE,939.999997615814
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Slovenia,SVN,EN.ATM.GHGT.KT.CE,16459.9990844727
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Slovak Republic,SVK,EN.ATM.GHGT.KT.CE,38060.001373291
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Sint Maarten (Dutch part),SXM,EN.ATM.GHGT.KT.CE,
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Singapore,SGP,EN.ATM.GHGT.KT.CE,67230.0033569336
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Sierra Leone,SLE,EN.ATM.GHGT.KT.CE,6079.99992370605
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Seychelles,SYC,EN.ATM.GHGT.KT.CE,779.999971389771
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Serbia,SRB,EN.ATM.GHGT.KT.CE,61930.0003051758
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Senegal,SEN,EN.ATM.GHGT.KT.CE,29229.9995422363
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Saudi Arabia,SAU,EN.ATM.GHGT.KT.CE,723150.024414063
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Sao Tome and Principe,STP,EN.ATM.GHGT.KT.CE,180.000007152557
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,San Marino,SMR,EN.ATM.GHGT.KT.CE,
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Samoa,WSM,EN.ATM.GHGT.KT.CE,680.000007152557
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Rwanda,RWA,EN.ATM.GHGT.KT.CE,5340.00015258789
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Russian Federation,RUS,EN.ATM.GHGT.KT.CE,2476840.08789063
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Romania,ROU,EN.ATM.GHGT.KT.CE,101239.99786377
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Qatar,QAT,EN.ATM.GHGT.KT.CE,114760.00213623
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Puerto Rico,PRI,EN.ATM.GHGT.KT.CE,
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Portugal,PRT,EN.ATM.GHGT.KT.CE,61380.0010681152
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Poland,POL,EN.ATM.GHGT.KT.CE,353140.014648438
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Philippines,PHL,EN.ATM.GHGT.KT.CE,234279.998779297
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Peru,PER,EN.ATM.GHGT.KT.CE,100730.003356934
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Paraguay,PRY,EN.ATM.GHGT.KT.CE,49549.9992370605
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Papua New Guinea,PNG,EN.ATM.GHGT.KT.CE,22409.9998474121
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Panama,PAN,EN.ATM.GHGT.KT.CE,20879.9991607666
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Palau,PLW,EN.ATM.GHGT.KT.CE,289.99999165535
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Pakistan,PAK,EN.ATM.GHGT.KT.CE,432500.0
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Oman,OMN,EN.ATM.GHGT.KT.CE,100260.00213623
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Norway,NOR,EN.ATM.GHGT.KT.CE,45900.0015258789
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Northern Mariana Islands,MNP,EN.ATM.GHGT.KT.CE,
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,North Macedonia,MKD,EN.ATM.GHGT.KT.CE,11250.0
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Nigeria,NGA,EN.ATM.GHGT.KT.CE,308179.992675781
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Niger,NER,EN.ATM.GHGT.KT.CE,42720.0012207031
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Nicaragua,NIC,EN.ATM.GHGT.KT.CE,18799.9992370605
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,New Zealand,NZL,EN.ATM.GHGT.KT.CE,83199.9969482422
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,New Caledonia,NCL,EN.ATM.GHGT.KT.CE,
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Netherlands,NLD,EN.ATM.GHGT.KT.CE,172229.995727539
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Nepal,NPL,EN.ATM.GHGT.KT.CE,44220.0012207031
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Nauru,NRU,EN.ATM.GHGT.KT.CE,70.0000002980232
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Namibia,NAM,EN.ATM.GHGT.KT.CE,10659.9998474121
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Myanmar,MMR,EN.ATM.GHGT.KT.CE,133250.0
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Mozambique,MOZ,EN.ATM.GHGT.KT.CE,35400.0015258789
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Morocco,MAR,EN.ATM.GHGT.KT.CE,93080.0018310547
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Montenegro,MNE,EN.ATM.GHGT.KT.CE,3829.99992370605
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Mongolia,MNG,EN.ATM.GHGT.KT.CE,56049.9992370605
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Monaco,MCO,EN.ATM.GHGT.KT.CE,
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Moldova,MDA,EN.ATM.GHGT.KT.CE,13390.0003433228
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,"Micronesia, Fed. Sts.",FSM,EN.ATM.GHGT.KT.CE,259.999990463257
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Mexico,MEX,EN.ATM.GHGT.KT.CE,653869.995117188
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Mauritius,MUS,EN.ATM.GHGT.KT.CE,6849.99990463257
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Mauritania,MRT,EN.ATM.GHGT.KT.CE,14289.999961853
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Marshall Islands,MHL,EN.ATM.GHGT.KT.CE,230.000004172325
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Malta,MLT,EN.ATM.GHGT.KT.CE,2140.00010490417
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Mali,MLI,EN.ATM.GHGT.KT.CE,44150.0015258789
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Maldives,MDV,EN.ATM.GHGT.KT.CE,2599.99990463257
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Malaysia,MYS,EN.ATM.GHGT.KT.CE,313019.989013672
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Malawi,MWI,EN.ATM.GHGT.KT.CE,10949.9998092651
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Madagascar,MDG,EN.ATM.GHGT.KT.CE,29579.9999237061
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,"Macao SAR, China",MAC,EN.ATM.GHGT.KT.CE,
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Luxembourg,LUX,EN.ATM.GHGT.KT.CE,10479.9995422363
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Lithuania,LTU,EN.ATM.GHGT.KT.CE,18930.0003051758
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Liechtenstein,LIE,EN.ATM.GHGT.KT.CE,159.999996423721
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Libya,LBY,EN.ATM.GHGT.KT.CE,126690.002441406
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Liberia,LBR,EN.ATM.GHGT.KT.CE,2220.00002861023
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Lesotho,LSO,EN.ATM.GHGT.KT.CE,2529.99997138977
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Lebanon,LBN,EN.ATM.GHGT.KT.CE,35209.9990844727
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Latvia,LVA,EN.ATM.GHGT.KT.CE,11699.9998092651
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Lao PDR,LAO,EN.ATM.GHGT.KT.CE,29280.0006866455
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Kyrgyz Republic,KGZ,EN.ATM.GHGT.KT.CE,16909.9998474121
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Kuwait,KWT,EN.ATM.GHGT.KT.CE,136690.002441406
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Kosovo,XKX,EN.ATM.GHGT.KT.CE,
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,"Korea, Rep.",KOR,EN.ATM.GHGT.KT.CE,698460.021972656
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,"Korea, Dem. People's Rep.",PRK,EN.ATM.GHGT.KT.CE,79339.9963378906
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Kiribati,KIR,EN.ATM.GHGT.KT.CE,119.999997317791
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Kenya,KEN,EN.ATM.GHGT.KT.CE,81010.0021362305
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Kazakhstan,KAZ,EN.ATM.GHGT.KT.CE,274670.013427734
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Jordan,JOR,EN.ATM.GHGT.KT.CE,36569.9996948242
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Japan,JPN,EN.ATM.GHGT.KT.CE,1166510.00976563
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Jamaica,JAM,EN.ATM.GHGT.KT.CE,9970.00026702881
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Italy,ITA,EN.ATM.GHGT.KT.CE,389000.0
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Israel,ISR,EN.ATM.GHGT.KT.CE,87180.0003051758
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Isle of Man,IMN,EN.ATM.GHGT.KT.CE,
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Ireland,IRL,EN.ATM.GHGT.KT.CE,61479.9995422363
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Iraq,IRQ,EN.ATM.GHGT.KT.CE,320820.007324219
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,"Iran, Islamic Rep.",IRN,EN.ATM.GHGT.KT.CE,893719.970703125
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Indonesia,IDN,EN.ATM.GHGT.KT.CE,1002369.99511719
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,India,IND,EN.ATM.GHGT.KT.CE,3394870.1171875
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Iceland,ISL,EN.ATM.GHGT.KT.CE,2849.99990463257
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Hungary,HUN,EN.ATM.GHGT.KT.CE,60590.0001525879
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,"Hong Kong SAR, China",HKG,EN.ATM.GHGT.KT.CE,
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Honduras,HND,EN.ATM.GHGT.KT.CE,22389.9993896484
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Haiti,HTI,EN.ATM.GHGT.KT.CE,10500.0
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Guyana,GUY,EN.ATM.GHGT.KT.CE,5679.99982833862
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Guinea-Bissau,GNB,EN.ATM.GHGT.KT.CE,2579.99992370605
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Guinea,GIN,EN.ATM.GHGT.KT.CE,28329.9999237061
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Guatemala,GTM,EN.ATM.GHGT.KT.CE,35099.9984741211
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Guam,GUM,EN.ATM.GHGT.KT.CE,
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Grenada,GRD,EN.ATM.GHGT.KT.CE,2390.00010490417
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Greenland,GRL,EN.ATM.GHGT.KT.CE,
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Greece,GRC,EN.ATM.GHGT.KT.CE,78500.0
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Gibraltar,GIB,EN.ATM.GHGT.KT.CE,
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Ghana,GHA,EN.ATM.GHGT.KT.CE,37650.0015258789
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Germany,DEU,EN.ATM.GHGT.KT.CE,749710.021972656
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Georgia,GEO,EN.ATM.GHGT.KT.CE,17600.0003814697
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,"Gambia, The",GMB,EN.ATM.GHGT.KT.CE,2339.99991416931
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Gabon,GAB,EN.ATM.GHGT.KT.CE,13170.0000762939
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,French Polynesia,PYF,EN.ATM.GHGT.KT.CE,
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,France,FRA,EN.ATM.GHGT.KT.CE,414040.008544922
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Finland,FIN,EN.ATM.GHGT.KT.CE,51479.9995422363
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Fiji,FJI,EN.ATM.GHGT.KT.CE,2380.00011444092
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Faroe Islands,FRO,EN.ATM.GHGT.KT.CE,
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Ethiopia,ETH,EN.ATM.GHGT.KT.CE,150960.006713867
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Eswatini,SWZ,EN.ATM.GHGT.KT.CE,2789.99996185303
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Estonia,EST,EN.ATM.GHGT.KT.CE,12869.9998855591
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Eritrea,ERI,EN.ATM.GHGT.KT.CE,6329.99992370605
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Equatorial Guinea,GNQ,EN.ATM.GHGT.KT.CE,11409.9998474121
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,El Salvador,SLV,EN.ATM.GHGT.KT.CE,12819.9996948242
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,"Egypt, Arab Rep.",EGY,EN.ATM.GHGT.KT.CE,351769.989013672
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Ecuador,ECU,EN.ATM.GHGT.KT.CE,72529.9987792969
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Dominican Republic,DOM,EN.ATM.GHGT.KT.CE,41319.9996948242
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Dominica,DMA,EN.ATM.GHGT.KT.CE,230.000004172325
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Djibouti,DJI,EN.ATM.GHGT.KT.CE,1379.99999523163
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Denmark,DNK,EN.ATM.GHGT.KT.CE,43200.0007629395
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Czechia,CZE,EN.ATM.GHGT.KT.CE,116589.996337891
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Cyprus,CYP,EN.ATM.GHGT.KT.CE,8539.99996185303
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Curacao,CUW,EN.ATM.GHGT.KT.CE,
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Cuba,CUB,EN.ATM.GHGT.KT.CE,41240.0016784668
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Croatia,HRV,EN.ATM.GHGT.KT.CE,22260.0002288818
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Cote d'Ivoire,CIV,EN.ATM.GHGT.KT.CE,24860.0006103516
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Costa Rica,CRI,EN.ATM.GHGT.KT.CE,15750.0
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,"Congo, Rep.",COG,EN.ATM.GHGT.KT.CE,19200.0007629395
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,"Congo, Dem. Rep.",COD,EN.ATM.GHGT.KT.CE,55000.0
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Comoros,COM,EN.ATM.GHGT.KT.CE,639.999985694885
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Colombia,COL,EN.ATM.GHGT.KT.CE,187339.996337891
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,China,CHN,EN.ATM.GHGT.KT.CE,12705089.84375
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Chile,CHL,EN.ATM.GHGT.KT.CE,113019.996643066
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Channel Islands,CHI,EN.ATM.GHGT.KT.CE,
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Chad,TCD,EN.ATM.GHGT.KT.CE,81650.0015258789
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Central African Republic,CAF,EN.ATM.GHGT.KT.CE,19729.9995422363
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Cayman Islands,CYM,EN.ATM.GHGT.KT.CE,
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Canada,CAN,EN.ATM.GHGT.KT.CE,736929.992675781
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Cameroon,CMR,EN.ATM.GHGT.KT.CE,90120.002746582
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Cambodia,KHM,EN.ATM.GHGT.KT.CE,40060.001373291
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Cabo Verde,CPV,EN.ATM.GHGT.KT.CE,810.000002384186
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Burundi,BDI,EN.ATM.GHGT.KT.CE,4559.99994277954
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Burkina Faso,BFA,EN.ATM.GHGT.KT.CE,32209.9990844727
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Bulgaria,BGR,EN.ATM.GHGT.KT.CE,51279.9987792969
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Brunei Darussalam,BRN,EN.ATM.GHGT.KT.CE,9300.00019073486
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,British Virgin Islands,VGB,EN.ATM.GHGT.KT.CE,
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Brazil,BRA,EN.ATM.GHGT.KT.CE,1057260.00976563
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Botswana,BWA,EN.ATM.GHGT.KT.CE,11000.0
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Bosnia and Herzegovina,BIH,EN.ATM.GHGT.KT.CE,26229.9995422363
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Bolivia,BOL,EN.ATM.GHGT.KT.CE,60790.0009155273
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Bhutan,BTN,EN.ATM.GHGT.KT.CE,1679.99994754791
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Bermuda,BMU,EN.ATM.GHGT.KT.CE,
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Benin,BEN,EN.ATM.GHGT.KT.CE,15020.0004577637
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Belize,BLZ,EN.ATM.GHGT.KT.CE,1549.99995231628
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Belgium,BEL,EN.ATM.GHGT.KT.CE,108059.997558594
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Belarus,BLR,EN.ATM.GHGT.KT.CE,86830.0018310547
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Barbados,BRB,EN.ATM.GHGT.KT.CE,3789.99996185303
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Bangladesh,BGD,EN.ATM.GHGT.KT.CE,215940.002441406
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Bahrain,BHR,EN.ATM.GHGT.KT.CE,54409.9998474121
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,"Bahamas, The",BHS,EN.ATM.GHGT.KT.CE,3160.00008583069
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Azerbaijan,AZE,EN.ATM.GHGT.KT.CE,54799.9992370605
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Austria,AUT,EN.ATM.GHGT.KT.CE,76919.9981689453
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Australia,AUS,EN.ATM.GHGT.KT.CE,585979.98046875
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Aruba,ABW,EN.ATM.GHGT.KT.CE,
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Armenia,ARM,EN.ATM.GHGT.KT.CE,9960.00003814697
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Argentina,ARG,EN.ATM.GHGT.KT.CE,369049.987792969
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Antigua and Barbuda,ATG,EN.ATM.GHGT.KT.CE,1220.00002861023
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Angola,AGO,EN.ATM.GHGT.KT.CE,79680.0003051758
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Andorra,AND,EN.ATM.GHGT.KT.CE,629.999995231628
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,American Samoa,ASM,EN.ATM.GHGT.KT.CE,
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Algeria,DZA,EN.ATM.GHGT.KT.CE,282010.009765625
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Albania,ALB,EN.ATM.GHGT.KT.CE,9010.00022888184
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Afghanistan,AFG,EN.ATM.GHGT.KT.CE,28639.9993896484
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,World,WLD,EN.ATM.GHGT.KT.CE,46287620.0335007
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Upper middle income,UMC,EN.ATM.GHGT.KT.CE,20931299.9263387
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Sub-Saharan Africa (IDA & IBRD countries),TSS,EN.ATM.GHGT.KT.CE,2261020.00176907
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Sub-Saharan Africa (excluding high income),SSA,EN.ATM.GHGT.KT.CE,2260240.00179768
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Sub-Saharan Africa,SSF,EN.ATM.GHGT.KT.CE,2261020.00176907
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,South Asia (IDA & IBRD),TSA,EN.ATM.GHGT.KT.CE,4156440.1217699
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,South Asia,SAS,EN.ATM.GHGT.KT.CE,4156440.1217699
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Small states,SST,EN.ATM.GHGT.KT.CE,354550.001589581
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Pre-demographic dividend,PRE,EN.ATM.GHGT.KT.CE,1787710.00683308
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Post-demographic dividend,PST,EN.ATM.GHGT.KT.CE,13060959.9804878
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Pacific island small states,PSS,EN.ATM.GHGT.KT.CE,6180.00010959804
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Other small states,OSS,EN.ATM.GHGT.KT.CE,286010.001063346
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,OECD members,OED,EN.ATM.GHGT.KT.CE,14551209.9852562
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Not classified,INX,EN.ATM.GHGT.KT.CE,
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,North America,NAC,EN.ATM.GHGT.KT.CE,6738139.95361328
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Middle income,MIC,EN.ATM.GHGT.KT.CE,30134349.9978092
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Middle East & North Africa (IDA & IBRD countries),TMN,EN.ATM.GHGT.KT.CE,2256579.97977734
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Middle East & North Africa (excluding high income),MNA,EN.ATM.GHGT.KT.CE,2256579.97977734
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Middle East & North Africa,MEA,EN.ATM.GHGT.KT.CE,3718720.01421451
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Lower middle income,LMC,EN.ATM.GHGT.KT.CE,9203050.07147044
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Low income,LIC,EN.ATM.GHGT.KT.CE,1012720.00360489
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Low & middle income,LMY,EN.ATM.GHGT.KT.CE,31147070.0014141
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Least developed countries: UN classification,LDC,EN.ATM.GHGT.KT.CE,1593780.01346253
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Latin America & the Caribbean (IDA & IBRD countries),TLA,EN.ATM.GHGT.KT.CE,3188969.98839081
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Latin America & Caribbean (excluding high income),LAC,EN.ATM.GHGT.KT.CE,2774539.98966516
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Latin America & Caribbean,LCN,EN.ATM.GHGT.KT.CE,3237159.99011696
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Late-demographic dividend,LTE,EN.ATM.GHGT.KT.CE,19844109.9478901
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,IDA total,IDA,EN.ATM.GHGT.KT.CE,2891070.00686787
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,IDA only,IDX,EN.ATM.GHGT.KT.CE,1705420.01343332
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,IDA blend,IDB,EN.ATM.GHGT.KT.CE,1185649.99343455
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,IDA & IBRD total,IBT,EN.ATM.GHGT.KT.CE,31959650.0165146
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,IBRD only,IBD,EN.ATM.GHGT.KT.CE,29068580.0096467
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,High income,HIC,EN.ATM.GHGT.KT.CE,14884810.0265935
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Heavily indebted poor countries (HIPC),HPC,EN.ATM.GHGT.KT.CE,1242080.0126195
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Fragile and conflict affected situations,FCS,EN.ATM.GHGT.KT.CE,2185330.01727425
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,European Union,EUU,EN.ATM.GHGT.KT.CE,3383420.04179955
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Europe & Central Asia (IDA & IBRD countries),TEC,EN.ATM.GHGT.KT.CE,4676500.10681153
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Europe & Central Asia (excluding high income),ECA,EN.ATM.GHGT.KT.CE,4199860.09407044
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Europe & Central Asia,ECS,EN.ATM.GHGT.KT.CE,8065980.12498022
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Euro area,EMU,EN.ATM.GHGT.KT.CE,2588930.03439903
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,East Asia & Pacific (IDA & IBRD countries),TEA,EN.ATM.GHGT.KT.CE,15420139.817996
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,East Asia & Pacific (excluding high income),EAP,EN.ATM.GHGT.KT.CE,15499409.8143335
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,East Asia & Pacific,EAS,EN.ATM.GHGT.KT.CE,18110159.8270368
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Early-demographic dividend,EAR,EN.ATM.GHGT.KT.CE,11592670.0982973
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Central Europe and the Baltics,CEB,EN.ATM.GHGT.KT.CE,803120.008468629
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Caribbean small states,CSS,EN.ATM.GHGT.KT.CE,62360.0004166365
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Arab World,ARB,EN.ATM.GHGT.KT.CE,2881820.04022598
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Africa Western and Central,AFW,EN.ATM.GHGT.KT.CE,833840.000689029
+"total greenhouse gas emissions, kt of c02 equivalent",2019.0,Africa Eastern and Southern,AFE,EN.ATM.GHGT.KT.CE,1427180.00108004
+"access to electricity, % of population",2019.0,Zimbabwe,ZWE,EG.ELC.ACCS.ZS,46.7814750671387
+"access to electricity, % of population",2019.0,Zambia,ZMB,EG.ELC.ACCS.ZS,43.0
+"access to electricity, % of population",2019.0,"Yemen, Rep.",YEM,EG.ELC.ACCS.ZS,72.7510757446289
+"access to electricity, % of population",2019.0,West Bank and Gaza,PSE,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Virgin Islands (U.S.),VIR,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Vietnam,VNM,EG.ELC.ACCS.ZS,99.4000015258789
+"access to electricity, % of population",2019.0,"Venezuela, RB",VEN,EG.ELC.ACCS.ZS,99.9768142700195
+"access to electricity, % of population",2019.0,Vanuatu,VUT,EG.ELC.ACCS.ZS,64.5901870727539
+"access to electricity, % of population",2019.0,Uzbekistan,UZB,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Uruguay,URY,EG.ELC.ACCS.ZS,99.9000015258789
+"access to electricity, % of population",2019.0,United States,USA,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,United Kingdom,GBR,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,United Arab Emirates,ARE,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Ukraine,UKR,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Uganda,UGA,EG.ELC.ACCS.ZS,41.2999992370605
+"access to electricity, % of population",2019.0,Tuvalu,TUV,EG.ELC.ACCS.ZS,99.6999969482422
+"access to electricity, % of population",2019.0,Turks and Caicos Islands,TCA,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Turkmenistan,TKM,EG.ELC.ACCS.ZS,99.9000015258789
+"access to electricity, % of population",2019.0,Turkiye,TUR,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Tunisia,TUN,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Trinidad and Tobago,TTO,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Tonga,TON,EG.ELC.ACCS.ZS,98.4000015258789
+"access to electricity, % of population",2019.0,Togo,TGO,EG.ELC.ACCS.ZS,52.363109588623
+"access to electricity, % of population",2019.0,Timor-Leste,TLS,EG.ELC.ACCS.ZS,90.7986526489258
+"access to electricity, % of population",2019.0,Thailand,THA,EG.ELC.ACCS.ZS,99.9000015258789
+"access to electricity, % of population",2019.0,Tanzania,TZA,EG.ELC.ACCS.ZS,37.6596870422363
+"access to electricity, % of population",2019.0,Tajikistan,TJK,EG.ELC.ACCS.ZS,99.6332092285156
+"access to electricity, % of population",2019.0,Syrian Arab Republic,SYR,EG.ELC.ACCS.ZS,89.2692108154297
+"access to electricity, % of population",2019.0,Switzerland,CHE,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Sweden,SWE,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Suriname,SUR,EG.ELC.ACCS.ZS,97.8254165649414
+"access to electricity, % of population",2019.0,Sudan,SDN,EG.ELC.ACCS.ZS,53.9625396728516
+"access to electricity, % of population",2019.0,St. Vincent and the Grenadines,VCT,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,St. Martin (French part),MAF,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,St. Lucia,LCA,EG.ELC.ACCS.ZS,99.5021820068359
+"access to electricity, % of population",2019.0,St. Kitts and Nevis,KNA,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Sri Lanka,LKA,EG.ELC.ACCS.ZS,99.7585678100586
+"access to electricity, % of population",2019.0,Spain,ESP,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,South Sudan,SSD,EG.ELC.ACCS.ZS,6.70700693130493
+"access to electricity, % of population",2019.0,South Africa,ZAF,EG.ELC.ACCS.ZS,85.0
+"access to electricity, % of population",2019.0,Somalia,SOM,EG.ELC.ACCS.ZS,49.2000007629395
+"access to electricity, % of population",2019.0,Solomon Islands,SLB,EG.ELC.ACCS.ZS,69.8094177246094
+"access to electricity, % of population",2019.0,Slovenia,SVN,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Slovak Republic,SVK,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Sint Maarten (Dutch part),SXM,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Singapore,SGP,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Sierra Leone,SLE,EG.ELC.ACCS.ZS,22.7000007629395
+"access to electricity, % of population",2019.0,Seychelles,SYC,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Serbia,SRB,EG.ELC.ACCS.ZS,99.8000030517578
+"access to electricity, % of population",2019.0,Senegal,SEN,EG.ELC.ACCS.ZS,70.4000015258789
+"access to electricity, % of population",2019.0,Saudi Arabia,SAU,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Sao Tome and Principe,STP,EG.ELC.ACCS.ZS,74.9672012329102
+"access to electricity, % of population",2019.0,San Marino,SMR,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Samoa,WSM,EG.ELC.ACCS.ZS,99.1999969482422
+"access to electricity, % of population",2019.0,Rwanda,RWA,EG.ELC.ACCS.ZS,40.3686065673828
+"access to electricity, % of population",2019.0,Russian Federation,RUS,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Romania,ROU,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Qatar,QAT,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Puerto Rico,PRI,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Portugal,PRT,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Poland,POL,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Philippines,PHL,EG.ELC.ACCS.ZS,95.6450805664063
+"access to electricity, % of population",2019.0,Peru,PER,EG.ELC.ACCS.ZS,95.5513610839844
+"access to electricity, % of population",2019.0,Paraguay,PRY,EG.ELC.ACCS.ZS,99.6999969482422
+"access to electricity, % of population",2019.0,Papua New Guinea,PNG,EG.ELC.ACCS.ZS,59.6629753112793
+"access to electricity, % of population",2019.0,Panama,PAN,EG.ELC.ACCS.ZS,95.8163299560547
+"access to electricity, % of population",2019.0,Palau,PLW,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Pakistan,PAK,EG.ELC.ACCS.ZS,74.1276931762695
+"access to electricity, % of population",2019.0,Oman,OMN,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Norway,NOR,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Northern Mariana Islands,MNP,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,North Macedonia,MKD,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Nigeria,NGA,EG.ELC.ACCS.ZS,55.4000015258789
+"access to electricity, % of population",2019.0,Niger,NER,EG.ELC.ACCS.ZS,18.9745712280273
+"access to electricity, % of population",2019.0,Nicaragua,NIC,EG.ELC.ACCS.ZS,88.0583267211914
+"access to electricity, % of population",2019.0,New Zealand,NZL,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,New Caledonia,NCL,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Netherlands,NLD,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Nepal,NPL,EG.ELC.ACCS.ZS,89.9000015258789
+"access to electricity, % of population",2019.0,Nauru,NRU,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Namibia,NAM,EG.ELC.ACCS.ZS,55.1770896911621
+"access to electricity, % of population",2019.0,Myanmar,MMR,EG.ELC.ACCS.ZS,68.358528137207
+"access to electricity, % of population",2019.0,Mozambique,MOZ,EG.ELC.ACCS.ZS,29.6744499206543
+"access to electricity, % of population",2019.0,Morocco,MAR,EG.ELC.ACCS.ZS,99.5999984741211
+"access to electricity, % of population",2019.0,Montenegro,MNE,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Mongolia,MNG,EG.ELC.ACCS.ZS,97.2299118041992
+"access to electricity, % of population",2019.0,Monaco,MCO,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Moldova,MDA,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,"Micronesia, Fed. Sts.",FSM,EG.ELC.ACCS.ZS,81.2767333984375
+"access to electricity, % of population",2019.0,Mexico,MEX,EG.ELC.ACCS.ZS,99.5999984741211
+"access to electricity, % of population",2019.0,Mauritius,MUS,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Mauritania,MRT,EG.ELC.ACCS.ZS,45.8300323486328
+"access to electricity, % of population",2019.0,Marshall Islands,MHL,EG.ELC.ACCS.ZS,97.538200378418
+"access to electricity, % of population",2019.0,Malta,MLT,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Mali,MLI,EG.ELC.ACCS.ZS,47.8362770080566
+"access to electricity, % of population",2019.0,Maldives,MDV,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Malaysia,MYS,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Malawi,MWI,EG.ELC.ACCS.ZS,11.1999998092651
+"access to electricity, % of population",2019.0,Madagascar,MDG,EG.ELC.ACCS.ZS,31.0400009155273
+"access to electricity, % of population",2019.0,"Macao SAR, China",MAC,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Luxembourg,LUX,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Lithuania,LTU,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Liechtenstein,LIE,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Libya,LBY,EG.ELC.ACCS.ZS,68.6424026489258
+"access to electricity, % of population",2019.0,Liberia,LBR,EG.ELC.ACCS.ZS,23.1000003814697
+"access to electricity, % of population",2019.0,Lesotho,LSO,EG.ELC.ACCS.ZS,44.5002098083496
+"access to electricity, % of population",2019.0,Lebanon,LBN,EG.ELC.ACCS.ZS,99.9748687744141
+"access to electricity, % of population",2019.0,Latvia,LVA,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Lao PDR,LAO,EG.ELC.ACCS.ZS,99.0920867919922
+"access to electricity, % of population",2019.0,Kyrgyz Republic,KGZ,EG.ELC.ACCS.ZS,99.8742370605469
+"access to electricity, % of population",2019.0,Kuwait,KWT,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Kosovo,XKX,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,"Korea, Rep.",KOR,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,"Korea, Dem. People's Rep.",PRK,EG.ELC.ACCS.ZS,49.9720001220703
+"access to electricity, % of population",2019.0,Kiribati,KIR,EG.ELC.ACCS.ZS,90.0328521728516
+"access to electricity, % of population",2019.0,Kenya,KEN,EG.ELC.ACCS.ZS,69.6999969482422
+"access to electricity, % of population",2019.0,Kazakhstan,KAZ,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Jordan,JOR,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Japan,JPN,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Jamaica,JAM,EG.ELC.ACCS.ZS,99.3676223754883
+"access to electricity, % of population",2019.0,Italy,ITA,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Israel,ISR,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Isle of Man,IMN,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Ireland,IRL,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Iraq,IRQ,EG.ELC.ACCS.ZS,99.9920043945313
+"access to electricity, % of population",2019.0,"Iran, Islamic Rep.",IRN,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Indonesia,IDN,EG.ELC.ACCS.ZS,98.8499984741211
+"access to electricity, % of population",2019.0,India,IND,EG.ELC.ACCS.ZS,97.3082656860352
+"access to electricity, % of population",2019.0,Iceland,ISL,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Hungary,HUN,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,"Hong Kong SAR, China",HKG,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Honduras,HND,EG.ELC.ACCS.ZS,91.0999984741211
+"access to electricity, % of population",2019.0,Haiti,HTI,EG.ELC.ACCS.ZS,45.990234375
+"access to electricity, % of population",2019.0,Guyana,GUY,EG.ELC.ACCS.ZS,91.9157562255859
+"access to electricity, % of population",2019.0,Guinea-Bissau,GNB,EG.ELC.ACCS.ZS,30.9615573883057
+"access to electricity, % of population",2019.0,Guinea,GIN,EG.ELC.ACCS.ZS,42.2000007629395
+"access to electricity, % of population",2019.0,Guatemala,GTM,EG.ELC.ACCS.ZS,95.7420043945313
+"access to electricity, % of population",2019.0,Guam,GUM,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Grenada,GRD,EG.ELC.ACCS.ZS,93.120964050293
+"access to electricity, % of population",2019.0,Greenland,GRL,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Greece,GRC,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Gibraltar,GIB,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Ghana,GHA,EG.ELC.ACCS.ZS,83.5
+"access to electricity, % of population",2019.0,Germany,DEU,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Georgia,GEO,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,"Gambia, The",GMB,EG.ELC.ACCS.ZS,62.0999984741211
+"access to electricity, % of population",2019.0,Gabon,GAB,EG.ELC.ACCS.ZS,90.7262954711914
+"access to electricity, % of population",2019.0,French Polynesia,PYF,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,France,FRA,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Finland,FIN,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Fiji,FJI,EG.ELC.ACCS.ZS,99.7158813476563
+"access to electricity, % of population",2019.0,Faroe Islands,FRO,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Ethiopia,ETH,EG.ELC.ACCS.ZS,48.063591003418
+"access to electricity, % of population",2019.0,Eswatini,SWZ,EG.ELC.ACCS.ZS,76.8694381713867
+"access to electricity, % of population",2019.0,Estonia,EST,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Eritrea,ERI,EG.ELC.ACCS.ZS,50.9369926452637
+"access to electricity, % of population",2019.0,Equatorial Guinea,GNQ,EG.ELC.ACCS.ZS,66.6000442504883
+"access to electricity, % of population",2019.0,El Salvador,SLV,EG.ELC.ACCS.ZS,97.3600006103516
+"access to electricity, % of population",2019.0,"Egypt, Arab Rep.",EGY,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Ecuador,ECU,EG.ELC.ACCS.ZS,99.0899963378906
+"access to electricity, % of population",2019.0,Dominican Republic,DOM,EG.ELC.ACCS.ZS,99.0
+"access to electricity, % of population",2019.0,Dominica,DMA,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Djibouti,DJI,EG.ELC.ACCS.ZS,61.2119293212891
+"access to electricity, % of population",2019.0,Denmark,DNK,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Czechia,CZE,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Cyprus,CYP,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Curacao,CUW,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Cuba,CUB,EG.ELC.ACCS.ZS,99.8000030517578
+"access to electricity, % of population",2019.0,Croatia,HRV,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Cote d'Ivoire,CIV,EG.ELC.ACCS.ZS,68.4595565795898
+"access to electricity, % of population",2019.0,Costa Rica,CRI,EG.ELC.ACCS.ZS,99.7099990844727
+"access to electricity, % of population",2019.0,"Congo, Rep.",COG,EG.ELC.ACCS.ZS,48.4074745178223
+"access to electricity, % of population",2019.0,"Congo, Dem. Rep.",COD,EG.ELC.ACCS.ZS,19.1000003814697
+"access to electricity, % of population",2019.0,Comoros,COM,EG.ELC.ACCS.ZS,84.2977752685547
+"access to electricity, % of population",2019.0,Colombia,COL,EG.ELC.ACCS.ZS,99.7559204101563
+"access to electricity, % of population",2019.0,China,CHN,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Chile,CHL,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Channel Islands,CHI,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Chad,TCD,EG.ELC.ACCS.ZS,8.39999961853027
+"access to electricity, % of population",2019.0,Central African Republic,CAF,EG.ELC.ACCS.ZS,14.3000001907349
+"access to electricity, % of population",2019.0,Cayman Islands,CYM,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Canada,CAN,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Cameroon,CMR,EG.ELC.ACCS.ZS,63.4898796081543
+"access to electricity, % of population",2019.0,Cambodia,KHM,EG.ELC.ACCS.ZS,84.0
+"access to electricity, % of population",2019.0,Cabo Verde,CPV,EG.ELC.ACCS.ZS,91.4000015258789
+"access to electricity, % of population",2019.0,Burundi,BDI,EG.ELC.ACCS.ZS,11.3565282821655
+"access to electricity, % of population",2019.0,Burkina Faso,BFA,EG.ELC.ACCS.ZS,18.3748550415039
+"access to electricity, % of population",2019.0,Bulgaria,BGR,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Brunei Darussalam,BRN,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,British Virgin Islands,VGB,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Brazil,BRA,EG.ELC.ACCS.ZS,99.8000030517578
+"access to electricity, % of population",2019.0,Botswana,BWA,EG.ELC.ACCS.ZS,69.9597396850586
+"access to electricity, % of population",2019.0,Bosnia and Herzegovina,BIH,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Bolivia,BOL,EG.ELC.ACCS.ZS,95.0800018310547
+"access to electricity, % of population",2019.0,Bhutan,BTN,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Bermuda,BMU,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Benin,BEN,EG.ELC.ACCS.ZS,40.3286895751953
+"access to electricity, % of population",2019.0,Belize,BLZ,EG.ELC.ACCS.ZS,92.7200012207031
+"access to electricity, % of population",2019.0,Belgium,BEL,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Belarus,BLR,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Barbados,BRB,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Bangladesh,BGD,EG.ELC.ACCS.ZS,92.1999969482422
+"access to electricity, % of population",2019.0,Bahrain,BHR,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,"Bahamas, The",BHS,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Azerbaijan,AZE,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Austria,AUT,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Australia,AUS,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Aruba,ABW,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Armenia,ARM,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Argentina,ARG,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Antigua and Barbuda,ATG,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Angola,AGO,EG.ELC.ACCS.ZS,45.6427993774414
+"access to electricity, % of population",2019.0,Andorra,AND,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,American Samoa,ASM,EG.ELC.ACCS.ZS,
+"access to electricity, % of population",2019.0,Algeria,DZA,EG.ELC.ACCS.ZS,99.5
+"access to electricity, % of population",2019.0,Albania,ALB,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Afghanistan,AFG,EG.ELC.ACCS.ZS,97.6999969482422
+"access to electricity, % of population",2019.0,World,WLD,EG.ELC.ACCS.ZS,90.0117847056585
+"access to electricity, % of population",2019.0,Upper middle income,UMC,EG.ELC.ACCS.ZS,99.3092192631989
+"access to electricity, % of population",2019.0,Sub-Saharan Africa (IDA & IBRD countries),TSS,EG.ELC.ACCS.ZS,47.1047724048359
+"access to electricity, % of population",2019.0,Sub-Saharan Africa (excluding high income),SSA,EG.ELC.ACCS.ZS,47.1001070492796
+"access to electricity, % of population",2019.0,Sub-Saharan Africa,SSF,EG.ELC.ACCS.ZS,47.1047724048359
+"access to electricity, % of population",2019.0,South Asia (IDA & IBRD),TSA,EG.ELC.ACCS.ZS,94.0436403801698
+"access to electricity, % of population",2019.0,South Asia,SAS,EG.ELC.ACCS.ZS,94.0436403801698
+"access to electricity, % of population",2019.0,Small states,SST,EG.ELC.ACCS.ZS,82.2147461442119
+"access to electricity, % of population",2019.0,Pre-demographic dividend,PRE,EG.ELC.ACCS.ZS,47.5468721039675
+"access to electricity, % of population",2019.0,Post-demographic dividend,PST,EG.ELC.ACCS.ZS,99.997963727551
+"access to electricity, % of population",2019.0,Pacific island small states,PSS,EG.ELC.ACCS.ZS,86.0064848271962
+"access to electricity, % of population",2019.0,Other small states,OSS,EG.ELC.ACCS.ZS,78.1356912200475
+"access to electricity, % of population",2019.0,OECD members,OED,EG.ELC.ACCS.ZS,99.9525509159537
+"access to electricity, % of population",2019.0,Not classified,INX,EG.ELC.ACCS.ZS,
+"access to electricity, % of population",2019.0,North America,NAC,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Middle income,MIC,EG.ELC.ACCS.ZS,93.4780474162556
+"access to electricity, % of population",2019.0,Middle East & North Africa (IDA & IBRD countries),TMN,EG.ELC.ACCS.ZS,96.7131270524313
+"access to electricity, % of population",2019.0,Middle East & North Africa (excluding high income),MNA,EG.ELC.ACCS.ZS,96.7526692934921
+"access to electricity, % of population",2019.0,Middle East & North Africa,MEA,EG.ELC.ACCS.ZS,97.2308525888101
+"access to electricity, % of population",2019.0,Lower middle income,LMC,EG.ELC.ACCS.ZS,89.0598996805966
+"access to electricity, % of population",2019.0,Low income,LIC,EG.ELC.ACCS.ZS,41.4766654177545
+"access to electricity, % of population",2019.0,Low & middle income,LMY,EG.ELC.ACCS.ZS,88.0860238243696
+"access to electricity, % of population",2019.0,Least developed countries: UN classification,LDC,EG.ELC.ACCS.ZS,52.9290034230591
+"access to electricity, % of population",2019.0,Latin America & the Caribbean (IDA & IBRD countries),TLA,EG.ELC.ACCS.ZS,98.0499073446023
+"access to electricity, % of population",2019.0,Latin America & Caribbean (excluding high income),LAC,EG.ELC.ACCS.ZS,97.9268787211912
+"access to electricity, % of population",2019.0,Latin America & Caribbean,LCN,EG.ELC.ACCS.ZS,98.0940252889238
+"access to electricity, % of population",2019.0,Late-demographic dividend,LTE,EG.ELC.ACCS.ZS,99.3741150003138
+"access to electricity, % of population",2019.0,IDA total,IDA,EG.ELC.ACCS.ZS,59.8345781257574
+"access to electricity, % of population",2019.0,IDA only,IDX,EG.ELC.ACCS.ZS,56.2071437164948
+"access to electricity, % of population",2019.0,IDA blend,IDB,EG.ELC.ACCS.ZS,66.9988649272964
+"access to electricity, % of population",2019.0,IDA & IBRD total,IBT,EG.ELC.ACCS.ZS,88.421488295289
+"access to electricity, % of population",2019.0,IBRD only,IBD,EG.ELC.ACCS.ZS,98.317338005068
+"access to electricity, % of population",2019.0,High income,HIC,EG.ELC.ACCS.ZS,99.9850468228112
+"access to electricity, % of population",2019.0,Heavily indebted poor countries (HIPC),HPC,EG.ELC.ACCS.ZS,44.9861028194082
+"access to electricity, % of population",2019.0,Fragile and conflict affected situations,FCS,EG.ELC.ACCS.ZS,55.8566912409178
+"access to electricity, % of population",2019.0,European Union,EUU,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Europe & Central Asia (IDA & IBRD countries),TEC,EG.ELC.ACCS.ZS,99.9865143284425
+"access to electricity, % of population",2019.0,Europe & Central Asia (excluding high income),ECA,EG.ELC.ACCS.ZS,99.9844410157369
+"access to electricity, % of population",2019.0,Europe & Central Asia,ECS,EG.ELC.ACCS.ZS,99.9932515305436
+"access to electricity, % of population",2019.0,Euro area,EMU,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,East Asia & Pacific (IDA & IBRD countries),TEA,EG.ELC.ACCS.ZS,98.4422738157447
+"access to electricity, % of population",2019.0,East Asia & Pacific (excluding high income),EAP,EG.ELC.ACCS.ZS,97.8508959890843
+"access to electricity, % of population",2019.0,East Asia & Pacific,EAS,EG.ELC.ACCS.ZS,98.0575567896266
+"access to electricity, % of population",2019.0,Early-demographic dividend,EAR,EG.ELC.ACCS.ZS,92.2512760560982
+"access to electricity, % of population",2019.0,Central Europe and the Baltics,CEB,EG.ELC.ACCS.ZS,100.0
+"access to electricity, % of population",2019.0,Caribbean small states,CSS,EG.ELC.ACCS.ZS,98.221954027314
+"access to electricity, % of population",2019.0,Arab World,ARB,EG.ELC.ACCS.ZS,89.9999455504113
+"access to electricity, % of population",2019.0,Africa Western and Central,AFW,EG.ELC.ACCS.ZS,51.2901929896648
+"access to electricity, % of population",2019.0,Africa Eastern and Southern,AFE,EG.ELC.ACCS.ZS,44.2708604789338
+"energy use, kg of oil equivalent per capita",2019.0,Zimbabwe,ZWE,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Zambia,ZMB,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,"Yemen, Rep.",YEM,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,West Bank and Gaza,PSE,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Virgin Islands (U.S.),VIR,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Vietnam,VNM,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,"Venezuela, RB",VEN,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Vanuatu,VUT,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Uzbekistan,UZB,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Uruguay,URY,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,United States,USA,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,United Kingdom,GBR,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,United Arab Emirates,ARE,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Ukraine,UKR,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Uganda,UGA,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Tuvalu,TUV,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Turks and Caicos Islands,TCA,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Turkmenistan,TKM,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Turkiye,TUR,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Tunisia,TUN,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Trinidad and Tobago,TTO,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Tonga,TON,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Togo,TGO,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Timor-Leste,TLS,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Thailand,THA,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Tanzania,TZA,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Tajikistan,TJK,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Syrian Arab Republic,SYR,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Switzerland,CHE,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Sweden,SWE,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Suriname,SUR,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Sudan,SDN,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,St. Vincent and the Grenadines,VCT,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,St. Martin (French part),MAF,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,St. Lucia,LCA,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,St. Kitts and Nevis,KNA,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Sri Lanka,LKA,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Spain,ESP,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,South Sudan,SSD,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,South Africa,ZAF,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Somalia,SOM,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Solomon Islands,SLB,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Slovenia,SVN,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Slovak Republic,SVK,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Sint Maarten (Dutch part),SXM,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Singapore,SGP,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Sierra Leone,SLE,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Seychelles,SYC,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Serbia,SRB,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Senegal,SEN,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Saudi Arabia,SAU,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Sao Tome and Principe,STP,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,San Marino,SMR,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Samoa,WSM,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Rwanda,RWA,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Russian Federation,RUS,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Romania,ROU,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Qatar,QAT,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Puerto Rico,PRI,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Portugal,PRT,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Poland,POL,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Philippines,PHL,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Peru,PER,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Paraguay,PRY,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Papua New Guinea,PNG,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Panama,PAN,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Palau,PLW,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Pakistan,PAK,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Oman,OMN,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Norway,NOR,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Northern Mariana Islands,MNP,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,North Macedonia,MKD,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Nigeria,NGA,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Niger,NER,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Nicaragua,NIC,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,New Zealand,NZL,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,New Caledonia,NCL,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Netherlands,NLD,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Nepal,NPL,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Nauru,NRU,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Namibia,NAM,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Myanmar,MMR,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Mozambique,MOZ,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Morocco,MAR,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Montenegro,MNE,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Mongolia,MNG,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Monaco,MCO,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Moldova,MDA,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,"Micronesia, Fed. Sts.",FSM,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Mexico,MEX,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Mauritius,MUS,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Mauritania,MRT,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Marshall Islands,MHL,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Malta,MLT,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Mali,MLI,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Maldives,MDV,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Malaysia,MYS,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Malawi,MWI,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Madagascar,MDG,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,"Macao SAR, China",MAC,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Luxembourg,LUX,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Lithuania,LTU,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Liechtenstein,LIE,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Libya,LBY,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Liberia,LBR,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Lesotho,LSO,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Lebanon,LBN,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Latvia,LVA,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Lao PDR,LAO,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Kyrgyz Republic,KGZ,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Kuwait,KWT,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Kosovo,XKX,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,"Korea, Rep.",KOR,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,"Korea, Dem. People's Rep.",PRK,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Kiribati,KIR,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Kenya,KEN,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Kazakhstan,KAZ,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Jordan,JOR,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Japan,JPN,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Jamaica,JAM,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Italy,ITA,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Israel,ISR,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Isle of Man,IMN,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Ireland,IRL,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Iraq,IRQ,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,"Iran, Islamic Rep.",IRN,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Indonesia,IDN,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,India,IND,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Iceland,ISL,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Hungary,HUN,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,"Hong Kong SAR, China",HKG,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Honduras,HND,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Haiti,HTI,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Guyana,GUY,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Guinea-Bissau,GNB,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Guinea,GIN,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Guatemala,GTM,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Guam,GUM,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Grenada,GRD,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Greenland,GRL,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Greece,GRC,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Gibraltar,GIB,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Ghana,GHA,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Germany,DEU,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Georgia,GEO,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,"Gambia, The",GMB,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Gabon,GAB,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,French Polynesia,PYF,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,France,FRA,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Finland,FIN,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Fiji,FJI,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Faroe Islands,FRO,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Ethiopia,ETH,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Eswatini,SWZ,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Estonia,EST,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Eritrea,ERI,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Equatorial Guinea,GNQ,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,El Salvador,SLV,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,"Egypt, Arab Rep.",EGY,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Ecuador,ECU,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Dominican Republic,DOM,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Dominica,DMA,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Djibouti,DJI,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Denmark,DNK,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Czechia,CZE,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Cyprus,CYP,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Curacao,CUW,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Cuba,CUB,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Croatia,HRV,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Cote d'Ivoire,CIV,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Costa Rica,CRI,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,"Congo, Rep.",COG,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,"Congo, Dem. Rep.",COD,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Comoros,COM,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Colombia,COL,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,China,CHN,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Chile,CHL,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Channel Islands,CHI,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Chad,TCD,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Central African Republic,CAF,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Cayman Islands,CYM,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Canada,CAN,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Cameroon,CMR,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Cambodia,KHM,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Cabo Verde,CPV,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Burundi,BDI,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Burkina Faso,BFA,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Bulgaria,BGR,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Brunei Darussalam,BRN,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,British Virgin Islands,VGB,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Brazil,BRA,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Botswana,BWA,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Bosnia and Herzegovina,BIH,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Bolivia,BOL,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Bhutan,BTN,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Bermuda,BMU,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Benin,BEN,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Belize,BLZ,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Belgium,BEL,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Belarus,BLR,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Barbados,BRB,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Bangladesh,BGD,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Bahrain,BHR,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,"Bahamas, The",BHS,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Azerbaijan,AZE,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Austria,AUT,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Australia,AUS,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Aruba,ABW,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Armenia,ARM,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Argentina,ARG,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Antigua and Barbuda,ATG,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Angola,AGO,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Andorra,AND,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,American Samoa,ASM,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Algeria,DZA,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Albania,ALB,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Afghanistan,AFG,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,World,WLD,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Upper middle income,UMC,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Sub-Saharan Africa (IDA & IBRD countries),TSS,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Sub-Saharan Africa (excluding high income),SSA,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Sub-Saharan Africa,SSF,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,South Asia (IDA & IBRD),TSA,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,South Asia,SAS,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Small states,SST,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Pre-demographic dividend,PRE,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Post-demographic dividend,PST,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Pacific island small states,PSS,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Other small states,OSS,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,OECD members,OED,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Not classified,INX,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,North America,NAC,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Middle income,MIC,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Middle East & North Africa (IDA & IBRD countries),TMN,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Middle East & North Africa (excluding high income),MNA,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Middle East & North Africa,MEA,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Lower middle income,LMC,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Low income,LIC,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Low & middle income,LMY,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Least developed countries: UN classification,LDC,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Latin America & the Caribbean (IDA & IBRD countries),TLA,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Latin America & Caribbean (excluding high income),LAC,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Latin America & Caribbean,LCN,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Late-demographic dividend,LTE,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,IDA total,IDA,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,IDA only,IDX,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,IDA blend,IDB,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,IDA & IBRD total,IBT,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,IBRD only,IBD,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,High income,HIC,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Heavily indebted poor countries (HIPC),HPC,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Fragile and conflict affected situations,FCS,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,European Union,EUU,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Europe & Central Asia (IDA & IBRD countries),TEC,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Europe & Central Asia (excluding high income),ECA,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Europe & Central Asia,ECS,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Euro area,EMU,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,East Asia & Pacific (IDA & IBRD countries),TEA,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,East Asia & Pacific (excluding high income),EAP,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,East Asia & Pacific,EAS,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Early-demographic dividend,EAR,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Central Europe and the Baltics,CEB,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Caribbean small states,CSS,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Arab World,ARB,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Africa Western and Central,AFW,EG.USE.PCAP.KG.OE,
+"energy use, kg of oil equivalent per capita",2019.0,Africa Eastern and Southern,AFE,EG.USE.PCAP.KG.OE,
+"personal remittances received, current $US",2019.0,Zimbabwe,ZWE,BX.TRF.PWKR.CD.DT,1417011952.8873
+"personal remittances received, current $US",2019.0,Zambia,ZMB,BX.TRF.PWKR.CD.DT,98259120.8108228
+"personal remittances received, current $US",2019.0,"Yemen, Rep.",YEM,BX.TRF.PWKR.CD.DT,
+"personal remittances received, current $US",2019.0,West Bank and Gaza,PSE,BX.TRF.PWKR.CD.DT,3152859814.38834
+"personal remittances received, current $US",2019.0,Virgin Islands (U.S.),VIR,BX.TRF.PWKR.CD.DT,
+"personal remittances received, current $US",2019.0,Vietnam,VNM,BX.TRF.PWKR.CD.DT,17000000000.0
+"personal remittances received, current $US",2019.0,"Venezuela, RB",VEN,BX.TRF.PWKR.CD.DT,279000000.0
+"personal remittances received, current $US",2019.0,Vanuatu,VUT,BX.TRF.PWKR.CD.DT,74997097.6137809
+"personal remittances received, current $US",2019.0,Uzbekistan,UZB,BX.TRF.PWKR.CD.DT,8545813106.61555
+"personal remittances received, current $US",2019.0,Uruguay,URY,BX.TRF.PWKR.CD.DT,112271708.009377
+"personal remittances received, current $US",2019.0,United States,USA,BX.TRF.PWKR.CD.DT,7049000000.0
+"personal remittances received, current $US",2019.0,United Kingdom,GBR,BX.TRF.PWKR.CD.DT,4214814558.37469
+"personal remittances received, current $US",2019.0,United Arab Emirates,ARE,BX.TRF.PWKR.CD.DT,
+"personal remittances received, current $US",2019.0,Ukraine,UKR,BX.TRF.PWKR.CD.DT,15788000000.0
+"personal remittances received, current $US",2019.0,Uganda,UGA,BX.TRF.PWKR.CD.DT,1424508662.67091
+"personal remittances received, current $US",2019.0,Tuvalu,TUV,BX.TRF.PWKR.CD.DT,901579.144854571
+"personal remittances received, current $US",2019.0,Turks and Caicos Islands,TCA,BX.TRF.PWKR.CD.DT,7481920.0
+"personal remittances received, current $US",2019.0,Turkmenistan,TKM,BX.TRF.PWKR.CD.DT,1000000.0
+"personal remittances received, current $US",2019.0,Turkiye,TUR,BX.TRF.PWKR.CD.DT,810000000.0
+"personal remittances received, current $US",2019.0,Tunisia,TUN,BX.TRF.PWKR.CD.DT,2049663194.48389
+"personal remittances received, current $US",2019.0,Trinidad and Tobago,TTO,BX.TRF.PWKR.CD.DT,144013909.747584
+"personal remittances received, current $US",2019.0,Tonga,TON,BX.TRF.PWKR.CD.DT,190366330.353795
+"personal remittances received, current $US",2019.0,Togo,TGO,BX.TRF.PWKR.CD.DT,507962802.03796
+"personal remittances received, current $US",2019.0,Timor-Leste,TLS,BX.TRF.PWKR.CD.DT,100384635.644561
+"personal remittances received, current $US",2019.0,Thailand,THA,BX.TRF.PWKR.CD.DT,8162162551.48331
+"personal remittances received, current $US",2019.0,Tanzania,TZA,BX.TRF.PWKR.CD.DT,433499813.406953
+"personal remittances received, current $US",2019.0,Tajikistan,TJK,BX.TRF.PWKR.CD.DT,2321884645.342
+"personal remittances received, current $US",2019.0,Syrian Arab Republic,SYR,BX.TRF.PWKR.CD.DT,
+"personal remittances received, current $US",2019.0,Switzerland,CHE,BX.TRF.PWKR.CD.DT,2549309963.18163
+"personal remittances received, current $US",2019.0,Sweden,SWE,BX.TRF.PWKR.CD.DT,3184903850.28114
+"personal remittances received, current $US",2019.0,Suriname,SUR,BX.TRF.PWKR.CD.DT,96177384.3131186
+"personal remittances received, current $US",2019.0,Sudan,SDN,BX.TRF.PWKR.CD.DT,522317287.755546
+"personal remittances received, current $US",2019.0,St. Vincent and the Grenadines,VCT,BX.TRF.PWKR.CD.DT,79338189.5304151
+"personal remittances received, current $US",2019.0,St. Martin (French part),MAF,BX.TRF.PWKR.CD.DT,
+"personal remittances received, current $US",2019.0,St. Lucia,LCA,BX.TRF.PWKR.CD.DT,43217252.5983377
+"personal remittances received, current $US",2019.0,St. Kitts and Nevis,KNA,BX.TRF.PWKR.CD.DT,42333816.87892
+"personal remittances received, current $US",2019.0,Sri Lanka,LKA,BX.TRF.PWKR.CD.DT,6748702044.3482
+"personal remittances received, current $US",2019.0,Spain,ESP,BX.TRF.PWKR.CD.DT,3212474500.45992
+"personal remittances received, current $US",2019.0,South Sudan,SSD,BX.TRF.PWKR.CD.DT,80440000.0
+"personal remittances received, current $US",2019.0,South Africa,ZAF,BX.TRF.PWKR.CD.DT,890059293.728208
+"personal remittances received, current $US",2019.0,Somalia,SOM,BX.TRF.PWKR.CD.DT,1577000000.0
+"personal remittances received, current $US",2019.0,Solomon Islands,SLB,BX.TRF.PWKR.CD.DT,25474128.7558912
+"personal remittances received, current $US",2019.0,Slovenia,SVN,BX.TRF.PWKR.CD.DT,662862979.137277
+"personal remittances received, current $US",2019.0,Slovak Republic,SVK,BX.TRF.PWKR.CD.DT,2544685949.43086
+"personal remittances received, current $US",2019.0,Sint Maarten (Dutch part),SXM,BX.TRF.PWKR.CD.DT,48475168.9273743
+"personal remittances received, current $US",2019.0,Singapore,SGP,BX.TRF.PWKR.CD.DT,0.0
+"personal remittances received, current $US",2019.0,Sierra Leone,SLE,BX.TRF.PWKR.CD.DT,68081022.8102885
+"personal remittances received, current $US",2019.0,Seychelles,SYC,BX.TRF.PWKR.CD.DT,23648219.3078321
+"personal remittances received, current $US",2019.0,Serbia,SRB,BX.TRF.PWKR.CD.DT,4237925900.80366
+"personal remittances received, current $US",2019.0,Senegal,SEN,BX.TRF.PWKR.CD.DT,2522205664.88
+"personal remittances received, current $US",2019.0,Saudi Arabia,SAU,BX.TRF.PWKR.CD.DT,334029333.333333
+"personal remittances received, current $US",2019.0,Sao Tome and Principe,STP,BX.TRF.PWKR.CD.DT,11114429.3726563
+"personal remittances received, current $US",2019.0,San Marino,SMR,BX.TRF.PWKR.CD.DT,
+"personal remittances received, current $US",2019.0,Samoa,WSM,BX.TRF.PWKR.CD.DT,155214806.424846
+"personal remittances received, current $US",2019.0,Rwanda,RWA,BX.TRF.PWKR.CD.DT,260710294.704425
+"personal remittances received, current $US",2019.0,Russian Federation,RUS,BX.TRF.PWKR.CD.DT,10432480000.0
+"personal remittances received, current $US",2019.0,Romania,ROU,BX.TRF.PWKR.CD.DT,8142029279.29984
+"personal remittances received, current $US",2019.0,Qatar,QAT,BX.TRF.PWKR.CD.DT,576648351.648352
+"personal remittances received, current $US",2019.0,Puerto Rico,PRI,BX.TRF.PWKR.CD.DT,
+"personal remittances received, current $US",2019.0,Portugal,PRT,BX.TRF.PWKR.CD.DT,617601901.893932
+"personal remittances received, current $US",2019.0,Poland,POL,BX.TRF.PWKR.CD.DT,7063000000.0
+"personal remittances received, current $US",2019.0,Philippines,PHL,BX.TRF.PWKR.CD.DT,35167471832.1845
+"personal remittances received, current $US",2019.0,Peru,PER,BX.TRF.PWKR.CD.DT,3325921218.81313
+"personal remittances received, current $US",2019.0,Paraguay,PRY,BX.TRF.PWKR.CD.DT,665990282.4938
+"personal remittances received, current $US",2019.0,Papua New Guinea,PNG,BX.TRF.PWKR.CD.DT,3000000.0
+"personal remittances received, current $US",2019.0,Panama,PAN,BX.TRF.PWKR.CD.DT,580854157.0
+"personal remittances received, current $US",2019.0,Palau,PLW,BX.TRF.PWKR.CD.DT,2176267.5754698
+"personal remittances received, current $US",2019.0,Pakistan,PAK,BX.TRF.PWKR.CD.DT,22252000000.0
+"personal remittances received, current $US",2019.0,Oman,OMN,BX.TRF.PWKR.CD.DT,39011703.5110533
+"personal remittances received, current $US",2019.0,Norway,NOR,BX.TRF.PWKR.CD.DT,615742173.230997
+"personal remittances received, current $US",2019.0,Northern Mariana Islands,MNP,BX.TRF.PWKR.CD.DT,
+"personal remittances received, current $US",2019.0,North Macedonia,MKD,BX.TRF.PWKR.CD.DT,317088137.0
+"personal remittances received, current $US",2019.0,Nigeria,NGA,BX.TRF.PWKR.CD.DT,23809281401.0144
+"personal remittances received, current $US",2019.0,Niger,NER,BX.TRF.PWKR.CD.DT,308661888.805164
+"personal remittances received, current $US",2019.0,Nicaragua,NIC,BX.TRF.PWKR.CD.DT,1686400000.0
+"personal remittances received, current $US",2019.0,New Zealand,NZL,BX.TRF.PWKR.CD.DT,462952736.493801
+"personal remittances received, current $US",2019.0,New Caledonia,NCL,BX.TRF.PWKR.CD.DT,621061715.841089
+"personal remittances received, current $US",2019.0,Netherlands,NLD,BX.TRF.PWKR.CD.DT,2234076587.98699
+"personal remittances received, current $US",2019.0,Nepal,NPL,BX.TRF.PWKR.CD.DT,8244465869.48491
+"personal remittances received, current $US",2019.0,Nauru,NRU,BX.TRF.PWKR.CD.DT,
+"personal remittances received, current $US",2019.0,Namibia,NAM,BX.TRF.PWKR.CD.DT,65593517.2338819
+"personal remittances received, current $US",2019.0,Myanmar,MMR,BX.TRF.PWKR.CD.DT,2553189788.15473
+"personal remittances received, current $US",2019.0,Mozambique,MOZ,BX.TRF.PWKR.CD.DT,299567589.191752
+"personal remittances received, current $US",2019.0,Morocco,MAR,BX.TRF.PWKR.CD.DT,6962578453.17234
+"personal remittances received, current $US",2019.0,Montenegro,MNE,BX.TRF.PWKR.CD.DT,584315521.917428
+"personal remittances received, current $US",2019.0,Mongolia,MNG,BX.TRF.PWKR.CD.DT,560930420.374501
+"personal remittances received, current $US",2019.0,Monaco,MCO,BX.TRF.PWKR.CD.DT,
+"personal remittances received, current $US",2019.0,Moldova,MDA,BX.TRF.PWKR.CD.DT,1909910000.0
+"personal remittances received, current $US",2019.0,"Micronesia, Fed. Sts.",FSM,BX.TRF.PWKR.CD.DT,23338700.0
+"personal remittances received, current $US",2019.0,Mexico,MEX,BX.TRF.PWKR.CD.DT,39021789685.0
+"personal remittances received, current $US",2019.0,Mauritius,MUS,BX.TRF.PWKR.CD.DT,318511666.223381
+"personal remittances received, current $US",2019.0,Mauritania,MRT,BX.TRF.PWKR.CD.DT,64458913.6407564
+"personal remittances received, current $US",2019.0,Marshall Islands,MHL,BX.TRF.PWKR.CD.DT,31450053.0
+"personal remittances received, current $US",2019.0,Malta,MLT,BX.TRF.PWKR.CD.DT,264726248.088836
+"personal remittances received, current $US",2019.0,Mali,MLI,BX.TRF.PWKR.CD.DT,971700936.136416
+"personal remittances received, current $US",2019.0,Maldives,MDV,BX.TRF.PWKR.CD.DT,4428730.22412144
+"personal remittances received, current $US",2019.0,Malaysia,MYS,BX.TRF.PWKR.CD.DT,1597353741.92284
+"personal remittances received, current $US",2019.0,Malawi,MWI,BX.TRF.PWKR.CD.DT,280913154.558341
+"personal remittances received, current $US",2019.0,Madagascar,MDG,BX.TRF.PWKR.CD.DT,407676204.197602
+"personal remittances received, current $US",2019.0,"Macao SAR, China",MAC,BX.TRF.PWKR.CD.DT,21815988.458913
+"personal remittances received, current $US",2019.0,Luxembourg,LUX,BX.TRF.PWKR.CD.DT,2041361755.82717
+"personal remittances received, current $US",2019.0,Lithuania,LTU,BX.TRF.PWKR.CD.DT,1303940311.17964
+"personal remittances received, current $US",2019.0,Liechtenstein,LIE,BX.TRF.PWKR.CD.DT,
+"personal remittances received, current $US",2019.0,Libya,LBY,BX.TRF.PWKR.CD.DT,0.0
+"personal remittances received, current $US",2019.0,Liberia,LBR,BX.TRF.PWKR.CD.DT,346244091.574358
+"personal remittances received, current $US",2019.0,Lesotho,LSO,BX.TRF.PWKR.CD.DT,543706903.648001
+"personal remittances received, current $US",2019.0,Lebanon,LBN,BX.TRF.PWKR.CD.DT,7410021339.89472
+"personal remittances received, current $US",2019.0,Latvia,LVA,BX.TRF.PWKR.CD.DT,1142611838.12228
+"personal remittances received, current $US",2019.0,Lao PDR,LAO,BX.TRF.PWKR.CD.DT,296516566.66
+"personal remittances received, current $US",2019.0,Kyrgyz Republic,KGZ,BX.TRF.PWKR.CD.DT,2410507184.54596
+"personal remittances received, current $US",2019.0,Kuwait,KWT,BX.TRF.PWKR.CD.DT,25700374.7167045
+"personal remittances received, current $US",2019.0,Kosovo,XKX,BX.TRF.PWKR.CD.DT,1248990731.0196
+"personal remittances received, current $US",2019.0,"Korea, Rep.",KOR,BX.TRF.PWKR.CD.DT,7166100000.0
+"personal remittances received, current $US",2019.0,"Korea, Dem. People's Rep.",PRK,BX.TRF.PWKR.CD.DT,
+"personal remittances received, current $US",2019.0,Kiribati,KIR,BX.TRF.PWKR.CD.DT,20075191.1375462
+"personal remittances received, current $US",2019.0,Kenya,KEN,BX.TRF.PWKR.CD.DT,2838192215.41577
+"personal remittances received, current $US",2019.0,Kazakhstan,KAZ,BX.TRF.PWKR.CD.DT,506076000.839177
+"personal remittances received, current $US",2019.0,Jordan,JOR,BX.TRF.PWKR.CD.DT,4652535211.2676
+"personal remittances received, current $US",2019.0,Japan,JPN,BX.TRF.PWKR.CD.DT,4388723265.72254
+"personal remittances received, current $US",2019.0,Jamaica,JAM,BX.TRF.PWKR.CD.DT,2562542094.73911
+"personal remittances received, current $US",2019.0,Italy,ITA,BX.TRF.PWKR.CD.DT,10458515879.0042
+"personal remittances received, current $US",2019.0,Israel,ISR,BX.TRF.PWKR.CD.DT,953400000.0
+"personal remittances received, current $US",2019.0,Isle of Man,IMN,BX.TRF.PWKR.CD.DT,
+"personal remittances received, current $US",2019.0,Ireland,IRL,BX.TRF.PWKR.CD.DT,586686133.468616
+"personal remittances received, current $US",2019.0,Iraq,IRQ,BX.TRF.PWKR.CD.DT,859200000.0
+"personal remittances received, current $US",2019.0,"Iran, Islamic Rep.",IRN,BX.TRF.PWKR.CD.DT,1330000000.0
+"personal remittances received, current $US",2019.0,Indonesia,IDN,BX.TRF.PWKR.CD.DT,11666395059.1407
+"personal remittances received, current $US",2019.0,India,IND,BX.TRF.PWKR.CD.DT,83332078002.3032
+"personal remittances received, current $US",2019.0,Iceland,ISL,BX.TRF.PWKR.CD.DT,184084310.234569
+"personal remittances received, current $US",2019.0,Hungary,HUN,BX.TRF.PWKR.CD.DT,4964320442.23079
+"personal remittances received, current $US",2019.0,"Hong Kong SAR, China",HKG,BX.TRF.PWKR.CD.DT,451246722.143142
+"personal remittances received, current $US",2019.0,Honduras,HND,BX.TRF.PWKR.CD.DT,5401465664.93251
+"personal remittances received, current $US",2019.0,Haiti,HTI,BX.TRF.PWKR.CD.DT,3026149513.65524
+"personal remittances received, current $US",2019.0,Guyana,GUY,BX.TRF.PWKR.CD.DT,380358400.968644
+"personal remittances received, current $US",2019.0,Guinea-Bissau,GNB,BX.TRF.PWKR.CD.DT,151185244.870505
+"personal remittances received, current $US",2019.0,Guinea,GIN,BX.TRF.PWKR.CD.DT,158130000.0
+"personal remittances received, current $US",2019.0,Guatemala,GTM,BX.TRF.PWKR.CD.DT,10655601360.0
+"personal remittances received, current $US",2019.0,Guam,GUM,BX.TRF.PWKR.CD.DT,
+"personal remittances received, current $US",2019.0,Grenada,GRD,BX.TRF.PWKR.CD.DT,63365362.2953786
+"personal remittances received, current $US",2019.0,Greenland,GRL,BX.TRF.PWKR.CD.DT,
+"personal remittances received, current $US",2019.0,Greece,GRC,BX.TRF.PWKR.CD.DT,676327504.794212
+"personal remittances received, current $US",2019.0,Gibraltar,GIB,BX.TRF.PWKR.CD.DT,
+"personal remittances received, current $US",2019.0,Ghana,GHA,BX.TRF.PWKR.CD.DT,4053694728.81049
+"personal remittances received, current $US",2019.0,Germany,DEU,BX.TRF.PWKR.CD.DT,18729702718.9933
+"personal remittances received, current $US",2019.0,Georgia,GEO,BX.TRF.PWKR.CD.DT,2258211424.72
+"personal remittances received, current $US",2019.0,"Gambia, The",GMB,BX.TRF.PWKR.CD.DT,275825107.455024
+"personal remittances received, current $US",2019.0,Gabon,GAB,BX.TRF.PWKR.CD.DT,18458042.25
+"personal remittances received, current $US",2019.0,French Polynesia,PYF,BX.TRF.PWKR.CD.DT,581560111.75
+"personal remittances received, current $US",2019.0,France,FRA,BX.TRF.PWKR.CD.DT,30024725081.0684
+"personal remittances received, current $US",2019.0,Finland,FIN,BX.TRF.PWKR.CD.DT,797176578.300856
+"personal remittances received, current $US",2019.0,Fiji,FJI,BX.TRF.PWKR.CD.DT,295226277.283677
+"personal remittances received, current $US",2019.0,Faroe Islands,FRO,BX.TRF.PWKR.CD.DT,0.0
+"personal remittances received, current $US",2019.0,Ethiopia,ETH,BX.TRF.PWKR.CD.DT,479624165.264604
+"personal remittances received, current $US",2019.0,Eswatini,SWZ,BX.TRF.PWKR.CD.DT,118702081.809135
+"personal remittances received, current $US",2019.0,Estonia,EST,BX.TRF.PWKR.CD.DT,541915243.762818
+"personal remittances received, current $US",2019.0,Eritrea,ERI,BX.TRF.PWKR.CD.DT,0.0
+"personal remittances received, current $US",2019.0,Equatorial Guinea,GNQ,BX.TRF.PWKR.CD.DT,0.0
+"personal remittances received, current $US",2019.0,El Salvador,SLV,BX.TRF.PWKR.CD.DT,5656754219.242
+"personal remittances received, current $US",2019.0,"Egypt, Arab Rep.",EGY,BX.TRF.PWKR.CD.DT,26781400000.0
+"personal remittances received, current $US",2019.0,Ecuador,ECU,BX.TRF.PWKR.CD.DT,3242684316.95308
+"personal remittances received, current $US",2019.0,Dominican Republic,DOM,BX.TRF.PWKR.CD.DT,7420600000.0
+"personal remittances received, current $US",2019.0,Dominica,DMA,BX.TRF.PWKR.CD.DT,47506082.4979811
+"personal remittances received, current $US",2019.0,Djibouti,DJI,BX.TRF.PWKR.CD.DT,79461628.0574608
+"personal remittances received, current $US",2019.0,Denmark,DNK,BX.TRF.PWKR.CD.DT,1451438646.96199
+"personal remittances received, current $US",2019.0,Czechia,CZE,BX.TRF.PWKR.CD.DT,3859937090.42623
+"personal remittances received, current $US",2019.0,Cyprus,CYP,BX.TRF.PWKR.CD.DT,535182398.093839
+"personal remittances received, current $US",2019.0,Curacao,CUW,BX.TRF.PWKR.CD.DT,176186257.296089
+"personal remittances received, current $US",2019.0,Cuba,CUB,BX.TRF.PWKR.CD.DT,
+"personal remittances received, current $US",2019.0,Croatia,HRV,BX.TRF.PWKR.CD.DT,4280379502.49387
+"personal remittances received, current $US",2019.0,Cote d'Ivoire,CIV,BX.TRF.PWKR.CD.DT,328290412.149646
+"personal remittances received, current $US",2019.0,Costa Rica,CRI,BX.TRF.PWKR.CD.DT,553377977.061178
+"personal remittances received, current $US",2019.0,"Congo, Rep.",COG,BX.TRF.PWKR.CD.DT,26242892.954918
+"personal remittances received, current $US",2019.0,"Congo, Dem. Rep.",COD,BX.TRF.PWKR.CD.DT,2076317927.82742
+"personal remittances received, current $US",2019.0,Comoros,COM,BX.TRF.PWKR.CD.DT,168546815.838786
+"personal remittances received, current $US",2019.0,Colombia,COL,BX.TRF.PWKR.CD.DT,7115322398.74071
+"personal remittances received, current $US",2019.0,China,CHN,BX.TRF.PWKR.CD.DT,18294313104.25
+"personal remittances received, current $US",2019.0,Chile,CHL,BX.TRF.PWKR.CD.DT,69372771.3618018
+"personal remittances received, current $US",2019.0,Channel Islands,CHI,BX.TRF.PWKR.CD.DT,
+"personal remittances received, current $US",2019.0,Chad,TCD,BX.TRF.PWKR.CD.DT,0.0
+"personal remittances received, current $US",2019.0,Central African Republic,CAF,BX.TRF.PWKR.CD.DT,0.0
+"personal remittances received, current $US",2019.0,Cayman Islands,CYM,BX.TRF.PWKR.CD.DT,14148597.5605371
+"personal remittances received, current $US",2019.0,Canada,CAN,BX.TRF.PWKR.CD.DT,1311782569.26068
+"personal remittances received, current $US",2019.0,Cameroon,CMR,BX.TRF.PWKR.CD.DT,355550645.811703
+"personal remittances received, current $US",2019.0,Cambodia,KHM,BX.TRF.PWKR.CD.DT,1524617295.39829
+"personal remittances received, current $US",2019.0,Cabo Verde,CPV,BX.TRF.PWKR.CD.DT,241314283.947866
+"personal remittances received, current $US",2019.0,Burundi,BDI,BX.TRF.PWKR.CD.DT,48328631.779466
+"personal remittances received, current $US",2019.0,Burkina Faso,BFA,BX.TRF.PWKR.CD.DT,467251841.7327
+"personal remittances received, current $US",2019.0,Bulgaria,BGR,BX.TRF.PWKR.CD.DT,2342370000.0
+"personal remittances received, current $US",2019.0,Brunei Darussalam,BRN,BX.TRF.PWKR.CD.DT,
+"personal remittances received, current $US",2019.0,British Virgin Islands,VGB,BX.TRF.PWKR.CD.DT,
+"personal remittances received, current $US",2019.0,Brazil,BRA,BX.TRF.PWKR.CD.DT,3213621676.71
+"personal remittances received, current $US",2019.0,Botswana,BWA,BX.TRF.PWKR.CD.DT,59360104.1407768
+"personal remittances received, current $US",2019.0,Bosnia and Herzegovina,BIH,BX.TRF.PWKR.CD.DT,2332570551.4136
+"personal remittances received, current $US",2019.0,Bolivia,BOL,BX.TRF.PWKR.CD.DT,1335620196.92987
+"personal remittances received, current $US",2019.0,Bhutan,BTN,BX.TRF.PWKR.CD.DT,56658762.9385091
+"personal remittances received, current $US",2019.0,Bermuda,BMU,BX.TRF.PWKR.CD.DT,1547229197.94004
+"personal remittances received, current $US",2019.0,Benin,BEN,BX.TRF.PWKR.CD.DT,216993145.183506
+"personal remittances received, current $US",2019.0,Belize,BLZ,BX.TRF.PWKR.CD.DT,96816750.1184865
+"personal remittances received, current $US",2019.0,Belgium,BEL,BX.TRF.PWKR.CD.DT,12178118946.1038
+"personal remittances received, current $US",2019.0,Belarus,BLR,BX.TRF.PWKR.CD.DT,1418800000.0
+"personal remittances received, current $US",2019.0,Barbados,BRB,BX.TRF.PWKR.CD.DT,108317190.29
+"personal remittances received, current $US",2019.0,Bangladesh,BGD,BX.TRF.PWKR.CD.DT,18363859531.2812
+"personal remittances received, current $US",2019.0,Bahrain,BHR,BX.TRF.PWKR.CD.DT,
+"personal remittances received, current $US",2019.0,"Bahamas, The",BHS,BX.TRF.PWKR.CD.DT,
+"personal remittances received, current $US",2019.0,Azerbaijan,AZE,BX.TRF.PWKR.CD.DT,1275168754.82216
+"personal remittances received, current $US",2019.0,Austria,AUT,BX.TRF.PWKR.CD.DT,2966978810.66014
+"personal remittances received, current $US",2019.0,Australia,AUS,BX.TRF.PWKR.CD.DT,1752198311.23879
+"personal remittances received, current $US",2019.0,Aruba,ABW,BX.TRF.PWKR.CD.DT,34264018.270972
+"personal remittances received, current $US",2019.0,Armenia,ARM,BX.TRF.PWKR.CD.DT,1527937456.87278
+"personal remittances received, current $US",2019.0,Argentina,ARG,BX.TRF.PWKR.CD.DT,561398444.719758
+"personal remittances received, current $US",2019.0,Antigua and Barbuda,ATG,BX.TRF.PWKR.CD.DT,36955426.2457208
+"personal remittances received, current $US",2019.0,Angola,AGO,BX.TRF.PWKR.CD.DT,3445473.46759301
+"personal remittances received, current $US",2019.0,Andorra,AND,BX.TRF.PWKR.CD.DT,
+"personal remittances received, current $US",2019.0,American Samoa,ASM,BX.TRF.PWKR.CD.DT,
+"personal remittances received, current $US",2019.0,Algeria,DZA,BX.TRF.PWKR.CD.DT,1785838683.22299
+"personal remittances received, current $US",2019.0,Albania,ALB,BX.TRF.PWKR.CD.DT,1472812241.61037
+"personal remittances received, current $US",2019.0,Afghanistan,AFG,BX.TRF.PWKR.CD.DT,828571904.111179
+"personal remittances received, current $US",2019.0,World,WLD,BX.TRF.PWKR.CD.DT,660938113823.564
+"personal remittances received, current $US",2019.0,Upper middle income,UMC,BX.TRF.PWKR.CD.DT,147263382068.654
+"personal remittances received, current $US",2019.0,Sub-Saharan Africa (IDA & IBRD countries),TSS,BX.TRF.PWKR.CD.DT,49338588591.3069
+"personal remittances received, current $US",2019.0,Sub-Saharan Africa (excluding high income),SSA,BX.TRF.PWKR.CD.DT,49314940371.999
+"personal remittances received, current $US",2019.0,Sub-Saharan Africa,SSF,BX.TRF.PWKR.CD.DT,49338588591.3069
+"personal remittances received, current $US",2019.0,South Asia (IDA & IBRD),TSA,BX.TRF.PWKR.CD.DT,139830764844.691
+"personal remittances received, current $US",2019.0,South Asia,SAS,BX.TRF.PWKR.CD.DT,139830764844.691
+"personal remittances received, current $US",2019.0,Small states,SST,BX.TRF.PWKR.CD.DT,9443934538.2219
+"personal remittances received, current $US",2019.0,Pre-demographic dividend,PRE,BX.TRF.PWKR.CD.DT,42625235447.734
+"personal remittances received, current $US",2019.0,Post-demographic dividend,PST,BX.TRF.PWKR.CD.DT,155920268791.947
+"personal remittances received, current $US",2019.0,Pacific island small states,PSS,BX.TRF.PWKR.CD.DT,819220431.28986
+"personal remittances received, current $US",2019.0,Other small states,OSS,BX.TRF.PWKR.CD.DT,4923772246.70834
+"personal remittances received, current $US",2019.0,OECD members,OED,BX.TRF.PWKR.CD.DT,189461333469.996
+"personal remittances received, current $US",2019.0,Not classified,INX,BX.TRF.PWKR.CD.DT,
+"personal remittances received, current $US",2019.0,North America,NAC,BX.TRF.PWKR.CD.DT,9908011767.20072
+"personal remittances received, current $US",2019.0,Middle income,MIC,BX.TRF.PWKR.CD.DT,488309421219.222
+"personal remittances received, current $US",2019.0,Middle East & North Africa (IDA & IBRD countries),TMN,BX.TRF.PWKR.CD.DT,51910698510.099
+"personal remittances received, current $US",2019.0,Middle East & North Africa (excluding high income),MNA,BX.TRF.PWKR.CD.DT,55063558324.4873
+"personal remittances received, current $US",2019.0,Middle East & North Africa,MEA,BX.TRF.PWKR.CD.DT,57257074335.7856
+"personal remittances received, current $US",2019.0,Lower middle income,LMC,BX.TRF.PWKR.CD.DT,341046039150.568
+"personal remittances received, current $US",2019.0,Low income,LIC,BX.TRF.PWKR.CD.DT,11639277878.2945
+"personal remittances received, current $US",2019.0,Low & middle income,LMY,BX.TRF.PWKR.CD.DT,499948699097.516
+"personal remittances received, current $US",2019.0,Least developed countries: UN classification,LDC,BX.TRF.PWKR.CD.DT,49895003528.0459
+"personal remittances received, current $US",2019.0,Latin America & the Caribbean (IDA & IBRD countries),TLA,BX.TRF.PWKR.CD.DT,97516820261.5562
+"personal remittances received, current $US",2019.0,Latin America & Caribbean (excluding high income),LAC,BX.TRF.PWKR.CD.DT,96252018472.3128
+"personal remittances received, current $US",2019.0,Latin America & Caribbean,LCN,BX.TRF.PWKR.CD.DT,97905693413.9012
+"personal remittances received, current $US",2019.0,Late-demographic dividend,LTE,BX.TRF.PWKR.CD.DT,133247421443.494
+"personal remittances received, current $US",2019.0,IDA total,IDA,BX.TRF.PWKR.CD.DT,128220005202.817
+"personal remittances received, current $US",2019.0,IDA only,IDX,BX.TRF.PWKR.CD.DT,68102560904.3191
+"personal remittances received, current $US",2019.0,IDA blend,IDB,BX.TRF.PWKR.CD.DT,60117444298.4979
+"personal remittances received, current $US",2019.0,IDA & IBRD total,IBT,BX.TRF.PWKR.CD.DT,517569698073.473
+"personal remittances received, current $US",2019.0,IBRD only,IBD,BX.TRF.PWKR.CD.DT,389349692870.656
+"personal remittances received, current $US",2019.0,High income,HIC,BX.TRF.PWKR.CD.DT,160710414726.047
+"personal remittances received, current $US",2019.0,Heavily indebted poor countries (HIPC),HPC,BX.TRF.PWKR.CD.DT,31569429116.8302
+"personal remittances received, current $US",2019.0,Fragile and conflict affected situations,FCS,BX.TRF.PWKR.CD.DT,68089561409.6398
+"personal remittances received, current $US",2019.0,European Union,EUU,BX.TRF.PWKR.CD.DT,126808050178.071
+"personal remittances received, current $US",2019.0,Europe & Central Asia (IDA & IBRD countries),TEC,BX.TRF.PWKR.CD.DT,81227270439.316
+"personal remittances received, current $US",2019.0,Europe & Central Asia (excluding high income),ECA,BX.TRF.PWKR.CD.DT,61741861657.5223
+"personal remittances received, current $US",2019.0,Europe & Central Asia,ECS,BX.TRF.PWKR.CD.DT,193506766592.526
+"personal remittances received, current $US",2019.0,Euro area,EMU,BX.TRF.PWKR.CD.DT,91519671366.3771
+"personal remittances received, current $US",2019.0,East Asia & Pacific (IDA & IBRD countries),TEA,BX.TRF.PWKR.CD.DT,97745555426.5033
+"personal remittances received, current $US",2019.0,East Asia & Pacific (excluding high income),EAP,BX.TRF.PWKR.CD.DT,97745555426.5033
+"personal remittances received, current $US",2019.0,East Asia & Pacific,EAS,BX.TRF.PWKR.CD.DT,113191214278.152
+"personal remittances received, current $US",2019.0,Early-demographic dividend,EAR,BX.TRF.PWKR.CD.DT,325967194039.174
+"personal remittances received, current $US",2019.0,Central Europe and the Baltics,CEB,BX.TRF.PWKR.CD.DT,36848052636.0836
+"personal remittances received, current $US",2019.0,Caribbean small states,CSS,BX.TRF.PWKR.CD.DT,3700941860.2237
+"personal remittances received, current $US",2019.0,Arab World,ARB,BX.TRF.PWKR.CD.DT,57041271104.9319
+"personal remittances received, current $US",2019.0,Africa Western and Central,AFW,BX.TRF.PWKR.CD.DT,34891533066.0657
+"personal remittances received, current $US",2019.0,Africa Eastern and Southern,AFE,BX.TRF.PWKR.CD.DT,14447055525.2412
+"pop. living in slums, % urban pop.",2019.0,Zimbabwe,ZWE,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Zambia,ZMB,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,"Yemen, Rep.",YEM,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,West Bank and Gaza,PSE,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Virgin Islands (U.S.),VIR,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Vietnam,VNM,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,"Venezuela, RB",VEN,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Vanuatu,VUT,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Uzbekistan,UZB,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Uruguay,URY,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,United States,USA,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,United Kingdom,GBR,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,United Arab Emirates,ARE,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Ukraine,UKR,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Uganda,UGA,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Tuvalu,TUV,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Turks and Caicos Islands,TCA,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Turkmenistan,TKM,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Turkiye,TUR,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Tunisia,TUN,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Trinidad and Tobago,TTO,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Tonga,TON,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Togo,TGO,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Timor-Leste,TLS,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Thailand,THA,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Tanzania,TZA,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Tajikistan,TJK,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Syrian Arab Republic,SYR,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Switzerland,CHE,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Sweden,SWE,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Suriname,SUR,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Sudan,SDN,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,St. Vincent and the Grenadines,VCT,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,St. Martin (French part),MAF,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,St. Lucia,LCA,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,St. Kitts and Nevis,KNA,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Sri Lanka,LKA,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Spain,ESP,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,South Sudan,SSD,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,South Africa,ZAF,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Somalia,SOM,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Solomon Islands,SLB,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Slovenia,SVN,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Slovak Republic,SVK,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Sint Maarten (Dutch part),SXM,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Singapore,SGP,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Sierra Leone,SLE,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Seychelles,SYC,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Serbia,SRB,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Senegal,SEN,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Saudi Arabia,SAU,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Sao Tome and Principe,STP,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,San Marino,SMR,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Samoa,WSM,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Rwanda,RWA,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Russian Federation,RUS,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Romania,ROU,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Qatar,QAT,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Puerto Rico,PRI,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Portugal,PRT,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Poland,POL,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Philippines,PHL,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Peru,PER,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Paraguay,PRY,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Papua New Guinea,PNG,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Panama,PAN,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Palau,PLW,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Pakistan,PAK,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Oman,OMN,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Norway,NOR,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Northern Mariana Islands,MNP,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,North Macedonia,MKD,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Nigeria,NGA,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Niger,NER,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Nicaragua,NIC,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,New Zealand,NZL,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,New Caledonia,NCL,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Netherlands,NLD,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Nepal,NPL,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Nauru,NRU,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Namibia,NAM,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Myanmar,MMR,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Mozambique,MOZ,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Morocco,MAR,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Montenegro,MNE,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Mongolia,MNG,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Monaco,MCO,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Moldova,MDA,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,"Micronesia, Fed. Sts.",FSM,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Mexico,MEX,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Mauritius,MUS,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Mauritania,MRT,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Marshall Islands,MHL,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Malta,MLT,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Mali,MLI,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Maldives,MDV,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Malaysia,MYS,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Malawi,MWI,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Madagascar,MDG,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,"Macao SAR, China",MAC,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Luxembourg,LUX,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Lithuania,LTU,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Liechtenstein,LIE,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Libya,LBY,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Liberia,LBR,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Lesotho,LSO,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Lebanon,LBN,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Latvia,LVA,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Lao PDR,LAO,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Kyrgyz Republic,KGZ,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Kuwait,KWT,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Kosovo,XKX,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,"Korea, Rep.",KOR,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,"Korea, Dem. People's Rep.",PRK,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Kiribati,KIR,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Kenya,KEN,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Kazakhstan,KAZ,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Jordan,JOR,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Japan,JPN,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Jamaica,JAM,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Italy,ITA,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Israel,ISR,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Isle of Man,IMN,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Ireland,IRL,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Iraq,IRQ,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,"Iran, Islamic Rep.",IRN,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Indonesia,IDN,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,India,IND,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Iceland,ISL,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Hungary,HUN,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,"Hong Kong SAR, China",HKG,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Honduras,HND,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Haiti,HTI,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Guyana,GUY,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Guinea-Bissau,GNB,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Guinea,GIN,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Guatemala,GTM,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Guam,GUM,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Grenada,GRD,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Greenland,GRL,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Greece,GRC,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Gibraltar,GIB,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Ghana,GHA,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Germany,DEU,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Georgia,GEO,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,"Gambia, The",GMB,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Gabon,GAB,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,French Polynesia,PYF,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,France,FRA,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Finland,FIN,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Fiji,FJI,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Faroe Islands,FRO,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Ethiopia,ETH,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Eswatini,SWZ,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Estonia,EST,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Eritrea,ERI,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Equatorial Guinea,GNQ,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,El Salvador,SLV,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,"Egypt, Arab Rep.",EGY,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Ecuador,ECU,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Dominican Republic,DOM,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Dominica,DMA,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Djibouti,DJI,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Denmark,DNK,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Czechia,CZE,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Cyprus,CYP,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Curacao,CUW,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Cuba,CUB,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Croatia,HRV,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Cote d'Ivoire,CIV,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Costa Rica,CRI,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,"Congo, Rep.",COG,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,"Congo, Dem. Rep.",COD,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Comoros,COM,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Colombia,COL,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,China,CHN,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Chile,CHL,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Channel Islands,CHI,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Chad,TCD,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Central African Republic,CAF,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Cayman Islands,CYM,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Canada,CAN,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Cameroon,CMR,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Cambodia,KHM,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Cabo Verde,CPV,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Burundi,BDI,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Burkina Faso,BFA,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Bulgaria,BGR,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Brunei Darussalam,BRN,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,British Virgin Islands,VGB,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Brazil,BRA,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Botswana,BWA,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Bosnia and Herzegovina,BIH,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Bolivia,BOL,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Bhutan,BTN,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Bermuda,BMU,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Benin,BEN,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Belize,BLZ,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Belgium,BEL,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Belarus,BLR,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Barbados,BRB,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Bangladesh,BGD,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Bahrain,BHR,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,"Bahamas, The",BHS,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Azerbaijan,AZE,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Austria,AUT,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Australia,AUS,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Aruba,ABW,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Armenia,ARM,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Argentina,ARG,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Antigua and Barbuda,ATG,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Angola,AGO,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Andorra,AND,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,American Samoa,ASM,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Algeria,DZA,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Albania,ALB,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Afghanistan,AFG,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,World,WLD,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Upper middle income,UMC,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Sub-Saharan Africa (IDA & IBRD countries),TSS,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Sub-Saharan Africa (excluding high income),SSA,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Sub-Saharan Africa,SSF,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,South Asia (IDA & IBRD),TSA,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,South Asia,SAS,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Small states,SST,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Pre-demographic dividend,PRE,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Post-demographic dividend,PST,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Pacific island small states,PSS,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Other small states,OSS,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,OECD members,OED,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Not classified,INX,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,North America,NAC,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Middle income,MIC,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Middle East & North Africa (IDA & IBRD countries),TMN,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Middle East & North Africa (excluding high income),MNA,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Middle East & North Africa,MEA,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Lower middle income,LMC,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Low income,LIC,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Low & middle income,LMY,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Least developed countries: UN classification,LDC,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Latin America & the Caribbean (IDA & IBRD countries),TLA,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Latin America & Caribbean (excluding high income),LAC,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Latin America & Caribbean,LCN,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Late-demographic dividend,LTE,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,IDA total,IDA,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,IDA only,IDX,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,IDA blend,IDB,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,IDA & IBRD total,IBT,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,IBRD only,IBD,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,High income,HIC,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Heavily indebted poor countries (HIPC),HPC,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Fragile and conflict affected situations,FCS,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,European Union,EUU,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Europe & Central Asia (IDA & IBRD countries),TEC,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Europe & Central Asia (excluding high income),ECA,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Europe & Central Asia,ECS,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Euro area,EMU,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,East Asia & Pacific (IDA & IBRD countries),TEA,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,East Asia & Pacific (excluding high income),EAP,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,East Asia & Pacific,EAS,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Early-demographic dividend,EAR,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Central Europe and the Baltics,CEB,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Caribbean small states,CSS,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Arab World,ARB,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Africa Western and Central,AFW,EN.POP.SLUM.UR.ZS,
+"pop. living in slums, % urban pop.",2019.0,Africa Eastern and Southern,AFE,EN.POP.SLUM.UR.ZS,
