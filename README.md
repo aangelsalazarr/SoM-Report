@@ -52,6 +52,7 @@
 - [Electricity Markets](https://github.com/aangelsalazarr/SoM-Report/tree/main/electricity_markets/data_visuals)
 - [Energy (EIA)](https://github.com/aangelsalazarr/SoM-Report/tree/main/energy_information_administration/data_visuals)
 - [Macro Economics](https://github.com/aangelsalazarr/SoM-Report/tree/main/macroeconomics/data_visuals)
+- [The World Bank Data](https://github.com/aangelsalazarr/SoM-Report/tree/main/the_world_bank/data_visuals)
 
 ## Saved Data
 - [Financial Markets Data](https://github.com/aangelsalazarr/SoM-Report/tree/main/financial_markets/data_files)
