@@ -3,6 +3,7 @@ import pandas as pd
 from datetime import date
 import seaborn as sns
 import matplotlib.pyplot as plt
+from black_box.pdfConverter import save_multi_image
 
 # setting up time related variables
 today = date.today()
@@ -27,5 +28,6 @@ world_pop = sns.scatterplot(data=df,
                             x='EN.ATM.GHGT.KT.CE', y='SP.POP.TOTL',
                             hue='Country', legend=False)
 
-plt.show()
+filename_2019_data = './data_visuals/wb_data_2019.pdf'
 
+save_multi_image(filename_2019_data)
