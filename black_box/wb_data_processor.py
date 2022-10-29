@@ -75,9 +75,6 @@ def grab_multi_year_data(dictionary, start, end):
     return df
 
 
-
-
-
 def combine_year_based_dfs(dfs):
     combined_df = pd.concat(dfs, axis=0, ignore_index=True)
     return combined_df
