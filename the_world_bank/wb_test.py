@@ -5,6 +5,8 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 from black_box.pdfConverter import save_multi_image
 from black_box.wb_data_processor import *
+pd.set_option('display.max_columns', None)
+
 
 # setting up time related variables
 today = date.today()
@@ -24,6 +26,11 @@ series_dict = {'SP.POP.TOTL': 'population, total',
 # let's grab our first df
 df_2019 = grab_year_based_data(dictionary=series_dict, economy='ALL', time=2019)
 
+# let's grab multi year data now
+df = grab_multi_year_data(dictionary=series_dict, start=2000,
+                          end=int(current_year))
+
 # converting our pop_df into a csv to store as a data file
 df_2019.to_csv('./data_files/wb_data_2019.csv', index=False)
+df.to_csv('./data_files/wb_data.csv', index=False)
 
