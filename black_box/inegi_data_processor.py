@@ -27,6 +27,7 @@ pop_migration = {
                   'insecurity or violence'
 }
 
+# mining ids
 mining = {
     '5300000005': 'Economic unites, sector 21, mining',
     '5300000025': 'Total renumeration, sector 21, mining',
@@ -55,33 +56,33 @@ geos = {'0700':'nacional',
 bridges = {'BIE':'Bank for Economic Information',
            'BISE':'Bank of Indicators'}
 
-# calling api
-base = 'https://en.www.inegi.org.mx/app/api/indicadores/desarrolladores/jsonxml/INDICATOR/'
-id_ind = list(mining.keys())[6] + '/'  # id indicator
-lang = 'en' + '/'  # or 'es' for spanish language
-geo = list(geos.keys())[1] + '/'  # geographic area
-recents = 'false/'  # or 'false/' for if you want historical data?
-data_bridge = list(bridges.keys())[1] + '/'  # not sure what this is tbh
-v = '2.0/'  # not sure what else you could put here for version
-token_n_type = simbolico + '?type=json'  # api key
 
-# url segments concatenated
-url = base + id_ind + lang + geo + recents + data_bridge + v + token_n_type
-print(url)
+def grab_inegi_data(indicator, geo, bridge):
+    # calling api
+    base = 'https://en.www.inegi.org.mx/app/api/indicadores/desarrolladores/jsonxml/INDICATOR/'
+    ind = indicator + '/'  # id indicator, list(mining.keys())[6]
+    lang = 'en' + '/'  # or 'es' for spanish language
+    geo_id = geo + '/'  # geographic area, list(geos.keys())[1]
+    recents = 'false/'  # or 'false/' for if you want historical data?
+    data_bridge = bridge + '/'  # list(bridges.keys())[1]
+    v = '2.0/'  # not sure what else you could put here for version lol
+    token = simbolico + '?type=json'  # api key
+    # url segments concatenated
+    url = base + ind + lang + geo_id + recents + data_bridge + v + token
 
-# response var
-response = requests.get(url=url)
-data = response.json()
+    # response var
+    response = requests.get(url=url)
+    data = response.json()
+    entries = data['Series'][0]['OBSERVATIONS']
+    df = pd.DataFrame(data=entries)
+    df['TIME_PERIOD'] = pd.to_datetime(df['TIME_PERIOD'])
+    df['OBS_VALUE'] = df['OBS_VALUE'].astype(float)
+    df.to_csv('./mining_gold_production.csv', index=False)
 
-entries = data['Series'][0]['OBSERVATIONS']
-df = pd.DataFrame(data=entries)
+    return df
 
-df.to_csv('./mining_gold_production.csv', index=False)
 
-fig1 = plt.figure()
-x = sns.lineplot(data=df, x='TIME_PERIOD', y='OBS_VALUE')
 
-plt.show()
 
 
 
