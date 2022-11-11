@@ -25,15 +25,14 @@ mining = {
     '6207046219': 'Volume of mining production, Gold, by state',
     '6207046220': 'Volume of mining production, Zinc, by state',
     '6207046221': 'Volume of mining production, Copper, by state',
-    '6207046222': 'Volume of mining production, Coke, by state',
     '6207046224': 'Volume of mining production, Silver by state',
     '6207046223': 'Volume of mining production, Lead, by state',
     '6207046230': 'Volume of mining production, Iron Pellets, by state',
     '6207046231': 'Volume of mining production, Iron Extraction by state',
     '6207046225': 'Volume of mining production, Sulfur, by state',
     '6207046226': 'Volume of mining production, Baryte, by state',
-    '6207046227': 'Volume of mining production, Fluorite, by state'
-
+    '6207046227': 'Volume of mining production, Fluorite, by state',
+    '6207046222': 'Volume of mining production, Coke, by state'
 }
 
 # geo ids
