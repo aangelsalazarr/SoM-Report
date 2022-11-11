@@ -2,6 +2,8 @@ import requests
 import json
 import os
 import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
 
 # want to load into our environment our api key
 simbolico = os.environ.get('inegiKey')
@@ -10,16 +12,56 @@ simbolico = os.environ.get('inegiKey')
 indicators = {'510108':'producto interno bruto (total nacional)',
               '497676':'actividad turistica, base 2013, indices de vol fisico',
               '1002000001':'poblacion total'}
-geos = {'0700':'nacional'}
-bridges = {'BIE':'Bank for Economic Information'}
+pop_migration = {
+    '6200205255': 'Immigration Population, 5 yrs and over',
+    '6200205252': '% international migran pop. headed to other country',
+    '6200205262': 'International migration net balance of 5 yrs and over',
+    '6200205264': '% international migrant with no destination',
+    '6200240349': '% international migration to USA',
+    '6200240327': '% of international migration to rest of world',
+    '6200240404': '% international migrant pop. due to public '
+                  'insecurity/violence',
+    '6200240415': '% of international migrant pop. to unspecified countries',
+    '6207129645': '% migrant pop. of 5 yrs and over according to: education',
+    '6207129646': '% migrant pop. of 5 yrs or over according to: criminal '
+                  'insecurity or violence'
+}
+
+mining = {
+    '5300000005': 'Economic unites, sector 21, mining',
+    '5300000025': 'Total renumeration, sector 21, mining',
+    '5300000035': 'Total gross production, sector 21, mining',
+    '5300000045': 'Total stock of fixed assets, sector 21, mining',
+    '5300000095': 'Recenue from provision of goods and services, sector 21, '
+                  'mining',
+    '5300000105': 'Total expenditures for consumption of goods and services, '
+                  'sector 21, mining',
+    '6207046219': 'Volume of mining production, Gold, by state',
+    '6207046220': 'Volume of mining production, Zinc, by state',
+    '6207046221': 'Volume of mining production, Copper, by state',
+    '6207046222': 'Volume of mining production, Coke, by state',
+    '6207046224': 'Volume of mining production, Silver by state',
+    '6207046223': 'Volume of mining production, Lead, by state',
+    '6207046225': 'Volume of mining production, Sulfur, by state',
+    '6207046226': 'Volume of mining production, Baryte, by state',
+    '6207046227': 'Volume of mining production, Fluorite, by state',
+    '6207046230': 'Volume of mining production, Iron Pellets, by state',
+    '6207046231': 'Volume of mining production, Iron Extraction by state',
+}
+
+geos = {'0700':'nacional',
+        '07000001': 'not sure what this is'}
+
+bridges = {'BIE':'Bank for Economic Information',
+           'BISE':'Bank of Indicators'}
 
 # calling api
 base = 'https://en.www.inegi.org.mx/app/api/indicadores/desarrolladores/jsonxml/INDICATOR/'
-id_ind = list(indicators.keys())[0] + '/'  # id indicator
+id_ind = list(mining.keys())[6] + '/'  # id indicator
 lang = 'en' + '/'  # or 'es' for spanish language
-geo = list(geos.keys())[0] + '/'  # geographic area
+geo = list(geos.keys())[1] + '/'  # geographic area
 recents = 'false/'  # or 'false/' for if you want historical data?
-data_bridge = list(bridges.keys())[0] + '/'  # not sure what this is tbh
+data_bridge = list(bridges.keys())[1] + '/'  # not sure what this is tbh
 v = '2.0/'  # not sure what else you could put here for version
 token_n_type = simbolico + '?type=json'  # api key
 
@@ -29,7 +71,17 @@ print(url)
 
 # response var
 response = requests.get(url=url)
+data = response.json()
 
+entries = data['Series'][0]['OBSERVATIONS']
+df = pd.DataFrame(data=entries)
+
+df.to_csv('./mining_gold_production.csv', index=False)
+
+fig1 = plt.figure()
+x = sns.lineplot(data=df, x='TIME_PERIOD', y='OBS_VALUE')
+
+plt.show()
 
 
 
