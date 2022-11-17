@@ -45,8 +45,13 @@ def params_2_data(json_obj, base_url):
     # concatenating all url segments
     url = base + freq + data_in + facet + start + end
     
-    
-    
+    # GET request to eia api
+    r = requests.get(url=url)
+    data = r.json()
+    entries = data['response']['data']
+    df = pd.DataFrame(data=entries)  # converting to pandas df
+    df.reset_index(drop=True)  # reseting index as to remove date index
+    df['period'] = pd.to_datetime(df['period']) # converting period col to date type
     
     
     
