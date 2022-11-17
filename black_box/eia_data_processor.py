@@ -31,3 +31,29 @@ def grab_eia_data(url):
     eia_df['period'] = pd.to_datetime(eia_df['period'])  # convert period type
 
     return eia_df  # return our now transformed df
+
+
+# purpose is to input a eia params json object and return data
+def params_2_data(json_obj, base_url):
+    base = base_url
+    freq = json_obj['frequency']
+    data_in = json_obj['data']
+    facet = json_obj['facets']['product'][0]
+    start = json_obj['start']
+    end = json_obj['end']
+    
+    # concatenating all url segments
+    url = base + freq + data_in + facet + start + end
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
