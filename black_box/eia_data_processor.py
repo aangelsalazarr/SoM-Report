@@ -34,7 +34,7 @@ def grab_eia_data(url):
 
 
 # purpose is to input a eia params json object and return data
-def params_2_data(json_obj, base_url):
+def params_2_data(json_obj, base_url, key):
     base = base_url
     freq = json_obj['frequency']
     data_in = json_obj['data']
@@ -43,7 +43,7 @@ def params_2_data(json_obj, base_url):
     end = json_obj['end']
     
     # concatenating all url segments
-    url = base + freq + data_in + facet + start + end
+    url = base + '?api_key' + str(key) + freq + data_in + facet + start + end
     
     # GET request to eia api
     r = requests.get(url=url)
