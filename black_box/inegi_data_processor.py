@@ -77,7 +77,6 @@ def grab_inegi_data(indicator, geo, bridge):
     df = pd.DataFrame(data=entries)
     df['TIME_PERIOD'] = pd.to_datetime(df['TIME_PERIOD'])
     df['OBS_VALUE'] = df['OBS_VALUE'].astype(float)
-    df.to_csv('./mining_gold_production.csv', index=False)
 
     return df
 
