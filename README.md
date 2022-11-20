@@ -74,6 +74,7 @@
 - [The World Bank Data Processor](https://github.com/aangelsalazarr/SoM-Report/blob/main/black_box/wb_data_processor.py)
 - [FRED Data Processor](https://github.com/aangelsalazarr/SoM-Report/blob/main/black_box/fred_data_processor.py)
 - [INEGI Data Processor](https://github.com/aangelsalazarr/SoM-Report/blob/main/black_box/inegi_data_processor.py)
+- [IMF Data Processor](https://github.com/aangelsalazarr/SoM-Report/blob/main/black_box/imf_data_processor.py)
 
 ## Sources
 - [Yahoo Finance](https://finance.yahoo.com/)
