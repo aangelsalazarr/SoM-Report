@@ -68,6 +68,6 @@ line1 = sns.lineplot(data=fredDf, x='Date', y='GDP Def')
 line2 = sns.lineplot(data=blsMainDF, x='Date', y='value', hue='seriesID')
 
 
-filename = '.\data_visuals\inflation_visuals'
+filename = '.\data_visuals\inflation_visuals_'
 
 save_multi_image(filename + currentDate + '.pdf')
