@@ -86,3 +86,5 @@
 - [UBS Insights](https://www.ubs.com/global/en/wealth-management/insights/chief-investment-office/house-view/daily.html)
 - [JP Morgan Asset Management](https://am.jpmorgan.com/us/en/asset-management/adv/insights/market-insights/market-updates/weekly-market-recap/)
 - [Merrill Lynch Capital Markets Outlook](https://www.ml.com/capital-market-outlook.html)
+- [INEGI](https://www.inegi.org.mx/datosabiertos/)
+- [Open EI](https://openei.org/wiki/Data)
