@@ -1,5 +1,5 @@
-from eia_data_processor import grab_eia_data, is_float
-from black_box.pdfConverter import save_multi_image
+from black_box.eia_data_processor import *
+from black_box.pdfConverter import *
 import os
 from datetime import date
 from dateutil.relativedelta import relativedelta
@@ -20,8 +20,6 @@ today = date.today()
 currentDate = today.strftime('%m_%d_%y')
 startDate = today - relativedelta(years=5)
 eiaStartDate = startDate.strftime('%Y')
-
-
 
 # base url
 baseUrl = 'https://api.eia.gov/v2/co2-emissions/co2-emissions-aggregates/data/'
