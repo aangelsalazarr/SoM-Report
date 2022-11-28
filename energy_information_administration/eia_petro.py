@@ -7,11 +7,23 @@ import matplotlib.pyplot as plt
 # grabbing our eia api key
 eia_key = os.environ.get('eiaKey')
 
+# some params related to the framework of output that we will need
+rc('mathtext', default='regular')
+plt.rcParams["figure.autolayout"] = True
+pd.set_option('display.max_columns', None)
+
+# setting up params for our data_visuals
+sns.set(font_scale=0.5)
+sns.set_style('dark')
+
 # base urls related to petro prices
 # Petro > prices > weekly retail gas and diesel prices
 petro_gnd = 'https://api.eia.gov/v2/petroleum/pri/gnd/data/'
 petro_spt = 'https://api.eia.gov/v2/petroleum/pri/spt/data/'
 petro_fut = 'https://api.eia.gov/v2/petroleum/pri/fut/data/'
+
+# setting up our start date
+start = '2017-01-01'
 
 petro_weekly = {
     "frequency": "weekly",
@@ -26,7 +38,7 @@ petro_weekly = {
             "EPMR"  # facets_index= 3
         ]
     },
-    "start": "2015-01-01",
+    "start": start,
     "end": null,
     "sort": [
         {
@@ -55,7 +67,7 @@ petro_spot = {
             "EPMRU"
         ]
     },
-    "start": "2015-01-01",
+    "start": start,
     "end": null,
     "sort": [
         {
@@ -83,7 +95,7 @@ petro_futs = {
 
         ]
     },
-    "start": "2015-01-01",
+    "start": start,
     "end": null,
     "sort": [
         {
@@ -155,6 +167,10 @@ dfs = [epd2d_df, epmm_df, epmp_df, epmr_df, epcbrent_df, epcwti_df, epd2dc_df,
 # combining all dfs vertically
 df_main = combine_dfs(dfs=dfs)
 
+# converting period col values to date types
+df_main['period'] = pd.to_datetime(df_main['period'])
+
+# visualizing our data
 eia_visualizer_by_prod(df=df_main, products=products)
 
 # let's now store our visualizations in a pdf format
