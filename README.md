@@ -21,6 +21,7 @@
 
 ## Topics
 - [U.S. Electricity Market](https://github.com/aangelsalazarr/SoM-Report/blob/main/electricity_markets/us_electricity_markets.py)
+- [U.S. Petroleum Market](https://github.com/aangelsalazarr/SoM-Report/blob/main/energy_information_administration/eia_petro.py)
 - [International Energy Data](https://github.com/aangelsalazarr/SoM-Report/blob/main/energy_information_administration/international_energy_eia_data.py)
 - [U.S. CO2 Emissions](https://github.com/aangelsalazarr/SoM-Report/blob/main/energy_information_administration/emissions_data.py)
 - Equity Indices
@@ -50,6 +51,7 @@
 ## Visuals
 - [Financial Markets](https://github.com/aangelsalazarr/SoM-Report/tree/main/financial_markets/data_visuals)
 - [Electricity Markets](https://github.com/aangelsalazarr/SoM-Report/tree/main/electricity_markets/data_visuals)
+- [Petroleum Markets](https://github.com/aangelsalazarr/SoM-Report/blob/main/energy_information_administration/data_visuals/eia_petro_visuals.pdf)
 - [Energy (EIA)](https://github.com/aangelsalazarr/SoM-Report/tree/main/energy_information_administration/data_visuals)
 - [Macro Economics](https://github.com/aangelsalazarr/SoM-Report/tree/main/macroeconomics/data_visuals)
 - [The World Bank Data](https://github.com/aangelsalazarr/SoM-Report/tree/main/the_world_bank/data_visuals)
