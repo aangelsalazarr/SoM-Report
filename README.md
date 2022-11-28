@@ -62,6 +62,7 @@
 - [Electricity Market Data](https://github.com/aangelsalazarr/SoM-Report/tree/main/electricity_markets/data_files)
 - [The World Bank Data](https://github.com/aangelsalazarr/SoM-Report/tree/main/the_world_bank/data_files)
 - [Macro Economic Data](https://github.com/aangelsalazarr/SoM-Report/tree/main/macroeconomics/data_files)
+- [U.S. Petroleum Market Data](https://github.com/aangelsalazarr/SoM-Report/tree/main/energy_information_administration/data_files)
 - [International Energy Agency Data]()
 
 ## Functions
